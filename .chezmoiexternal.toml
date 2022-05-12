@@ -25,7 +25,7 @@ type = "file"
 url = "https://raw.githubusercontent.com/jnats/nofetch/main/nofetch"
 executable = true
 
-["~/.local/bin/unimatrix"]
+[".local/bin/unimatrix"]
 type = "file"
 url = "https://github.com/will8211/unimatrix/raw/master/unimatrix.py"
 executable = true
