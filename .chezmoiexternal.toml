@@ -8,6 +8,10 @@ type = "file"
 url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
 refreshPeriod = "168h"
 
+[".config/kitty/kitty_tokyonight_day.conf"]
+type = "file"
+url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_day.conf"
+
 [".config/kitty/kitty_tokyonight_night.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_night.conf"
