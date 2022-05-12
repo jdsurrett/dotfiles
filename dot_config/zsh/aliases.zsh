@@ -5,6 +5,16 @@ pamac () {
     /usr/bin/pamac $@ | lolcat -i -p 9.0
 }
 
+tree () {
+    tput clear
+    lsd --tree \
+        --date='+ ║ %D ┊ %I:%M %p ║ ' \
+        --group-dirs=last \
+        --blocks=date \
+        --blocks=name \
+        --blocks=size
+    }
+
 alias cargo="tput clear && cargo"
 alias vim="lvim"
 alias vi="lvim"
@@ -22,4 +32,3 @@ alias cl="sl -Fla"
 alias holly="sl -Fla"
 alias vl="sl -Fla"
 alias tclear="tput clear"
-alias tree="tput clear && lsd --tree --date='+ ║ %D ┊ %I:%M %p ║ ' --group-dirs=last --blocks=date --blocks=name --blocks=size"
