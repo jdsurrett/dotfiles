@@ -1,0 +1,104 @@
+#!/bin/env sh
+
+trim_quotes() {
+    trim_output="${1//\'}"
+    trim_output="${trim_output//\"}"
+    printf "%s" "$trim_output"
+}
+
+# Get CPU speed.
+speed_dir="/sys/devices/system/cpu/cpu0/cpufreq"
+speed="$(< "${speed_dir}/cpuinfo_max_freq")"
+speed="$((speed / 1000))"
+speed="${speed:0:1}.${speed:1}"
+cpu_speed=" @ ${speed}GHz"
+
+# Select the right temperature file.
+for temp_dir in /sys/class/hwmon/*; do
+  [[ "$(< "${temp_dir}/name")" =~ (cpu_thermal|coretemp|fam15h_power|k10temp) ]] && {
+  temp_dirs=("$temp_dir"/temp*_input)
+  temp_dir=${temp_dirs[0]}
+  break
+  }
+done
+
+[[ -f "$temp_dir" ]] && deg="$(($(< "$temp_dir") * 100 / 10000))"
+
+# Add CPU temp to the output.  # Format the output
+deg="[${deg/${deg: -1}}.${deg: -1}°${cpu_temp:-C}]"
+
+
+# Values
+COLOR="${1:-92}"
+OS=$(nofetch)
+# OS="$(os) $(lscpu | awk 'FNR == 1 {print $2}')"
+HOST="$(cat /sys/devices/virtual/dmi/id/board_vendor) $(cat /sys/devices/virtual/dmi/id/board_name)"
+# KERNEL=$(uname -r)
+SHELL=$(zsh --version | sed 's/(.*)//g')
+TERMINAL=$(echo $TERM)
+term_font="from kitty.cli import *; o = create_default_opts(); print(f'{o.font_family} {o.font_size}')"
+term_font="$(kitty +runpy ''"$term_font"'')"
+EDIT=$(editor '${pretty_name} ${version}')
+CPU="$(lscpu | awk 'FNR == 8 {printf "%s %s %s %s ",$3,$4,$5,$6;} FNR == 12 {printf "%s%s%s","(",$4,")";}')$cpu_speed $deg"
+GPU="ATI Radeon Vega Series / Radeon Vega Mobile Series"
+SEPARATOR=$(echo "GPU: $GPU" | sed -e 's/./─/g')
+MEMORY=$(mem '${gb_used}GiB/${gb_total}GiB \($(((gb_used*100)/gb_total))%%\)')
+ROOT_DISK="$(disk '${gb_used}GiB/${gb_total}GiB \($(((gb_used*100)/gb_total))%%\) ' '/$')"
+HOME_DISK="$(disk '${gb_used}GiB/${gb_total}GiB \($(((gb_used*100)/gb_total))%%\) ' '/home$')"
+TEXT="${1:-███}"
+MODES="${2:-normal both}"
+ORDER="${3:-0 1 2 3 4 5 6 7}"
+SPECTRUM="${4}"
+
+
+
+# Start
+
+for mode in $MODES; do
+	case "$mode" in
+		'normal') bold=''  ; bright='3' ;;
+		'bright') bold=''  ; bright='9' ;;
+		'bold')   bold=';1'; bright='3' ;;
+		'both')   bold=';1'; bright='9' ;;
+	esac
+
+	[ "$newline" = 'true' ] && print="$print\n"
+
+	[ -n "$SPECTRUM" ] && {
+		spectrum=''
+		text_print="$SPECTRUM"
+	}
+
+	for color in $ORDER; do
+		[ "$color" != 'none' ] && colors="$bold$spectrum;$bright$color"
+
+		print="$print\033[0${colors:-$spectrum}m${text_print:-$TEXT}"
+
+		colors=''
+
+		[ -n "$SPECTRUM" ] && {
+			[ "$color" != 'none' ] && spectrum=";$(( bright + 1 ))$color" || spectrum=''
+			text_print="$TEXT"
+		}
+	done
+
+	print="$print\033[0m"
+	newline='true'
+done
+
+printf "\033[1;${COLOR}m\033[0m ${OS:-os}\033[0m
+\033[0m${SEPARATOR:----}\033[0m
+\033[1;${COLOR}mShell\033[0m: ${SHELL:-shell}\033[0m
+\033[1;${COLOR}mTerminal\033[0m: ${TERMINAL:-terminal}\033[0m
+\033[1;${COLOR}mTerminal Font\033[0m: ${term_font:-terminal_font}\033[0m
+\033[1;${COLOR}mEditor\033[0m: ${EDIT:-editor}\033[0m
+\033[1;${COLOR}mHost\033[0m: ${HOST:-host}\033[0m
+\033[1;${COLOR}mCPU\033[0m: ${CPU:-cpu}\033[0m
+\033[1;${COLOR}mGPU\033[0m: ${GPU:-gpu}\033[0m
+\033[1;${COLOR}mMemory\033[0m: ${MEMORY:-memory}\033[0m
+\033[1;${COLOR}mDisk (/)\033[0m: ${ROOT_DISK:-root_disk}\033[0m
+\033[1;${COLOR}mDisk (/home)\033[0m: ${HOME_DISK:-home_disk}\033[0m 
+
+$print" | boxes -d peek
+exit 0
+# \033[1;${COLOR}mKernel\033[0m: ${KERNEL:-kernel}\033[0m

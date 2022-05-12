@@ -1,0 +1,24 @@
+#!/bin/sh
+      # archer \
+      # farscape \
+      # dexterslab \
+      # sherlock \
+      # rickandmorty \
+      # quantumleap \
+      # eureka \
+      # startrek \
+      # futurama \
+      # firefly \
+      # ferengi_rules_of_acquisition \
+
+PRINT=$(fortune -c -a -s \
+      torchwood \
+      montypython \
+      matrix \
+      hitchhiker \
+      hackers \
+      doctorwho-new-series \
+      doctorwho-classic-series | sed -e 's|/usr/share/fortune/||g' -e 's|%||g' -e 's|- None||g' | \
+      boxes -d jstone)
+
+printf '%s' "$PRINT"
