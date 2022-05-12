@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+case "$DESKTOP_SESSION" in
+    i3)
+        export $(gnome-keyring-daemon --start)
+        ;;
+    sway)
+        export $(gnome-keyring-daemon --start)
+        ;;
+esac
