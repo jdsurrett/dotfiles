@@ -10,7 +10,7 @@ refreshPeriod = "168h"
 
 [".config/kitty/kitty_tokyonight_night.conf"]
 type = "file"
-url = "https://raw.githubusercontent.om/folke/tokyonight.nvim/main/extras/kitty_tokyonight_night.conf"
+url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_night.conf"
 
 [".config/kitty/kitty_tokyonight_storm.conf"]
 type = "file"
