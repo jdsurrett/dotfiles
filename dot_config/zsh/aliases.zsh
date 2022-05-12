@@ -1,5 +1,10 @@
 #!/usr/bin/env zsh
 
+pamac () {
+    tput clear
+    /usr/bin/pamac $@ | lolcat -i -p 9.0
+}
+
 alias cargo="tput clear && cargo"
 alias vim="lvim"
 alias vi="lvim"
