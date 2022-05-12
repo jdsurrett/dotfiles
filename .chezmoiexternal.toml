@@ -3,6 +3,10 @@ type = "git-repo"
 url = "https://github.com/trapd00r/LS_COLORS.git"
 refreshPeriod = "168h"
 
+[".config/boxes/boxes-config_copy"]
+type = "file"
+url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
+
 [".config/boxes/boxes-config"]
 type = "file"
 url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
