@@ -1,4 +1,0 @@
-#!/usr/bin/env zsh
-
-tput clear
-/usr/bin/pamac $@ | lolcat -i -p 9.0
