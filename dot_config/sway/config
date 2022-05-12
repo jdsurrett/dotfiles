@@ -3,8 +3,8 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-
-### Variables
+#
+###{{{ Variables
 #
 # Logo key. Use Control for Alt.
 set $mod Mod4
@@ -20,8 +20,8 @@ set $term kitty -o allow_remote_control=yes --single-instance --listen-on unix:@
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu rofi -no-config -no-lazy-grab -show run -modi run -theme ~/.config/wofi/launcher.rasi
-### Output configuration
-#
+#}}}
+###{{{ Output configuration
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/teahub.io-black-wallpaper-hd-93723.png fill
 # default_floating_border normal 2
@@ -41,8 +41,8 @@ bindsym $mod+n nop kitti3
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-
-### Idle configuration
+#}}}
+###{{{ Idle configuration
 #
 # Example configuration:
 #
@@ -54,8 +54,8 @@ bindsym $mod+n nop kitti3
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-
-### Input configuration
+#}}}
+###{{{ Input configuration
 #
 # Example configuration:
 #
@@ -70,7 +70,8 @@ bindsym $mod+n nop kitti3
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 input * xkb_numlock enable
-### Key bindings
+#}}}
+###{{{ Key bindings
 #
 # Basics:
 #
@@ -206,8 +207,8 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-
-
+#}}}
+#{{{
  # The default colors are:
  # class	             border	 background text    indicator child_border			
  # background	         n/a	 #ffffff    n/a	   n/a	      n/a
@@ -220,9 +221,8 @@ bindsym $mod+r mode "resize"
  client.focused_inactive #16161d #16161d    #c0caf5 #16161d   #16161d
  client.unfocused        #16161d #16161d    #c0caf5 #16161d   #16161d
 #client.background       #F8F8F2
-
-#
-# Status Bar:
+#}}}
+#{{{ Status Bar:
 # font pango:SauceCodePro Nerd Font Mono Mono 11
 #
 # Read `man 5 sway-bar` for more information about this section.
@@ -249,20 +249,20 @@ exec --no-startup-id autotiling
 exec --no-startup-id $term
 exec --no-startup-id steam -silent
 exec --no-startup-id discord --start-minimized
-
+#}}}
 # bindsym $mod+Control+Space exec env RUST_BACKTRACE=1 \
 #     swayr switch-window &gt;&gt; /tmp/swayr.log 2&gt;&amp;1
 # exec env RUST_BACKTRACE=1 swayrd > /tmp/swayrd.log 2>&1
-#bindsym $mod+Delete exec env RUST_BACKTRACE=1 \
+# bindsym $mod+Delete exec env RUST_BACKTRACE=1 \
 #    swayr quit-window &gt; /tmp/swayr.log 2&gt;&amp;1
 
-#bindsym $mod+Tab exec env RUST_BACKTRACE=1 \
+# bindsym $mod+Tab exec env RUST_BACKTRACE=1 \
 #    swayr switch-to-urgent-or-lru-window &gt;&gt; /tmp/swayr.log 2&gt;&amp;1
 
-#bindsym $mod+Next exec env RUST_BACKTRACE=1 \
+# bindsym $mod+Next exec env RUST_BACKTRACE=1 \
 #    swayr next-window all-workspaces &gt;&gt; /tmp/swayr.log 2&gt;&amp;2
 
-#bindsym $mod+Prior exec env RUST_BACKTRACE=1 \
+# bindsym $mod+Prior exec env RUST_BACKTRACE=1 \
 #    swayr prev-window all-workspaces &gt;&gt; /tmp/swayr.log 2&gt;&amp;2
 
 # bindsym $mod+Control+Shift+Space exec env RUST_BACKTRACE=1 \
@@ -274,4 +274,4 @@ exec --no-startup-id discord --start-minimized
 # bindsym $mod+Control+c exec env RUST_BACKTRACE=1 \
 #     swayr execute-swayr-command &gt;&gt; /tmp/swayr.log 2&gt;&amp;1
 
-# include /etc/sway/config.d/*
+include ~/.config/sway/config.d/50-systemd-user.conf
