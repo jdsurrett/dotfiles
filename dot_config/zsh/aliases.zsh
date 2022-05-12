@@ -12,7 +12,7 @@ tree () {
         --group-dirs=last \
         --blocks=date \
         --blocks=name \
-        --blocks=size
+        --blocks=size $@
     }
 
 alias cargo="tput clear && cargo"
