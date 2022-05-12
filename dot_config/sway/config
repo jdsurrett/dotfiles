@@ -4,6 +4,9 @@
 #
 # Read `man 5 sway` for a complete reference.
 #
+
+include ~/.config/sway/config.d/50-systemd-user.conf
+
 ###{{{ Variables
 #
 # Logo key. Use Control for Alt.
@@ -250,28 +253,3 @@ exec --no-startup-id $term
 exec --no-startup-id steam -silent
 exec --no-startup-id discord --start-minimized
 #}}}
-# bindsym $mod+Control+Space exec env RUST_BACKTRACE=1 \
-#     swayr switch-window &gt;&gt; /tmp/swayr.log 2&gt;&amp;1
-# exec env RUST_BACKTRACE=1 swayrd > /tmp/swayrd.log 2>&1
-# bindsym $mod+Delete exec env RUST_BACKTRACE=1 \
-#    swayr quit-window &gt; /tmp/swayr.log 2&gt;&amp;1
-
-# bindsym $mod+Tab exec env RUST_BACKTRACE=1 \
-#    swayr switch-to-urgent-or-lru-window &gt;&gt; /tmp/swayr.log 2&gt;&amp;1
-
-# bindsym $mod+Next exec env RUST_BACKTRACE=1 \
-#    swayr next-window all-workspaces &gt;&gt; /tmp/swayr.log 2&gt;&amp;2
-
-# bindsym $mod+Prior exec env RUST_BACKTRACE=1 \
-#    swayr prev-window all-workspaces &gt;&gt; /tmp/swayr.log 2&gt;&amp;2
-
-# bindsym $mod+Control+Shift+Space exec env RUST_BACKTRACE=1 \
-    # swayr switch-workspace-or-window &gt;&gt; /tmp/swayr.log 2&gt;&amp;1
-
-# bindsym $mod+c exec env RUST_BACKTRACE=1 \
-#     swayr execute-swaymsg-command &gt;&gt; /tmp/swayr.log 2&gt;&amp;1
-
-# bindsym $mod+Control+c exec env RUST_BACKTRACE=1 \
-#     swayr execute-swayr-command &gt;&gt; /tmp/swayr.log 2&gt;&amp;1
-
-include ~/.config/sway/config.d/50-systemd-user.conf
