@@ -1,2 +1,0 @@
-#!/usr/bin/env zsh
-tput clear && lsd --tree --group-dirs=last --blocks=date --blocks=name --blocks=size $@
