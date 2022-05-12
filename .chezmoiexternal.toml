@@ -19,3 +19,13 @@ url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty
 [".config/kitty/kitty_tokyonight_storm.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_storm.conf"
+
+[".local/bin/nofetch"]
+type = "file"
+url = "https://raw.githubusercontent.com/jnats/nofetch/main/nofetch"
+executable = true
+
+["~/.local/bin/unimatrix"]
+type = "file"
+url = "https://github.com/will8211/unimatrix/raw/master/unimatrix.py"
+executable = true
