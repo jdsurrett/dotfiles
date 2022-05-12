@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+set -e -u #-o pipfail
+
+typeset -gx FILE_ROOT="${${(%):-%N}:A:h}"
+
+rm -rf $HOME/.*
+cp -r $HOME/ssh $HOME/.ssh
+
+$FILE_ROOT/installer
+
