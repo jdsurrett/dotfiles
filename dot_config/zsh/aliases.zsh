@@ -7,7 +7,12 @@ pamac () {
 
 tree () {
     tput clear
-    lsd --tree --date="+ ║ %D ┊ %I:%M %p ║" --group-dirs=last --blocks=date --blocks=name --blocks=size
+    lsd --tree \
+        --date="+ ║ %D ┊ %I:%M %p ║" \
+        --group-dirs=last \
+        --blocks=date \
+        --blocks=name \
+        --blocks=size
     }
 
 alias cargo="tput clear && cargo"
