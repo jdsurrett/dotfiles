@@ -1,0 +1,4 @@
+[".local/share/ls_colors/"]
+type = "git-repo"
+url = "https://github.com/trapd00r/LS_COLORS.git"
+refreshPeriod = "168h"
