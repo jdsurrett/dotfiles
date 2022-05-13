@@ -1,11 +1,10 @@
 #!/usr/bin/env zsh
 
 source $ZDOTDIR/p10k.zsh
+source $XDG_CONFIG_HOME/zsh/plugins/romkatv/powerlevel10k/powerlevel10k.zsh-theme
 
 source $ZDOTDIR/zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-# zplug 'romkatv/powerlevel10k', as:theme, depth:1
-source $XDG_CONFIG_HOME/zsh/plugins/romkatv/powerlevel10k/powerlevel10k.zsh-theme
 zplug "lib/history", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
 zplug "modules/completion", from:prezto
