@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
-export ZPLUG_HOME=$ZDOTDIR/zplug
-source $ZPLUG_HOME/init.zsh
+source $ZDOTDIR/zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug 'romkatv/powerlevel10k', as:theme, depth:1
 zplug "lib/history", from:oh-my-zsh
