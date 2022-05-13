@@ -7,7 +7,7 @@ pamac () {
 
 tree () {
     tput clear
-    lsd --tree \
+    /usr/bin/lsd --tree \
         --date="+ ║ %D ┊ %I:%M %p ║" \
         --group-dirs=last \
         --blocks=date \
