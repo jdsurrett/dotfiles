@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-export HISTFILE=$XDG_CACHE_HOME/zsh_history
+source $ZDOTDIR/p10k.zsh
 
 source $ZDOTDIR/zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
@@ -21,7 +21,7 @@ if ! zplug check --verbose; then
 fi
 zplug load
 
-source $ZDOTDIR/p10k.zsh
+export HISTFILE=$XDG_CACHE_HOME/zsh_history
 typeset -U PATH path=("$HOME/.local/bin" "$path[@]")
 export PATH
 source $ZDOTDIR/aliases.zsh
