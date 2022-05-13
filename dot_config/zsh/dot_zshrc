@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+export HISTFILE=$XDG_CACHE_HOME/zsh_history
+
 source $ZDOTDIR/zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug 'romkatv/powerlevel10k', as:theme, depth:1
@@ -19,7 +21,6 @@ if ! zplug check --verbose; then
 fi
 zplug load
 
-export HISTFILE=$XDG_CACHE_HOME/zsh_history
 source $ZDOTDIR/p10k.zsh
 typeset -U PATH path=("$HOME/.local/bin" "$path[@]")
 export PATH
