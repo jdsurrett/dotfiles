@@ -40,6 +40,15 @@ type = "git-repo"
 url = "https://github.com/zplug/zplug.git"
 refreshPeriod = "168h"
 
+["~/.config/zsh/plugins/romkatv/powerlevel10k/"]
+type = "git-repo"
+url = "https://github.com/romkatv/powerlevel10k.git"
+refreshPeriod = "168h"
+[clone]
+args = "--depth=1"
+[pull]
+args = "--depth=1"
+
 [".config/boxes/boxes-config_copy"]
 type = "file"
 url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
