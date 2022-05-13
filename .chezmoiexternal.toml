@@ -1,25 +1,13 @@
+#{{{ color themes
+
 [".local/share/ls_colors/"]
 type = "git-repo"
 url = "https://github.com/trapd00r/LS_COLORS.git"
 refreshPeriod = "168h"
 
-[".config/zsh/zplug/"]
-type = "git-repo"
-url = "https://github.com/zplug/zplug.git"
-refreshPeriod = "168h"
-
 [".config/bat/themes/Tokyo-Night.tmTheme"]
 type = "file"
 url = "https://raw.githubusercontent.com/enkia/enki-theme/master/scheme/Enki-Tokyo-Night.tmTheme"
-refreshPeriod = "168h"
-
-[".config/boxes/boxes-config_copy"]
-type = "file"
-url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
-
-[".config/boxes/boxes-config"]
-type = "file"
-url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
 refreshPeriod = "168h"
 
 [".config/kitty/kitty_tokyonight_day.conf"]
@@ -34,6 +22,9 @@ url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_storm.conf"
 
+#}}}
+#{{{ executables
+
 [".local/bin/nofetch"]
 type = "file"
 url = "https://raw.githubusercontent.com/jnats/nofetch/main/nofetch"
@@ -43,3 +34,25 @@ executable = true
 type = "file"
 url = "https://github.com/will8211/unimatrix/raw/master/unimatrix.py"
 executable = true
+
+#}}}
+#{{{ zsh plgins
+
+[".config/zsh/zplug/"]
+type = "git-repo"
+url = "https://github.com/zplug/zplug.git"
+refreshPeriod = "168h"
+
+#}}}
+#{{{ miscellaneous
+
+[".config/boxes/boxes-config_copy"]
+type = "file"
+url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
+
+[".config/boxes/boxes-config"]
+type = "file"
+url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
+refreshPeriod = "168h"
+
+#}}}
