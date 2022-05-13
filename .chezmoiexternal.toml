@@ -84,6 +84,11 @@ type="file"
 url="https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/sudo/sudo.plugin.zsh"
 refreshPeriod="168h"
 
+[".config/zsh/plugins/Valiev/almostontop"]
+type="git-repo"
+url="https://github.com/Valiev/almostontop.git"
+refreshPeriod="168h"
+
 [".config/boxes/boxes-config_copy"]
 type = "file"
 url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
