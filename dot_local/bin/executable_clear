@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-tput clear
 unimatrix -fbwl m -s 99
 bfetch
 echo
