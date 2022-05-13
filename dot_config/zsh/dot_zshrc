@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 
+source $ZDOTDIR/p10k.zsh
 source $ZDOTDIR/plugins/romkatv/powerlevel10k/powerlevel10k.zsh-theme
 source $ZDOTDIR/plugins/sorin-ionescu/prezto/completion/init.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
