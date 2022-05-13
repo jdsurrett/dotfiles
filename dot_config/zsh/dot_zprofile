@@ -1,10 +1,10 @@
 #!/usr/bin/env zsh
 
+typeset -U PATH path=("$HOME/.local/bin" "$path[@]")
+export PATH
+
 case "$DESKTOP_SESSION" in
-    i3)
-        export $(gnome-keyring-daemon --start)
-        ;;
-    sway)
+    i3|sway)
         export $(gnome-keyring-daemon --start)
         ;;
 esac

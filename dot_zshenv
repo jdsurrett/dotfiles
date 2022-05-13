@@ -28,4 +28,12 @@ export NPM_CONFIG_TMP=$XDG_RUNTIME_DIR/npm
 source $XDG_DATA_HOME/ls_colors/lscolors.sh
 export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
 
+source $ZDOTDIR/p10k.zsh
+source $ZDOTDIR/plugins/ohmyzsh/history.zsh
+source $ZDOTDIR/plugins/ohmyzsh/sudo.plugin.zsh
+source $ZDOTDIR/plugins/ohmyzsh/key-bindings.zsh
+source $ZDOTDIR/plugins/ohmyzsh/clipboard.zsh
+export HISTFILE=$XDG_CACHE_HOME/zsh_history
+source $ZDOTDIR/aliases.zsh
+
 . "/home/test/.local/share/cargo/env"
