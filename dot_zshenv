@@ -35,6 +35,6 @@ source $ZDOTDIR/plugins/ohmyzsh/clipboard.zsh
 source $ZDOTDIR/plugins/Valiev/almostontop/almostontop.plugin.zsh
 export HISTFILE=$XDG_CACHE_HOME/zsh_history
 source $ZDOTDIR/aliases.zsh
-export MANDIR+=$XDG_DATA_HOME/man
+export MANDIR=$XDG_DATA_HOME/man
 
 . "/home/test/.local/share/cargo/env"
