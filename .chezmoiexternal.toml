@@ -1,5 +1,3 @@
-# {{{ color themes
-
 [".local/share/ls_colors/"]
 type = "git-repo"
 url = "https://github.com/trapd00r/LS_COLORS.git"
@@ -25,9 +23,6 @@ type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_storm.conf"
 refreshPeriod = "168h"
 
-# }}}
-# {{{ executables
-
 [".local/bin/nofetch"]
 type = "file"
 url = "https://raw.githubusercontent.com/jnats/nofetch/main/nofetch"
@@ -40,16 +35,10 @@ url = "https://github.com/will8211/unimatrix/raw/master/unimatrix.py"
 executable = true
 refreshPeriod = "168h"
 
-# }}}
-# {{{ zsh plgins
-
 [".config/zsh/zplug/"]
 type = "git-repo"
 url = "https://github.com/zplug/zplug.git"
 refreshPeriod = "168h"
-
-# }}}
-# {{{ miscellaneous
 
 [".config/boxes/boxes-config_copy"]
 type = "file"
@@ -60,5 +49,3 @@ refreshPeriod = "168h"
 type = "file"
 url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
 refreshPeriod = "168h"
-
-# }}}
