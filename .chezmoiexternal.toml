@@ -13,14 +13,17 @@ refreshPeriod = "168h"
 [".config/kitty/kitty_tokyonight_day.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_day.conf"
+refreshPeriod = "168h"
 
 [".config/kitty/kitty_tokyonight_night.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_night.conf"
+refreshPeriod = "168h"
 
 [".config/kitty/kitty_tokyonight_storm.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_storm.conf"
+refreshPeriod = "168h"
 
 #}}}
 #{{{ executables
@@ -29,11 +32,13 @@ url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty
 type = "file"
 url = "https://raw.githubusercontent.com/jnats/nofetch/main/nofetch"
 executable = true
+refreshPeriod = "168h"
 
 [".local/bin/unimatrix"]
 type = "file"
 url = "https://github.com/will8211/unimatrix/raw/master/unimatrix.py"
 executable = true
+refreshPeriod = "168h"
 
 #}}}
 #{{{ zsh plgins
@@ -49,6 +54,7 @@ refreshPeriod = "168h"
 [".config/boxes/boxes-config_copy"]
 type = "file"
 url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
+refreshPeriod = "168h"
 
 [".config/boxes/boxes-config"]
 type = "file"
