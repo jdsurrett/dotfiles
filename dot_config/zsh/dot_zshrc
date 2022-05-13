@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 source $ZDOTDIR/p10k.zsh
-source $XDG_CONFIG_HOME/zsh/plugins/romkatv/powerlevel10k/powerlevel10k.zsh-theme
+source $ZDOTDIR/plugins/romkatv/powerlevel10k/powerlevel10k.zsh-theme
 
 source $ZDOTDIR/zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
@@ -10,9 +10,9 @@ zplug "plugins/sudo", from:oh-my-zsh
 zplug "modules/completion", from:prezto
 zplug "lib/key-bindings", from:oh-my-zsh:
 zplug "lib/clipboard", from:oh-my-zsh:
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-autosuggestions"
+fpath+=($ZDOTDIR/plugins/zsh-users/zsh-completions/src)
+source $ZDOTDIR/plugins/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZDOTDIR/plugins/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then

@@ -49,6 +49,20 @@ args = ["--depth=1"]
 [".config/zsh/plugins/romkatv/powerlevel10k/".pull]
 args = ["--depth=1"]
 
+[".config/zsh/plugins/zsh-users/zsh-syntax-highlighting"]
+type = "git-repo"
+url = "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+refreshPeriod = "168h"
+[".config/zsh/plugins/zsh-users/zsh-autosuggestions"]
+type = "git-repo"
+url = "https://github.com/zsh-users/zsh-autosuggestions.git"
+refreshPeriod = "168h"
+[".config/zsh/plugins/zsh-users/zsh-completions"]
+type = "git-repo"
+url = "https://github.com/zsh-users/zsh-completions.git"
+refreshPeriod = "168h"
+
+
 [".config/boxes/boxes-config_copy"]
 type = "file"
 url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
