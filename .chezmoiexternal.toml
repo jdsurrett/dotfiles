@@ -35,11 +35,6 @@ url = "https://github.com/will8211/unimatrix/raw/master/unimatrix.py"
 executable = true
 refreshPeriod = "168h"
 
-[".config/zsh/zplug/"]
-type = "git-repo"
-url = "https://github.com/zplug/zplug.git"
-refreshPeriod = "168h"
-
 [".config/zsh/plugins/romkatv/powerlevel10k/"]
 type = "git-repo"
 url = "https://github.com/romkatv/powerlevel10k.git"
@@ -53,15 +48,41 @@ args = ["--depth=1"]
 type = "git-repo"
 url = "https://github.com/zsh-users/zsh-syntax-highlighting.git"
 refreshPeriod = "168h"
+
 [".config/zsh/plugins/zsh-users/zsh-autosuggestions"]
 type = "git-repo"
 url = "https://github.com/zsh-users/zsh-autosuggestions.git"
 refreshPeriod = "168h"
-[".config/zsh/plugins/zsh-users/zsh-completions"]
+
+[".config/zsh/plugins/sorin-ionescu/prezto/completion/external"]
 type = "git-repo"
 url = "https://github.com/zsh-users/zsh-completions.git"
 refreshPeriod = "168h"
 
+[".config/zsh/plugins/sorin-ionescu/prezto/completion/init.zsh"]
+type="file"
+url="https://raw.githubusercontent.com/sorin-ionescu/prezto/master/modules/completion/init.zsh"
+refreshPeriod = "168h"
+
+[".config/zsh/plugins/ohmyzsh/history.zsh"]
+type="file"
+url="https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/history.zsh"
+refreshPeriod="168h"
+
+[".config/zsh/plugins/ohmyzsh/clipboard.zsh"]
+type="file"
+url="https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/clipboard.zsh"
+refreshPeriod="168h"
+
+[".config/zsh/plugins/ohmyzsh/key-bindings.zsh"]
+type="file"
+url="https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/key-bindings.zsh"
+refreshPeriod="168h"
+
+[".config/zsh/plugins/ohmyzsh/sudo.plugin.zsh"]
+type="file"
+url="https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/sudo/sudo.plugin.zsh"
+refreshPeriod="168h"
 
 [".config/boxes/boxes-config_copy"]
 type = "file"
