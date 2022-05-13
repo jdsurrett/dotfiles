@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
 
-tput clear
 /usr/bin/sl $@ | lolcat
 clear | lolcat -i -p 1
