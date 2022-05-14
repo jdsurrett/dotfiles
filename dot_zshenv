@@ -12,7 +12,6 @@ export PATH
 export CARGO_HOME=$XDG_DATA_HOME/cargo
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 . "$XDG_DATA_HOME/cargo/env"
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 export EDITOR=${HOME}/.local/bin/lvim
 export COMMON_FLAGS="-march=native -O2 -pipe"
@@ -37,3 +36,4 @@ export HISTFILE=$XDG_CACHE_HOME/zsh_history
 source $ZDOTDIR/aliases.zsh
 # export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
 . "/home/test/.local/share/cargo/env"
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
