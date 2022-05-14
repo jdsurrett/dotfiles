@@ -35,6 +35,17 @@ url = "https://github.com/will8211/unimatrix/raw/master/unimatrix.py"
 executable = true
 refreshPeriod = "168h"
 
+[".local/bin/bfetch"]
+type = "file"
+url = "https://github.com/NNBnh/bfetch/raw/main/bin/bfetch"
+executable = true
+refreshPeriod = "168h"
+
+[".local/share/man/bfetch.1"]
+type = "file"
+url = "https://github.com/NNBnh/bfetch/raw/main/man/bfetch.1"
+refreshPeriod = "168h"
+
 [".config/zsh/plugins/romkatv/powerlevel10k/"]
 type = "git-repo"
 url = "https://github.com/romkatv/powerlevel10k.git"
@@ -60,34 +71,34 @@ url = "https://github.com/zsh-users/zsh-completions.git"
 refreshPeriod = "168h"
 
 [".config/zsh/plugins/sorin-ionescu/prezto/completion/init.zsh"]
-type="file"
-url="https://raw.githubusercontent.com/sorin-ionescu/prezto/master/modules/completion/init.zsh"
+type = "file"
+url = "https://raw.githubusercontent.com/sorin-ionescu/prezto/master/modules/completion/init.zsh"
 refreshPeriod = "168h"
 
 [".config/zsh/plugins/ohmyzsh/history.zsh"]
-type="file"
-url="https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/history.zsh"
-refreshPeriod="168h"
+type = "file"
+url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/history.zsh"
+refreshPeriod = "168h"
 
 [".config/zsh/plugins/ohmyzsh/clipboard.zsh"]
-type="file"
-url="https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/clipboard.zsh"
-refreshPeriod="168h"
+type = "file"
+url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/clipboard.zsh"
+refreshPeriod = "168h"
 
 [".config/zsh/plugins/ohmyzsh/key-bindings.zsh"]
-type="file"
-url="https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/key-bindings.zsh"
-refreshPeriod="168h"
+type = "file"
+url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/key-bindings.zsh"
+refreshPeriod = "168h"
 
 [".config/zsh/plugins/ohmyzsh/sudo.plugin.zsh"]
-type="file"
-url="https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/sudo/sudo.plugin.zsh"
-refreshPeriod="168h"
+type = "file"
+url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/sudo/sudo.plugin.zsh"
+refreshPeriod = "168h"
 
 [".config/zsh/plugins/Valiev/almostontop"]
-type="git-repo"
-url="https://github.com/Valiev/almostontop.git"
-refreshPeriod="168h"
+type = "git-repo"
+url = "https://github.com/Valiev/almostontop.git"
+refreshPeriod = "168h"
 
 [".config/boxes/boxes-config_copy"]
 type = "file"
