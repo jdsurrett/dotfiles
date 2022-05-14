@@ -4,7 +4,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
-# export XDG_RUNTIME_DIR=/run/user/$UID
+export XDG_RUNTIME_DIR=/run/user/$UID
 
 typeset -U PATH path=("$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
 export PATH
@@ -28,6 +28,6 @@ export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
 
 source $XDG_DATA_HOME/ls_colors/lscolors.sh
 
-# export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
+export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
