@@ -23,6 +23,7 @@ type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_storm.conf"
 refreshPeriod = "168h"
 
+
 [".local/bin/nofetch"]
 type = "file"
 url = "https://raw.githubusercontent.com/jnats/nofetch/main/nofetch"
@@ -41,10 +42,12 @@ url = "https://github.com/NNBnh/bfetch/raw/main/bin/bfetch"
 executable = true
 refreshPeriod = "168h"
 
+
 [".local/share/man/bfetch.1"]
 type = "file"
 url = "https://github.com/NNBnh/bfetch/raw/main/man/bfetch.1"
 refreshPeriod = "168h"
+
 
 [".config/zsh/plugins/romkatv/powerlevel10k/"]
 type = "git-repo"
@@ -99,6 +102,7 @@ refreshPeriod = "168h"
 type = "git-repo"
 url = "https://github.com/Valiev/almostontop.git"
 refreshPeriod = "168h"
+
 
 [".config/boxes/boxes-config_copy"]
 type = "file"
