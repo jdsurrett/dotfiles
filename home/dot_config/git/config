@@ -3,5 +3,3 @@
 	email = jdsurrett@gmail.com
 [init]
 	defaultBranch = main
-[core]
-	editor = lvim
