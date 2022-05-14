@@ -1,7 +1,14 @@
 #!/usr/bin/env zsh
 
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/plugins/ohmyzsh/history.zsh
+export HISTFILE=$XDG_CACHE_HOME/zsh_history
 source $ZDOTDIR/p10k.zsh
 source $ZDOTDIR/plugins/romkatv/powerlevel10k/powerlevel10k.zsh-theme
+source $ZDOTDIR/plugins/ohmyzsh/clipboard.zsh
+source $ZDOTDIR/plugins/ohmyzsh/sudo.plugin.zsh
+source $ZDOTDIR/plugins/ohmyzsh/key-bindings.zsh
+source $ZDOTDIR/plugins/Valiev/almostontop/almostontop.plugin.zsh
 source $ZDOTDIR/plugins/sorin-ionescu/prezto/completion/init.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
