@@ -20,7 +20,7 @@ export COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 
 export EDITOR=${HOME}/.local/bin/lvim
 
-export COMMON_FLAGS="-march=native -O2 -pipe"
+export COMMON_FLAGS="-march=native -mtune=native -O2 -pipe"
 export CFLAGS="${COMMON_FLAGS}"
 export CXXFLAGS="${COMMON_FLAGS}"
 export MAKEOPTS="-j$(nproc)"
