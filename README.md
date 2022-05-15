@@ -6,26 +6,26 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 
 ### ToDo:
 
--[ ] Refactor lvim configuration file.
--[ ] Rewrite lvim configuration file.
--[ ] Refactor kitty configuration file.
--[ ] Clean local kitty configuration dir.
--[ ] Rewrite kitty configuration file.
--[ ] Add kitty plugins to .chezmoiexternal.toml file.
--[ ] Refactor sway configuration file.
--[ ] Rewrite sway configuration file.
--[ ] Add mpv configuration file.
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
--[ ] 
+* [ ] Refactor lvim configuration file.
+* [ ] Rewrite lvim configuration file.
+* [ ] Refactor kitty configuration file.
+* [ ] Clean local kitty configuration dir.
+* [ ] Rewrite kitty configuration file.
+* [ ] Add kitty plugins to .chezmoiexternal.toml file.
+* [ ] Refactor sway configuration file.
+* [ ] Rewrite sway configuration file.
+* [ ] Add mpv configuration file.
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
