@@ -18,4 +18,4 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 * [ ] Write mpv configuration file.
 * [ ] Refactor and rewrite all configuration files.
 * [ ] Rewrite .chezmoiexternal.toml file.
-* [ ] PLACEHOLDER
+* [X] ~~PLACEHOLDER~~
