@@ -2,4 +2,4 @@
 autoCommit = true
 autoPush = true
 [cd]
-command = "CHEZMOI_ENV=true zsh"
+command = "CHEZMOI_ENV=true; zsh"
