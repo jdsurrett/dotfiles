@@ -15,5 +15,7 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 * [ ] Refactor sway configuration file.
 * [ ] Rewrite sway configuration file.
 * [ ] Add mpv configuration file.
+* [ ] Write mpv configuration file.
+* [ ] Refactor and rewrite all configuration files.
+* [ ] Rewrite .chezmoiexternal.toml file.
 * [ ] PLACEHOLDER
-
