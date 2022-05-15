@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
-typeset -U PATH path=("$HOME/.local/bin" "$path[@]")
-export PATH
+# typeset -U PATH path=("$HOME/.local/bin" "$path[@]")
+# export PATH
 
 case "$DESKTOP_SESSION" in
     i3|sway)

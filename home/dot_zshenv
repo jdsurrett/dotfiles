@@ -1,34 +1,36 @@
 #!/usr/bin/env zsh
 
 export XDG_CONFIG_HOME=$HOME/.config
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
+
 export XDG_CACHE_HOME=$HOME/.cache
+export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
+export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
+export KITTY_CONFIG_DIRECTORY=$XDG_CONFIG_HOME/kitty
+
 export XDG_DATA_HOME=$HOME/.local/share
-export XDG_STATE_HOME=$HOME/.local/state
-# export XDG_RUNTIME_DIR=/run/user/$UID
-
-typeset -U PATH path=("$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
-export PATH
-
 export CARGO_HOME=$XDG_DATA_HOME/cargo
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
-. "$CARGO_HOME/env"
+source $XDG_DATA_HOME/ls_colors/lscolors.sh
+export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
+
+export XDG_STATE_HOME=$HOME/.local/state
+
 export COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+
 export EDITOR=${HOME}/.local/bin/lvim
+
 export COMMON_FLAGS="-march=native -O2 -pipe"
 export CFLAGS="${COMMON_FLAGS}"
 export CXXFLAGS="${COMMON_FLAGS}"
 export MAKEOPTS="-j$(nproc)"
+
 export BFETCH_CLASSIC_MODE=true
 export BFETCH_ART_RIGHT=true
 export BFETCH_SEPARATOR=0
-export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
-export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
-export NPM_CONFIG_TMP=$XDG_RUNTIME_DIR/npm
-export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
-export KITTY_CONFIG_DIRECTORY=$XDG_CONFIG_HOME/kitty
 
-source $XDG_DATA_HOME/ls_colors/lscolors.sh
-
-export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
+. "$CARGO_HOME/env"
+typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
+export PATH
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
