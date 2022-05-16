@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+. "$CARGO_HOME/env"
+typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
+export PATH
+
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/plugins/ohmyzsh/history.zsh
 export HISTFILE=$XDG_CACHE_HOME/zsh_history
@@ -12,4 +16,5 @@ source $ZDOTDIR/plugins/Valiev/almostontop/almostontop.plugin.zsh
 source $ZDOTDIR/plugins/sorin-ionescu/prezto/completion/init.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 clear
