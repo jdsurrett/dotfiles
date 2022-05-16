@@ -226,7 +226,7 @@ lvim.plugins = {
         config = function()
             require("autosave").setup({
                 execution_message = "AutoSave: saved at " ..
-                    vim.fn.strftime("%I:%M_%p ┊ %D"),
+                    vim.fn.strftime("%I:%M %p ┊ %D"),
                 events = {"InsertLeave", "TextChanged"},
                 conditions = {
                     exists = true,
