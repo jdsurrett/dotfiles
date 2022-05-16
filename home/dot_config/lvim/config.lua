@@ -1,5 +1,3 @@
-#!/usr/bin/env lua
-
 -- luacheck: globals vim lvim
 -- {{{ User Config
 lvim.log.level = "warn"
