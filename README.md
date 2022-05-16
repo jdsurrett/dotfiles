@@ -8,7 +8,6 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 
 * [X] ~~Refactor lvim configuration file.~~
 * [X] ~~Refactor kitty configuration file.~~
-* [ ] Clean local kitty configuration dir.
 * [ ] Add kitty plugins to .chezmoiexternal.toml file.
 * [ ] Refactor sway configuration file.
 * [ ] Add mpv configuration file.
