@@ -30,7 +30,7 @@ export BFETCH_ART_RIGHT=true
 export BFETCH_SEPARATOR=0
 
 . "$CARGO_HOME/env"
-typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
-export PATH
+# typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
+# export PATH
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
