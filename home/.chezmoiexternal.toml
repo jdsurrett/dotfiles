@@ -8,17 +8,17 @@ type = "file"
 url = "https://raw.githubusercontent.com/enkia/enki-theme/master/scheme/Enki-Tokyo-Night.tmTheme"
 refreshPeriod = "168h"
 
-[".config/kitty/kitty_tokyonight_day.conf"]
+[".config/kitty/color_themes/kitty_tokyonight_day.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_day.conf"
 refreshPeriod = "168h"
 
-[".config/kitty/kitty_tokyonight_night.conf"]
+[".config/kitty/color_themes/kitty_tokyonight_night.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_night.conf"
 refreshPeriod = "168h"
 
-[".config/kitty/kitty_tokyonight_storm.conf"]
+[".config/kitty/color_themes/kitty_tokyonight_storm.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_storm.conf"
 refreshPeriod = "168h"
