@@ -260,6 +260,8 @@ lvim.plugins = {
     }, -- }}}
     -- -- {{{ Glow
     -- { "npxbr/glow.nvim", ft = { "markdown" }, run = "yay -S glow" }, -- }}}
+    -- {{{ Vim Kitty Navigator
+    {"knubie/vim-kitty-navigator", run = "cp ./*.py ~/.config/kitty/"}, -- }}}
     -- {{{ Neoscroll
     {
         "karb94/neoscroll.nvim",
