@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-. "$CARGO_HOME/env"
 typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
 export PATH
 
