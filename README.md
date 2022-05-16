@@ -6,7 +6,7 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 
 ### ToDo:
 
-* [ ] Refactor lvim configuration file.
+* [X] Refactor lvim configuration file.
 * [ ] Rewrite lvim configuration file.
 * [ ] Refactor kitty configuration file.
 * [ ] Clean local kitty configuration dir.
