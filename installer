@@ -18,7 +18,7 @@ export CARGO_INSTALL_ROOT=$HOME/.local
 mkdir -p $ZDOTDIR
 touch $ZDOTDIR/.zshenv
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $XDG_DATA_HOME/cargo/env
+source $CARGO_HOME/env
 rm -f $HOME/.profile $ZDOTDIR/.zshenv
 
 cargo install fd-find taplo-cli
