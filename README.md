@@ -8,10 +8,9 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 
 * [X] ~~Refactor lvim configuration file.~~
 * [X] ~~Refactor kitty configuration file.~~
-* [ ] Add kitty plugins to .chezmoiexternal.toml file.
 * [X] ~~Refactor sway configuration file.~~
-* [ ] Add mpv configuration file.
-* [ ] Write mpv configuration file.
-* [ ] Rewrite all configuration files.
-* [ ] Rewrite .chezmoiexternal.toml file.
+* [ ] Fix system bar
+* [ ] Fix app launcher
+* [ ] Rewrite all files.
+* [ ] Write chezmoi template
 * [X] ~~PLACEHOLDER~~
