@@ -12,6 +12,7 @@
             "sway/workspaces",
             "temperature",
             "memory",
+            "clock#date",
             "custom/arrow1"
             // "mpd",
             // "custom/media"
@@ -27,10 +28,10 @@
             // "sway/language",
             // "battery",
             // "battery#bat2",
+            "custom/arrow2",
+            "clock#time",
             "cpu",
             "network",
-            "clock#date",
-            "clock#time",
             "tray"
         ],
         //}}}
@@ -260,9 +261,13 @@
             // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
         },
         // }}}
-        //{{{ custom/
+        //{{{ custom/arrow
         "custom/arrow1": {
             "format": "",
+            "tooltip": false
+        },
+        "custom/arrow2": {
+            "format": "",
             "tooltip": false
         }
         //}}}
