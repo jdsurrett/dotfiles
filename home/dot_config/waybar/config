@@ -10,6 +10,9 @@
         "modules-left": [
             "sway/workspaces",
             "network",
+            "cpu",
+            "memory",
+            "temperature",
             "sway/mode"
             // "custom/media"
         ],
@@ -19,16 +22,14 @@
         "modules-right": [
             // "mpd",
             // "idle_inhibitor",
-            "pulseaudio",
-            "cpu",
-            "memory",
-            "temperature",
+            // "pulseaudio",
             // "backlight",
             // "keyboard-state",
             // "sway/language",
             // "battery",
             // "battery#bat2",
-            "clock",
+            "clock#date",
+            "clock#time",
             "tray"
         ],
         //}}}
@@ -110,10 +111,16 @@
         },
         //}}}
         //{{{clock
-        "clock": {
-            // "timezone": "America/New_York",
-            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-            "format-alt": "{:%Y-%m-%d}"
+        "clock#time": {
+            "interval": 10,
+            "format": "{:%I:%M %p}",
+            "tooltip": false
+        },
+        "clock#date": {
+            "interval": 20,
+            "format": "{:%a ┊ %D}", // Icon: calendar-alt
+            //"tooltip-format": "{:%e %B %Y}"
+            "tooltip": false
         },
         //}}}
         //{{{ cpu
