@@ -120,7 +120,7 @@
         },
         "clock#date": {
             "interval": 20,
-            "format": "{ :%a ┊ %D}", // Icon: calendar-alt
+            "format": "{: %a ┊ %D}", // Icon: calendar-alt
             "tooltip": false
         },
         //}}}
