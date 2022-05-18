@@ -8,12 +8,12 @@
         "spacing": 0, // Gaps between modules (4px)
         // Choose the order of the modules
         "modules-left": [
+            "sway/workspaces",
             "tray",
             "custom/arrow1",
-            "sway/workspaces",
-            "network",
-            "cpu",
             "memory",
+            "cpu",
+            "network",
             "temperature",
             "sway/mode"
             // "custom/media"
