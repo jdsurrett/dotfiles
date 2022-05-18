@@ -11,9 +11,9 @@
             "tray",
             "sway/workspaces",
             "network",
-            // "cpu",
-            // "memory",
-            // "temperature",
+            "cpu",
+            "memory",
+            "temperature",
             "sway/mode"
             // "custom/media"
         ],
@@ -119,19 +119,30 @@
         "clock#date": {
             "interval": 20,
             "format": "{:%a ┊ %D}", // Icon: calendar-alt
-            //"tooltip-format": "{:%e %B %Y}"
             "tooltip": false
         },
         //}}}
         //{{{ cpu
         "cpu": {
-            "format": "{usage}% ",
-            "tooltip": false
+            "interval": 6,
+            "min-length": 6,
+            "tooltip": true,
+            "format": " {usage}%",
+            "states": {
+                "warning": 70,
+                "critical": 90
+            }
         },
         //}}}
         //{{{memory
         "memory": {
-            "format": "{}% "
+            "interval": 6,
+            "min-length": 6,
+            "format": " {}%",
+            "states": {
+                "warning": 70,
+                "critical": 90
+            }
         },
         //}}}
         //{{{temperature
@@ -142,9 +153,11 @@
             // "format-critical": "{temperatureC}°C {icon}",
             "format": "{temperatureC}°C {icon}",
             "format-icons": [
-                "",
-                "",
-                ""
+                "", // Icon: temperature-empty
+                "", // Icon: temperature-quarter
+                "", // Icon: temperature-half
+                "", // Icon: temperature-three-quarters
+                "" // Icon: temperature-full
             ]
         },
         //}}}
