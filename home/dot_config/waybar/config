@@ -10,7 +10,7 @@
         "modules-left": [
             "sway/mode",
             "sway/workspaces",
-            "temperature",
+            "network",
             "memory",
             "clock#time",
             "custom/arrow1"
@@ -31,7 +31,7 @@
             "custom/arrow2",
             "clock#date",
             "cpu",
-            "network",
+            "temperature",
             "tray"
         ],
         //}}}
