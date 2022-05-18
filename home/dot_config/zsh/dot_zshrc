@@ -9,7 +9,7 @@ fi
 
 typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
 export PATH
-
+source $ZDOTDIR/plugins/ohmyzsh/clipboard.zsh
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/plugins/ohmyzsh/history.zsh
 export HISTFILE=$XDG_CACHE_HOME/zsh_history
