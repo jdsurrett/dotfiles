@@ -41,7 +41,7 @@
             "format": "{icon} {name}",
             "format-icons": {
                 "1": "",
-                "2": "爵",
+                "2": "爵 ",
                 "3": "",
                 "4": "",
                 "5": "",
@@ -64,7 +64,7 @@
         //}}}
         //{{{ sway/mode
         "sway/mode": {
-            "format": "<span style=\"italic\">{}</span>"
+            "format": "<span style=\"italic\">= {}</span>"
         },
         //}}}
         //{{{ mpd
