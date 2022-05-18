@@ -83,6 +83,11 @@ type = "file"
 url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/history.zsh"
 refreshPeriod = "168h"
 
+[".config/zsh/plugins/ohmyzsh/completion.zsh"]
+type = "file"
+url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/completion.zsh"
+refreshPeriod = "168h"
+
 [".config/zsh/plugins/ohmyzsh/clipboard.zsh"]
 type = "file"
 url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/clipboard.zsh"
