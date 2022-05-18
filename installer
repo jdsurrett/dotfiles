@@ -11,8 +11,8 @@ export XDG_CACHE_HOME=$HOME/.cache
 export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
 
 export XDG_DATA_HOME=$HOME/.local/share
-export CARGO_HOME=$HOME/.local
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
+export CARGO_HOME=$HOME/.local
 export CARGO_INSTALL_ROOT=$HOME/.local
 
 mkdir -p $ZDOTDIR
