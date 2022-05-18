@@ -9,11 +9,13 @@ export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
 export KITTY_CONFIG_DIRECTORY=$XDG_CONFIG_HOME/kitty
 
 export XDG_DATA_HOME=$HOME/.local/share
-export CARGO_HOME=$XDG_DATA_HOME/cargo
-export RUSTUP_HOME=$XDG_DATA_HOME/rustup
-source $XDG_DATA_HOME/ls_colors/lscolors.sh
 export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
+source $XDG_DATA_HOME/ls_colors/lscolors.sh
+
+export RUSTUP_HOME=$XDG_DATA_HOME/rustup
+export CARGO_HOME=$XDG_DATA_HOME/cargo
 export CARGO_INSTALL_ROOT=$HOME/.local/
+
 export XDG_STATE_HOME=$HOME/.local/state
 
 export COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
