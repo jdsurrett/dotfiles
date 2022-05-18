@@ -11,10 +11,10 @@
             "sway/workspaces",
             "tray",
             "custom/arrow1",
+            "temperature",
             "memory",
             "cpu",
             "network",
-            "temperature",
             "sway/mode"
             // "custom/media"
         ],
