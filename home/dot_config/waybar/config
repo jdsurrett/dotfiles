@@ -12,7 +12,7 @@
             "sway/workspaces",
             "temperature",
             "memory",
-            "clock#date",
+            "clock#time",
             "custom/arrow1"
             // "mpd",
             // "custom/media"
@@ -29,7 +29,7 @@
             // "battery",
             // "battery#bat2",
             "custom/arrow2",
-            "clock#time",
+            "clock#date",
             "cpu",
             "network",
             "tray"
