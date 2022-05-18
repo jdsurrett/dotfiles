@@ -8,9 +8,12 @@
         "spacing": 0, // Gaps between modules (4px)
         // Choose the order of the modules
         "modules-left": [
+            "sway/mode",
             "sway/workspaces",
-            "mpd",
+            "temperature",
+            "memory",
             "custom/arrow1"
+            // "mpd",
             // "custom/media"
         ],
         "modules-center": [
@@ -24,11 +27,8 @@
             // "sway/language",
             // "battery",
             // "battery#bat2",
-            "temperature",
-            "memory",
             "cpu",
             "network",
-            "sway/mode",
             "clock#date",
             "clock#time",
             "tray"
