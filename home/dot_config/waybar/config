@@ -9,6 +9,7 @@
         // Choose the order of the modules
         "modules-left": [
             "sway/workspaces",
+            "mpd",
             "custom/arrow1"
             // "custom/media"
         ],
@@ -16,7 +17,6 @@
             "sway/window"
         ],
         "modules-right": [
-            // "mpd",
             // "idle_inhibitor",
             // "pulseaudio",
             // "backlight",
