@@ -120,7 +120,7 @@
         },
         "clock#date": {
             "interval": 20,
-            "format": "{:%a ┊ %D }", // Icon: calendar-alt
+            "format": "{ :%a ┊ %D}", // Icon: calendar-alt
             "tooltip": false
         },
         //}}}
@@ -140,7 +140,7 @@
         "memory": {
             "interval": 6,
             "min-length": 6,
-            "format": " {}%",
+            "format": "{}% ",
             "states": {
                 "warning": 70,
                 "critical": 90
@@ -214,11 +214,11 @@
             // "interface": "wlp2*", // (Optional) To force the use of this interface
             "interval": 6,
             "min-length": 6,
-            "format-wifi": " {signalStrength}%",
-            "tooltip-format": " {essid}",
-            "format-ethernet": " {ifname}",
-            "format-linked": " {ifname} (No IP)",
-            "format-disconnected": "⚠ 睊 Disconnected",
+            "format-wifi": "{signalStrength}% ",
+            "tooltip-format": "{essid} ",
+            "format-ethernet": "{ifname} ",
+            "format-linked": "{ifname} (No IP) ",
+            "format-disconnected": "Disconnected ⚠ 睊",
             "format-alt": "{ifname}: {ipaddr}/{cidr}"
         },
         //}}}
