@@ -9,13 +9,7 @@
         // Choose the order of the modules
         "modules-left": [
             "sway/workspaces",
-            "tray",
-            "custom/arrow1",
-            "temperature",
-            "memory",
-            "cpu",
-            "network",
-            "sway/mode"
+            "custom/arrow1"
             // "custom/media"
         ],
         "modules-center": [
@@ -30,8 +24,14 @@
             // "sway/language",
             // "battery",
             // "battery#bat2",
+            "temperature",
+            "memory",
+            "cpu",
+            "network",
+            "sway/mode",
             "clock#date",
-            "clock#time"
+            "clock#time",
+            "tray"
         ],
         //}}}
         // Modules configuration
@@ -107,7 +107,7 @@
         //}}}
         //{{{tray
         "tray": {
-            // "icon-size": 21,
+            "icon-size": 21,
             "spacing": 5
         },
         //}}}
