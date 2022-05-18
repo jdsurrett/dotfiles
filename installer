@@ -11,14 +11,14 @@ export XDG_CACHE_HOME=$HOME/.cache
 export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
 
 export XDG_DATA_HOME=$HOME/.local/share
-export CARGO_HOME=$XDG_DATA_HOME/cargo
+export CARGO_HOME=$HOME/.local
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
-export CARGO_INSTALL_ROOT=$HOME/.local/
+export CARGO_INSTALL_ROOT=$HOME/.local
 
 mkdir -p $ZDOTDIR
 touch $ZDOTDIR/.zshenv
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $XDG_DATA_HOME/cargo/env
+source $CARGO_HOME/env
 rm -f $HOME/.profile $ZDOTDIR/.zshenv
 
 cargo install fd-find taplo-cli

@@ -9,6 +9,7 @@ export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
 export KITTY_CONFIG_DIRECTORY=$XDG_CONFIG_HOME/kitty
 
 export XDG_DATA_HOME=$HOME/.local/share
+<<<<<<< HEAD
 export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
 source $XDG_DATA_HOME/ls_colors/lscolors.sh
 
@@ -16,6 +17,13 @@ export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 export CARGO_HOME=$XDG_DATA_HOME/cargo
 export CARGO_INSTALL_ROOT=$HOME/.local/
 
+=======
+export CARGO_HOME=$HOME/.local
+export RUSTUP_HOME=$HOME/.local
+source $XDG_DATA_HOME/ls_colors/lscolors.sh
+export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
+export CARGO_INSTALL_ROOT=$HOME/.local
+>>>>>>> a6efcb8304ce21cc6879a23da94e6e8e2589d261
 export XDG_STATE_HOME=$HOME/.local/state
 
 export COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
@@ -31,7 +39,7 @@ export BFETCH_CLASSIC_MODE=true
 export BFETCH_ART_RIGHT=true
 export BFETCH_SEPARATOR=0
 
-. "$CARGO_HOME/env"
+# . "$CARGO_HOME/env"
 # typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
 # export PATH
 
