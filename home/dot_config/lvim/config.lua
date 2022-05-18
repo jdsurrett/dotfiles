@@ -369,6 +369,7 @@ lvim.plugins = {
 lvim.autocommands.custom_groups = {
     {"User,BufEnter", "*", ":lua vim.wo.fillchars = 'vert:║,fold:.,eob: '"},
     {"TermEnter,QuitPre", "*", ":MinimapClose"},
-    {"BufEnter", "*", ":MinimapRefresh"}
+    {"BufEnter", "*", ":MinimapRefresh"},
+    {"BufNewFile,BufRead */waybar/config setlocal filetype=jsonc"}
 }
 -- }}}
