@@ -12,5 +12,4 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 * [ ] Fix system bar
 * [ ] Fix app launcher
 * [ ] Rewrite all files.
-* [ ] Write chezmoi templates
 * [X] ~~PLACEHOLDER~~
