@@ -9,6 +9,7 @@
         // Choose the order of the modules
         "modules-left": [
             "sway/workspaces",
+            "network",
             "sway/mode"
             // "custom/media"
         ],
@@ -19,7 +20,6 @@
             // "mpd",
             // "idle_inhibitor",
             "pulseaudio",
-            "network",
             "cpu",
             "memory",
             "temperature",
