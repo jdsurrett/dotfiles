@@ -9,6 +9,7 @@
         // Choose the order of the modules
         "modules-left": [
             "tray",
+            "custom/arrow1",
             "sway/workspaces",
             "network",
             "cpu",
@@ -244,6 +245,7 @@
             },
             "on-click": "pavucontrol"
         },
+        // }}}
         //{{{custom/media
         "custom/media": {
             "format": "{icon} {}",
@@ -256,6 +258,12 @@
             "escape": true,
             "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
             // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-        }
+        },
         // }}}
+        //{{{ custom/
+        "custom/arrow1": {
+            "format": "",
+            "tooltip": false
+        }
+        //}}}
     }
