@@ -38,7 +38,7 @@
         "sway/workspaces": {
             "disable-scroll": true,
             "all-outputs": true,
-            "format": "{name}: {icon}",
+            "format": "{icon} {name}",
             "format-icons": {
                 "1": "",
                 "2": "爵",
