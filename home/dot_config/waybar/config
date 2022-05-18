@@ -113,12 +113,12 @@
         //{{{clock
         "clock#time": {
             "interval": 10,
-            "format": "{:%I:%M %p}",
+            "format": "{:%I:%M %p }",
             "tooltip": false
         },
         "clock#date": {
             "interval": 20,
-            "format": "{:%a ┊ %D}", // Icon: calendar-alt
+            "format": "{:%a ┊ %D }", // Icon: calendar-alt
             "tooltip": false
         },
         //}}}
