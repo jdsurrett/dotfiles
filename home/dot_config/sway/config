@@ -213,7 +213,7 @@ bindsym $mod+r mode "resize"
 bar {
     font pango:Fira Code 11
     position top
-    tray_output primary
+    # tray_output primary
     # swaybar_command waybar
     # swaybar_command yambar
     # When the status_command prints a new line to stdout, swaybar updates.
