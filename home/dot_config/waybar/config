@@ -8,7 +8,6 @@
         "spacing": 0, // Gaps between modules (4px)
         // Choose the order of the modules
         "modules-left": [
-            "sway/mode",
             "network",
             "custom/arrow1",
             "memory",
@@ -16,7 +15,8 @@
             "clock#time",
             "custom/arrow3",
             "custom/spaces",
-            "sway/workspaces"
+            "sway/workspaces",
+            "sway/mode"
             // "mpd",
             // "custom/media"
         ],
