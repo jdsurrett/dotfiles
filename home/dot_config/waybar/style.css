@@ -1,13 +1,13 @@
 /* :root { */
 /*   --main-bg-color: #1f2335; */
 /* } */
-@define-color light #a9b1d6;
-@define-color dark #1a1b26;
-@define-color warning #f7768e;
-@define-color critical #ff9e64;
+@define-color light #c0caf5;
+@define-color dark #24283b;
+@define-color warning #bb9af7;
+@define-color critical #2ac3de;
 @define-color mode #414868;
-@define-color workspaces #c0caf5;
-@define-color workspacesfocused #b4f9f8;
+@define-color workspaces #b4f9f8;
+@define-color workspacesfocused #2ac3de;
 @define-color sound #7dcfff;
 @define-color network #2ac3de;
 @define-color memory #bb9af7;
