@@ -29,7 +29,7 @@
             // "sway/language",
             // "battery",
             // "battery#bat2",
-            "custom/arrow2",
+            "custom/arrow4",
             "clock#date",
             "cpu",
             "temperature",
@@ -272,7 +272,7 @@
             "format": "",
             "tooltip": false
         },
-        "custom/arrow2": {
+        "custom/arrow4": {
             "format": "",
             "tooltip": false
         }

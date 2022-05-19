@@ -177,7 +177,7 @@ window#waybar.chromium {
     color: @time;
     background: transparent;
 }
-#custom-arrow2 {
+#custom-arrow4 {
     font-size: 16px;
     color: @date;
     background: transparent;
