@@ -24,7 +24,7 @@
 }
 window#waybar {
     background-color: @dark;
-    color: #ffffff;
+    color: @light;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -80,19 +80,20 @@ window#waybar.chromium {
 }
 
 #clock,
-#battery,
+/* #battery, */
 #cpu,
 #memory,
-#disk,
+/* #disk, */
 #temperature,
-#backlight,
+/* #backlight, */
 #network,
-#pulseaudio,
-#custom-media,
+/* #pulseaudio, */
+/* #custom-media, */
 #tray,
-#mode,
-#idle_inhibitor,
-#mpd {
+#mode
+/* #idle_inhibitor, */
+/* #mpd */
+{
     padding: 0 10px;
     color: #ffffff;
 }
