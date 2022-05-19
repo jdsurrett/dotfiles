@@ -165,7 +165,7 @@ window#waybar.chromium {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @sound;
+    background-color: @workspacesfocused;
 }
 #custom-spaces {
     font-size: 16px;
@@ -174,28 +174,28 @@ window#waybar.chromium {
 }
 #custom-arrow7 {
     font-size: 16px;
-    color: @tray;
-    background: @temp;
+    color: @workspacesfocused;
+    background: @memory;
 }
 #custom-arrow6 {
     font-size: 16px;
-    color: @temp;
+    color: @memory;
     background: @cpu;
 }
 #custom-arrow5 {
     font-size: 16px;
     color: @cpu;
-    background: @dark;
+    background: @date;
 }
 #custom-arrow3 {
     font-size: 16px;
-    color: @date;
+    color: @time;
     background: transparent;
 }
 #custom-arrow2 {
     font-size: 16px;
     color: @memory;
-    background: @date;
+    background: @time;
 }
 #custom-arrow1 {
     font-size: 16px;
