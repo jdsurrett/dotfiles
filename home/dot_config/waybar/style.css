@@ -3,9 +3,9 @@
     font-family: 'Fira Code', monospace;
     font-size: 12px;
 }
-:root {
-  --main-bg-color: #1f2335;
-}
+/* :root { */
+/*   --main-bg-color: #1f2335; */
+/* } */
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
     color: #ffffff;
