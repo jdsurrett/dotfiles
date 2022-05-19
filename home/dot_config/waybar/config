@@ -10,9 +10,9 @@
         "modules-left": [
             "sway/mode",
             "network",
+            "custom/arrow1",
             "memory",
             "clock#time",
-            "custom/arrow1",
             "custom/spaces",
             "sway/workspaces"
             // "mpd",

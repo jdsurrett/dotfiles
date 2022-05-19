@@ -174,8 +174,8 @@ window#waybar.chromium {
 }
 #custom-arrow1 {
     font-size: 16px;
-    color: @time;
-    background: transparent;
+    color: @dark;
+    background: @memory;
 }
 #custom-arrow4 {
     font-size: 16px;
