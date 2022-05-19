@@ -136,7 +136,7 @@ window#waybar.chromium {
 }
 
 #temperature {
-    background-color: @temp;
+    background-color: @memory;
 }
 
 #temperature.critical {
