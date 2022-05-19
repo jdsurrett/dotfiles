@@ -3,6 +3,11 @@ type = "git-repo"
 url = "https://github.com/trapd00r/LS_COLORS.git"
 refreshPeriod = "168h"
 
+[".Xresources"]
+type = "file"
+url = "https://github.com/folke/tokyonight.nvim/blob/main/extras/xresources_tokyonight_storm.Xresources"
+refreshPeriod = "168h"
+
 [".config/bat/themes/Tokyo-Night.tmTheme"]
 type = "file"
 url = "https://raw.githubusercontent.com/enkia/enki-theme/master/scheme/Enki-Tokyo-Night.tmTheme"

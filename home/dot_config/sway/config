@@ -171,41 +171,66 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 #}}}
 #:{{{ Colors
- #: The default colors are:
- #: class	             border	 background text    indicator child_border			
- #: background	         n/a	 #ffffff    n/a	   n/a	      n/a
- #: focused	             #4c7899 #285577	#ffffff #2e9ef4   #285577
- #: focused_inactive	     #333333 #5f676a    #ffffff #484e50	  #5f676a
- #: unfocused	         #333333 #222222	#888888 #292d2e	  #222222
- #: urgent	             #2f343a #900000	#ffffff #900000	  #900000
- #: placeholder	         #000000 #0c0c0c	#ffffff #000000   #0c0c0c
- client.focused          #9aa5ce #364A82    #c0caf5 #9aa5ce   #9aa5ce
- client.focused_inactive #16161d #16161d    #c0caf5 #16161d   #16161d
- client.unfocused        #16161d #16161d    #c0caf5 #16161d   #16161d
-#:client.background       #F8F8F2
+ # theme colors
+set_from_resource $bgcolor  	color4
+set_from_resource $ibgcolor	color0
+set_from_resource $textcolor	color7
+set_from_resource $ubgcolor 	color1
+
+# class                   border    backgr.   text        indic.   child_border
+  client.focused          $bgcolor  $bgcolor  $textcolor  $bgcolor
+  client.focused_inactive $ibgcolor $ibgcolor $textcolor  $ibgcolor
+  client.unfocused        #ibgclor  $ibgcolor $textcolor  $ibgcolor
+  client.urgent           $ubgcolor $ubgcolor $textcolor  $ubgcolor
+  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+
+  client.background       $bgcolor
+
+# color palette used for the terminal ( ~/.Xresources file )
+set_from_resource $term_background background
+set_from_resource $term_foreground foreground
+set_from_resource $term_color0     color0
+set_from_resource $term_color1     color1
+set_from_resource $term_color2     color2
+set_from_resource $term_color3     color3
+set_from_resource $term_color4     color4
+set_from_resource $term_color5     color5
+set_from_resource $term_color6     color6
+set_from_resource $term_color7     color7
+set_from_resource $term_color8     color8
+set_from_resource $term_color9     color9
+set_from_resource $term_color10    color10
+set_from_resource $term_color11    color11
+set_from_resource $term_color12    color12
+set_from_resource $term_color13    color13
+set_from_resource $term_color14    color14
+set_from_resource $term_color15    color15
 #:}}}
 #{{{ Status Bar:
 # font pango:SauceCodePro Nerd Font Mono Mono 11
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    # font pango:SauceCodePro Nerd Font Mono Mono 11
+    font pango:Fira Code Mono 11
     position top
-    swaybar_command waybar
-
+    # swaybar_command waybar
+swaybar_command /usr/bin/i3status-rs ~/.config/i3status-rs/config.toml
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     # status_command while date +'%Y-%m-%d %l:%M %p'; do sleep 1; done
     # status_command i3status-rs ~/.config/sway/config.toml
-    # colors {
-    #     separator #666666
-    #     background #222222
-    #     statusline #dddddd
-    #     focused_workspace #0088CC #0088CC #ffffff
-    #     active_workspace #333333 #333333 #ffffff
-    #     inactive_workspace #333333 #333333 #888888
-    #     urgent_workspace #2f343a #900000 #ffffff
-    # }
+   colors {
+       background #24283b
+       statusline #f9faf9
+       separator  #c0caf5
+
+#                         border  backgr. text
+       focused_workspace  #414868 #414868 #c0caf5
+       active_workspace   #414868 #414868 #c0caf5
+       inactive_workspace #24283b #24283b #c0caf5
+       binding_mode       #16a085 #2C2C2C #F9FAF9
+       urgent_workspace   #f7768e #f7768e #c0caf5
+   }
 }
 exec --no-startup-id autotiling
 exec --no-startup-id $term
