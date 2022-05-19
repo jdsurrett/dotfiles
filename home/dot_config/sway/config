@@ -232,8 +232,4 @@ bar {
        urgent_workspace   #f7768e #f7768e #c0caf5
    }
 }
-exec --no-startup-id autotiling
-exec --no-startup-id $term
-exec --no-startup-id steam -silent
-exec --no-startup-id discord --start-minimized
 #}}}
