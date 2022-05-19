@@ -135,6 +135,10 @@ window#waybar.chromium {
     background-color: @memory;
     color: @dark;
 }
+#network {
+    background-color: @network;
+    color: @dark;
+}
 
 #network.disconnected {
     background-color: @warning;
