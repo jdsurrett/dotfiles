@@ -171,11 +171,12 @@ window#waybar.chromium {
     -gtk-icon-effect: highlight;
     background-color: @workspacesfocused;
 }
-##custom-spaces3 {
+#custom-spaces3 {
     font-size: 16px;
     color: @dark;
     background: transparent;
-}custom-spaces2 {
+}
+#custom-spaces2 {
     font-size: 16px;
     color: @dark;
     background: @date;
