@@ -64,7 +64,7 @@ window#waybar.chromium {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-    background: @workspace;
+    background: @workspaces;
 }
 
 #workspaces button.focused {
@@ -158,7 +158,7 @@ window#waybar.chromium {
 #custom-spaces {
     font-size: 16px;
     color: @light;
-    background: @dark;
+    background: @workspaces;
 }
 #custom-arrow1 {
     font-size: 16px;
