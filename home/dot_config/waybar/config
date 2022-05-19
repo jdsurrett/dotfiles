@@ -16,6 +16,7 @@
             "custom/arrow3",
             "custom/spaces1",
             "sway/workspaces",
+            "custom/spaces3",
             "sway/mode"
             // "mpd",
             // "custom/media"
@@ -275,6 +276,11 @@
         },
         // }}}
         //{{{ custom/arrow
+        "custom/spaces3": {
+            "max-length": 1,
+            "format": "┊",
+            "tooltip": false
+        },
         "custom/spaces2": {
             "max-length": 1,
             "format": "┊",
