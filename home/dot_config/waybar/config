@@ -265,7 +265,7 @@
         //{{{ custom/arrow
         "custom/spaces": {
             "min-length": 3,
-            "format": "  ║ ",
+            "format": "  ║",
             "tooltip": false
         },
         "custom/arrow1": {
