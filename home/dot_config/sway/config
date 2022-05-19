@@ -215,6 +215,7 @@ bar {
     position top
     tray_output primary
     # swaybar_command waybar
+    swaybar_command yambar
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     # status_command while date +'%Y-%m-%d %l:%M %p'; do sleep 1; done
