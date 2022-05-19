@@ -173,7 +173,7 @@ window#waybar.chromium {
 }
 #custom-spaces3 {
     font-size: 16px;
-    color: @dark;
+    color: @light;
     background: transparent;
 }
 #custom-spaces2 {
