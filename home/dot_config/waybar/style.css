@@ -144,7 +144,7 @@ window#waybar.chromium {
 }
 
 #tray {
-    background-color: @layout;
+    background-color: @workspacesfocused;
 }
 
 #tray > .passive {
