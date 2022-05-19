@@ -12,7 +12,9 @@
             "network",
             "custom/arrow1",
             "memory",
+            "custom/arrow2",
             "clock#time",
+            "custom/arrow3",
             "custom/spaces",
             "sway/workspaces"
             // "mpd",
@@ -31,8 +33,11 @@
             // "battery#bat2",
             "custom/arrow4",
             "clock#date",
+            "custom/arrow5",
             "cpu",
+            "custom/arrow6",
             "temperature",
+            "custom/arrow7",
             "tray"
         ],
         //}}}
@@ -268,8 +273,28 @@
             "format": "  ║",
             "tooltip": false
         },
+        "custom/arrow3": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow2": {
+            "format": "",
+            "tooltip": false
+        },
         "custom/arrow1": {
             "format": "",
+            "tooltip": false
+        },
+        "custom/arrow7": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow6": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow5": {
+            "format": "",
             "tooltip": false
         },
         "custom/arrow4": {

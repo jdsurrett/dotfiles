@@ -172,6 +172,31 @@ window#waybar.chromium {
     color: @light;
     background: transparent;
 }
+#custom-arrow7 {
+    font-size: 16px;
+    color: @tray;
+    background: @temp;
+}
+#custom-arrow6 {
+    font-size: 16px;
+    color: @temp;
+    background: @cpu;
+}
+#custom-arrow5 {
+    font-size: 16px;
+    color: @cpu;
+    background: @dark;
+}
+#custom-arrow3 {
+    font-size: 16px;
+    color: @date;
+    background: transparent;
+}
+#custom-arrow2 {
+    font-size: 16px;
+    color: @memory;
+    background: @date;
+}
 #custom-arrow1 {
     font-size: 16px;
     color: @dark;
