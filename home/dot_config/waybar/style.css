@@ -2,7 +2,7 @@
 /*   --main-bg-color: #1f2335; */
 /* } */
 @define-color light #a9b1d6;
-@define-color dark #24283b;
+@define-color dark #1a1b26;
 @define-color warning #f7768e;
 @define-color critical #ff9e64;
 @define-color mode #414868;
@@ -95,7 +95,7 @@ window#waybar.chromium {
 /* #mpd */
 {
     padding: 0 10px;
-    color: @light;
+    color: #ffffff;
 }
 
 #window,
@@ -144,7 +144,7 @@ window#waybar.chromium {
 }
 
 #tray {
-    background-color: battery;
+    background-color: #2980b9;
 }
 
 #tray > .passive {
@@ -153,7 +153,7 @@ window#waybar.chromium {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @warning;
+    background-color: #eb4d4b;
 }
 
 #custom-arrow1 {
