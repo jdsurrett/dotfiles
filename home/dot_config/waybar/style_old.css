@@ -36,6 +36,7 @@
 /* -----------------------------------------------------------------------------
  * Styles
  * -------------------------------------------------------------------------- */
+"css.lint.unknownAtRules": "ignore"
 
 /* COLORS */
 
@@ -77,7 +78,6 @@
 /* @define-color date #8ec07c; */
 /* @define-color time #ebdbb2; */
 /*Tokyo Night Storm*/
- 
 
 @define-color light #a9b1d6;
 @define-color dark #1a1b26;
