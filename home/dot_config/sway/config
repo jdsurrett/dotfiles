@@ -214,6 +214,7 @@ bar {
     font pango:DejaVu Sans Mono, FontAwesome 12
     # font pango:Fira Code 11
     position top
+    tray_output primary
     # swaybar_command waybar
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
