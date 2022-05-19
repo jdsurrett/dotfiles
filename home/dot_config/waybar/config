@@ -123,7 +123,7 @@
         //{{{clock
         "clock#dayofweek": {
             "interval": 10,
-            "format": "{: %a }",
+            "format": "{: %a}",
             "tooltip": false
         },
         "clock#time": {
@@ -133,7 +133,7 @@
         },
         "clock#date": {
             "interval": 20,
-            "format": "{: %D}", // Icon: calendar-alt
+            "format": "{:%D}", // Icon: calendar-alt
             "tooltip": false
         },
         //}}}
