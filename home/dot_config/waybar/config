@@ -278,7 +278,7 @@
         //{{{ custom/arrow
         "custom/spaces3": {
             "max-length": 1,
-            "format": "┊",
+            "format": "║",
             "tooltip": false
         },
         "custom/spaces2": {
