@@ -211,7 +211,8 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    font pango:Fira Code 11
+    font pango:DejaVu Sans Mono, FontAwesome 12
+    # font pango:Fira Code 11
     position top
     # swaybar_command waybar
     swaybar_command i3status-rs  ~/.config/i3status-rs/config.toml
