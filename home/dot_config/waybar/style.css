@@ -123,12 +123,12 @@ window#waybar.chromium {
 }
 
 #cpu {
-    background-color: #2ecc71;
+    background-color: @cpu;
     color: #000000;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: @memory;
 }
 
 #disk {
