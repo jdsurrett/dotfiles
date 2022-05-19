@@ -2,3 +2,9 @@
 block = "focused_window"
 max_width = 50
 show_marks = "visible"
+[[block]]
+block = "time"
+format = "%a %d/%m %R"
+timezone = "US/Pacific"
+interval = 60
+# locale = "fr_BE"
