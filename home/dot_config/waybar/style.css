@@ -65,6 +65,7 @@ window#waybar.chromium {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: @workspaces;
+    color: @dark;
 }
 
 #workspaces button.focused {
@@ -116,11 +117,13 @@ window#waybar.chromium {
 
 #clock.date {
     background-color: @date;
+    color: @dark;
 }
 
 
 #clock.time {
     background-color: @time;
+    color: @dark;
 }
 
 #cpu {
@@ -130,14 +133,17 @@ window#waybar.chromium {
 
 #memory {
     background-color: @memory;
+    color: @dark;
 }
 
 #network.disconnected {
     background-color: @warning;
+    color: @dark;
 }
 
 #temperature {
     background-color: @memory;
+    color: @dark;
 }
 
 #temperature.critical {
@@ -146,6 +152,7 @@ window#waybar.chromium {
 
 #tray {
     background-color: @workspacesfocused;
+    color: @dark;
 }
 
 #tray > .passive {
