@@ -1,0 +1,38 @@
+:root {
+--light : #ff9e64;
+--dark : #e0af68;
+--warning : #9ece6a;
+--critical : #73daca;
+--mode : #b4f9f8;
+--workspaces :#2ac3de;
+--workspacesfocused : #7dcfff;
+--sound : #7aa2f7;
+--network : #bb9af7;
+--memory : #c0caf5;
+--cpu :#a9b1d6;
+--temp :#9aa5ce;
+--layout :#cfc9c2;
+--battery :#565f89;
+--date :#414868;
+--time :#24283b;
+--a : #1a1b26;
+}
+
+@define-color
+
+@define-color light #c0caf5;
+@define-color dark #24283b;
+@define-color warning #bb9af7;
+@define-color critical #2ac3de;
+@define-color mode #414868;
+@define-color workspaces #b4f9f8;
+@define-color workspacesfocused #2ac3de;
+@define-color sound #7dcfff;
+@define-color network #2ac3de;
+@define-color memory #bb9af7;
+@define-color cpu #e0af68;
+@define-color temp #7dcfff;
+@define-color layout #cfc9c2;
+@define-color battery #c0caf5;
+@define-color date #7aa2f7;
+@define-color time #ff9e64;
