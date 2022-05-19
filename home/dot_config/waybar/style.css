@@ -1,13 +1,13 @@
-:root {
-  --main-bg-color: #1f2335;
-}
+/* :root { */
+/*   --main-bg-color: #1f2335; */
+/* } */
 * {
     /* `Fira Code` is required to be installed for icons */
     font-family: 'Fira Code', monospace;
     font-size: 12px;
 }
 window#waybar {
-    background-color: var(--main-bg-color);
+    background-color: rgba(43, 48, 59, 0.5);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
