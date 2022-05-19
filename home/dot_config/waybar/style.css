@@ -155,7 +155,11 @@ window#waybar.chromium {
     -gtk-icon-effect: highlight;
     background-color: @sound;
 }
-
+#custom-spaces {
+    font-size: 16px;
+    color: @light;
+    background: @dark;
+}
 #custom-arrow1 {
     font-size: 16px;
     color: @time;
