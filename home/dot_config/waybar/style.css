@@ -136,8 +136,8 @@ window#waybar.chromium {
     color: @dark;
 }
 #network {
-    background-color: @network;
-    color: @dark;
+    background-color: @dark;
+    color: @light;
 }
 
 #network.disconnected {
