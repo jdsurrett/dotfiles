@@ -114,6 +114,10 @@ window#waybar.chromium {
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
 }
+#clock.dayofweek {
+    background-color: @date;
+    color: @dark;
+}
 
 #clock.date {
     background-color: @date;
@@ -167,7 +171,12 @@ window#waybar.chromium {
     -gtk-icon-effect: highlight;
     background-color: @workspacesfocused;
 }
-#custom-spaces {
+#custom-spaces2 {
+    font-size: 16px;
+    color: @light;
+    background: transparent;
+}
+#custom-spaces1 {
     font-size: 16px;
     color: @light;
     background: transparent;

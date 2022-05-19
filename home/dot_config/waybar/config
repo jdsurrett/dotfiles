@@ -14,7 +14,7 @@
             "custom/arrow2",
             "clock#time",
             "custom/arrow3",
-            "custom/spaces",
+            "custom/spaces1",
             "sway/workspaces",
             "sway/mode"
             // "mpd",
@@ -32,6 +32,8 @@
             // "battery",
             // "battery#bat2",
             "custom/arrow4",
+            "clock#dayofweek",
+            "custom/spaces2",
             "clock#date",
             "custom/arrow5",
             "cpu",
@@ -119,6 +121,11 @@
         },
         //}}}
         //{{{clock
+        "clock#dayofweek": {
+            "interval": 10,
+            "format": "{: %a }",
+            "tooltip": false
+        },
         "clock#time": {
             "interval": 10,
             "format": "{:%I:%M %p }",
@@ -126,7 +133,7 @@
         },
         "clock#date": {
             "interval": 20,
-            "format": "{: %a ┊ %D}", // Icon: calendar-alt
+            "format": "{: %D}", // Icon: calendar-alt
             "tooltip": false
         },
         //}}}
@@ -268,7 +275,12 @@
         },
         // }}}
         //{{{ custom/arrow
-        "custom/spaces": {
+        "custom/spaces2": {
+            "max-length": 1,
+            "format": "║",
+            "tooltip": false
+        },
+        "custom/spaces1": {
             "min-length": 3,
             "format": "  ║",
             "tooltip": false
