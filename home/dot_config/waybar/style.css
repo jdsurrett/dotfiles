@@ -69,6 +69,7 @@ window#waybar.chromium {
 
 #workspaces button.focused {
     background-color: @workspacesfocused;
+    color : @dark;
 }
 
 #workspaces button.urgent {
@@ -124,7 +125,7 @@ window#waybar.chromium {
 
 #cpu {
     background-color: @cpu;
-    color: #000000;
+    color: @dark;
 }
 
 #memory {
