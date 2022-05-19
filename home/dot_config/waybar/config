@@ -12,12 +12,13 @@
             "network",
             "memory",
             "clock#time",
-            "custom/arrow1"
+            "custom/arrow1",
+            "custom/spaces",
+            "sway/workspaces"
             // "mpd",
             // "custom/media"
         ],
         "modules-center": [
-            "sway/workspaces",
             "sway/window"
         ],
         "modules-right": [
@@ -136,7 +137,7 @@
             }
         },
         //}}}
-        //{{{memory
+        //{{{memoryz
         "memory": {
             "interval": 6,
             "min-length": 6,
@@ -262,6 +263,11 @@
         },
         // }}}
         //{{{ custom/arrow
+        "custom/spaces": {
+            "min-length": 3,
+            "format": "   ",
+            "tooltip": false
+        },
         "custom/arrow1": {
             "format": "",
             "tooltip": false
