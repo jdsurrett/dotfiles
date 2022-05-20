@@ -7,7 +7,7 @@ set $down j
 set $up k
 set $right l
 set $term kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty 
-set $menu rofi -no-config -no-lazy-grab -show run -modi run -theme ~/.config/wofi/launcher.rasi
+set $menu wofi -no-config -no-lazy-grab -show run -modi run -theme ~/.config/wofi/launcher.rasi
 
 #:}}}
 ###:{{{ Output configuration
