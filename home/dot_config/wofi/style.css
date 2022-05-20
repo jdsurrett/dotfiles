@@ -5,7 +5,7 @@
 window {
     margin: 5px;
     border: 0px solid white;
-    background-color: rgba(48, 98, 148, 1.0);
+    background-color: #414868;
 }
 
 #input {
@@ -29,7 +29,7 @@ window {
 }
 
 #scroll {
-    
+color: #2ac3de;    
 }
 
 #text {
@@ -44,7 +44,7 @@ window {
 } */
 
 #entry:selected {
-    background-color: #151718;
+    background-color: #2ac3de;
 }
 
 #text:selected {
