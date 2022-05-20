@@ -1,5 +1,4 @@
-    // Bar configuration
-    // {{{
+    // {{{ Bar configuration
     {
         "layer": "top", // Waybar at top layer
         "position": "top", // Waybar position (top|bottom|left|right)
@@ -44,7 +43,7 @@
             "tray"
         ],
         //}}}
-        // Modules configuration
+        //{{{ Modules configuration
         // {{{ sway/workspaces
         "sway/workspaces": {
             "disable-scroll": true,
@@ -326,5 +325,6 @@
             "format": "",
             "tooltip": false
         }
-        //}}}
     }
+    //}}}
+    //}}}
