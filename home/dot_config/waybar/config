@@ -12,7 +12,7 @@
             "memory",
             "custom/arrow2",
             "clock#time",
-            "custom/spaces1",
+            "custom/spaces3",
             "sway/workspaces",
             "custom/spaces3",
             "sway/mode",
@@ -292,11 +292,11 @@
             "format": "┊",
             "tooltip": false
         },
-        "custom/spaces1": {
-            // "min-length": 2,
-            "format": "║",
-            "tooltip": false
-        },
+        // "custom/spaces1": {
+        //     // "min-length": 2,
+        //     "format": "║",
+        //     "tooltip": false
+        // },
         "custom/arrow3": {
             "format": "",
             "tooltip": false
