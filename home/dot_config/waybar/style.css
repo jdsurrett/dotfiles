@@ -203,7 +203,7 @@ window#waybar.chromium {
 }
 #custom-arrow3 {
     font-size: 16px;
-    color: @time;
+    color: @mode;
     background: transparent;
 }
 #custom-arrow2 {

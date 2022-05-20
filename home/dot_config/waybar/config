@@ -12,11 +12,11 @@
             "memory",
             "custom/arrow2",
             "clock#time",
-            "custom/arrow3",
             "custom/spaces1",
             "sway/workspaces",
             "custom/spaces3",
-            "sway/mode"
+            "sway/mode",
+            "custom/arrow3"
             // "mpd",
             // "custom/media"
         ],
@@ -293,8 +293,8 @@
             "tooltip": false
         },
         "custom/spaces1": {
-            "min-length": 3,
-            "format": "  ║",
+            "max-length": 1,
+            "format": "║",
             "tooltip": false
         },
         "custom/arrow3": {
