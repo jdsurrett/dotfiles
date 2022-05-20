@@ -174,7 +174,7 @@ window#waybar.chromium {
 }
 #custom-spaces3 {
     font-size: 16px;
-    color: @workspaces;
+    color: @workspacesfocused;
     background: transparent;
 }
 #custom-spaces2 {
