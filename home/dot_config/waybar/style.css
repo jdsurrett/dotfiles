@@ -78,7 +78,7 @@ window#waybar.chromium {
 }
 
 #mode {
-    background-color: @mode;
+    background-color: @workspaces;
 }
 
 #clock,
@@ -173,7 +173,7 @@ window#waybar.chromium {
 }
 #custom-spaces3 {
     font-size: 16px;
-    color: @mode;
+    color: @workspaces;
     background: transparent;
 }
 #custom-spaces2 {
