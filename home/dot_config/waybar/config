@@ -293,7 +293,7 @@
             "tooltip": false
         },
         "custom/spaces1": {
-            "max-length": 1,
+            "max-length": 2,
             "format": "║",
             "tooltip": false
         },
