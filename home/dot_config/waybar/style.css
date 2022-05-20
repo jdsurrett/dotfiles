@@ -78,6 +78,7 @@ window#waybar.chromium {
 }
 
 #mode {
+    color: @dark;
     background-color: @workspaces;
 }
 
@@ -203,7 +204,7 @@ window#waybar.chromium {
 }
 #custom-arrow3 {
     font-size: 16px;
-    color: @mode;
+    color: @workspaces;
     background: transparent;
 }
 #custom-arrow2 {
