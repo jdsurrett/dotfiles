@@ -294,7 +294,7 @@
         },
         "custom/spaces1": {
             "min-length": 2,
-            "format": " ║",
+            "format": "║",
             "tooltip": false
         },
         "custom/arrow3": {
