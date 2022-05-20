@@ -78,8 +78,8 @@ window#waybar.chromium {
 }
 
 #mode {
-    background-color: @workspaces;
-    color: #24283b;
+    color: @dark;
+    background-color: @workspacesfocused;
 }
 
 #clock,
@@ -175,7 +175,7 @@ window#waybar.chromium {
 #custom-spaces3 {
     font-size: 16px;
     color: @workspaces;
-    background: transparent;
+    background: @workspacesfocused;
 }
 #custom-spaces2 {
     font-size: 16px;
@@ -204,7 +204,7 @@ window#waybar.chromium {
 }
 #custom-arrow3 {
     font-size: 16px;
-    color: @workspaces;
+    color: @workspacesfocused;
     background: transparent;
 }
 #custom-arrow2 {
