@@ -7,7 +7,7 @@ set $down j
 set $up k
 set $right l
 set $term kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty 
-set $menu --no-startup-id wofi --show drun --conf $XDG_CONFIG_HOME/wofi/launcher.rasi --style $XDG_CONFIG_HOME/wofi/style.css --color $XDG_CONFIG_HOME/wofi/colors.rasi
+set $menu --no-startup-id wofi --show drun --conf ~/.config/wofi/launcher.rasi --style ~/.config/wofi/style.css --color ~/.config/wofi/colors.rasi
 
 #:}}}
 ###:{{{ Output configuration
