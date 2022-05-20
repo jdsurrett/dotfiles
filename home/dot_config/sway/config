@@ -47,7 +47,7 @@ input * xkb_numlock enable
 ###{{{ Key bindings
 #: Basics:
     #: Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec --no-startup-id $term
 #: for_window [title="^terminal"] resize set width 42 ppt
 
     #: Kill focused window
