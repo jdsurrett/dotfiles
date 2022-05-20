@@ -7,7 +7,7 @@ set $down j
 set $up k
 set $right l
 set $term kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty 
-set $menu wofi --show drun --conf $XDG_CONFIG_HOME/wofi/launcher.rasi --style $XDG_CONFIG_HOME/wofi/style.css --color $XDG_CONFIG_HOME/wofi/colors.rasi
+set $menu --no-startup-id wofi --show drun --conf $XDG_CONFIG_HOME/wofi/launcher.rasi --style $XDG_CONFIG_HOME/wofi/style.css --color $XDG_CONFIG_HOME/wofi/colors.rasi
 
 #:}}}
 ###:{{{ Output configuration
@@ -54,7 +54,7 @@ input * xkb_numlock enable
     bindsym $mod+Shift+q kill
 
     #: Start your launcher
-    bindsym $mod+d exec --no-startup-id $menu
+    bindsym $mod+d exec $menu
 
     #: Drag floating windows by holding down $mod and left mouse button.
     #: Resize them with right mouse button + $mod.
