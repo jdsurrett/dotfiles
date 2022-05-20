@@ -62,6 +62,12 @@
             }
         },
         //}}}
+        //{{{
+        "sway/window": {
+            "tooltip": false,
+            "icon": true
+        },
+        //}}}
         //{{{ keyboard-state
         "keyboard-state": {
             "numlock": true,
@@ -150,7 +156,7 @@
             }
         },
         //}}}
-        //{{{memoryz
+        //{{{memory
         "memory": {
             "interval": 6,
             "min-length": 6,
