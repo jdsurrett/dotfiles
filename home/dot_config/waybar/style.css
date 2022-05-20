@@ -20,7 +20,7 @@
 * {
     /* `Fira Code` is required to be installed for icons */
     font-family: 'Fira Code', monospace;
-    font-size: 14px;
+    font-size: 15px;
 }
 window#waybar {
     background-color: transparent;
