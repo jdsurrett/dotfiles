@@ -78,8 +78,8 @@ window#waybar.chromium {
 }
 
 #mode {
-    color: @dark;
     background-color: @workspaces;
+    color: @dark;
 }
 
 #clock,
