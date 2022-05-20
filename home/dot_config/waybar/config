@@ -62,10 +62,10 @@
             }
         },
         //}}}
-        //{{{
+        //{{{ sway/window
         "sway/window": {
             "tooltip": false,
-            "icon": true
+            "icon": false
         },
         //}}}
         //{{{ keyboard-state
