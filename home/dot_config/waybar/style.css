@@ -23,7 +23,7 @@
     font-size: 15px;
 }
 window#waybar {
-    background-color: @dark;
+    background-color: transparent;
     color: @light;
     transition-property: background-color;
     transition-duration: .5s;
