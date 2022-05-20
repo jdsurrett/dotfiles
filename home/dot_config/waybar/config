@@ -293,8 +293,8 @@
             "tooltip": false
         },
         "custom/spaces1": {
-            "max-length": 2,
-            "format": "║",
+            "min-length": 2,
+            "format": " ║",
             "tooltip": false
         },
         "custom/arrow3": {
