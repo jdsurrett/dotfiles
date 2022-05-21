@@ -159,7 +159,7 @@
         "memory": {
             "interval": 6,
             "min-length": 6,
-            "format": "{}% ",
+            "format": "{}% ",
             "states": {
                 "warning": 70,
                 "critical": 90
