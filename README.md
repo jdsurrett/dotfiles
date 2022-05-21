@@ -9,7 +9,7 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 * [X] ~~Refactor lvim configuration file.~~
 * [X] ~~Refactor kitty configuration file.~~
 * [X] ~~Refactor sway configuration file.~~
-* [ ] Fix system bar
+* [X] ~~Fix system bar~~
 * [ ] Fix app launcher
 * [ ] Rewrite all files.
 * [X] ~~PLACEHOLDER~~
