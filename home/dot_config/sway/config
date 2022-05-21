@@ -7,8 +7,7 @@ set $down j
 set $up k
 set $right l
 set $term kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty 
-set $menu wofi --show drun --conf ~/.config/wofi/launcher.rasi --style ~/.config/wofi/style.css --color ~/.config/wofi/colors.rasi
-
+set $menu wofi
 #:}}}
 ###:{{{ Output configuration
 output * bg /usr/share/backgrounds/teahub.io-black-wallpaper-hd-93723.png fill
