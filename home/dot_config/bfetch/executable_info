@@ -45,46 +45,12 @@ SEPARATOR=$(echo "GPU: $GPU" | sed -e 's/./─/g')
 MEMORY=$(mem '${gb_used}GiB/${gb_total}GiB \($(((gb_used*100)/gb_total))%%\)')
 ROOT_DISK="$(disk '${gb_used}GiB/${gb_total}GiB \($(((gb_used*100)/gb_total))%%\) ' '/$')"
 HOME_DISK="$(disk '${gb_used}GiB/${gb_total}GiB \($(((gb_used*100)/gb_total))%%\) ' '/home$')"
-TEXT="${1:-███}"
-MODES="${2:-normal both}"
-ORDER="${3:-0 1 2 3 4 5 6 7}"
-SPECTRUM="${4}"
+echo
 
-
-
-# Start
-
-for mode in $MODES; do
-	case "$mode" in
-		'normal') bold=''  ; bright='3' ;;
-		'bright') bold=''  ; bright='9' ;;
-		'bold')   bold=';1'; bright='3' ;;
-		'both')   bold=';1'; bright='9' ;;
-	esac
-
-	[ "$newline" = 'true' ] && print="$print\n"
-
-	[ -n "$SPECTRUM" ] && {
-		spectrum=''
-		text_print="$SPECTRUM"
-	}
-
-	for color in $ORDER; do
-		[ "$color" != 'none' ] && colors="$bold$spectrum;$bright$color"
-
-		print="$print\033[0${colors:-$spectrum}m${text_print:-$TEXT}"
-
-		colors=''
-
-		[ -n "$SPECTRUM" ] && {
-			[ "$color" != 'none' ] && spectrum=";$(( bright + 1 ))$color" || spectrum=''
-			text_print="$TEXT"
-		}
-	done
-
-	print="$print\033[0m"
-	newline='true'
+for f in {0..6}; do
+	echo -en "\033[$((f+41))m\033[$((f+30))m██▓▒░"
 done
+echo -en "\033[37m██\n"
 
 printf "\033[1;${COLOR}m\033[0m ${OS:-os}\033[0m
 \033[0m${SEPARATOR:----}\033[0m
