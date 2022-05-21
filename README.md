@@ -10,7 +10,8 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 * [X] ~~Refactor kitty configuration file.~~
 * [X] ~~Refactor sway configuration file.~~
 * [X] ~~Fix waybar.~~
-* [ ] Fix app launcher.
-* [ ] Fix email.
+* [ ] Fix wofi.
+* [ ] Setup email client.
+* [ ] Setup notification daemon.
 * [ ] Rewrite all files.
 <!-- * [X] ~~PLACEHOLDER~~ -->
