@@ -1,6 +1,6 @@
 show=drun
 columns=2
-width=500
+# width=500
 height=500
 always_parse_args=true
 allow_images=true
