@@ -1,6 +1,6 @@
 show=drun
 columns=2
-lines=5
+lines=15
 always_parse_args=true
 allow_images=true
 print_command=true
