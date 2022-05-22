@@ -10,8 +10,3 @@ allow_images=true
 image_size=16
 layer=overlay
 insensitive=true
-
-# outher
-# always_parse_args=true
-# print_command=true
-# prompt=
