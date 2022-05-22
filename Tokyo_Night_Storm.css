@@ -1,4 +1,4 @@
-:root {
+/* :root {
 --light : #ff9e64;
 --dark : #e0af68;
 --warning : #9ece6a;
@@ -17,7 +17,7 @@
 --time :#24283b;
 --a : #1a1b26;
 }
-
+ */
 /* @define-color */
 
 /* @define-color light #c0caf5; */
@@ -36,20 +36,22 @@
 /* @define-color battery #c0caf5; */
 /* @define-color date #7aa2f7; */
 /* @define-color time #ff9e64; */
-
-#c0caf5
-#24283b
-#bb9af7
-#2ac3de
-#414868
-#b4f9f8
-#2ac3de
-#7dcfff
-#2ac3de
-#bb9af7
-#e0af68
-#7dcfff
-#cfc9c2
-#c0caf5
-#7aa2f7
-#ff9e64
+:root{
+--a : #f7768e;
+--b : #ff9e64;
+--c : #e0af68;
+--d : #9ece6a;
+--e : #73daca;
+--f : #b4f9f8;
+--g : #2ac3de;
+--h : #7dcfff;
+--i : #7aa2f7;
+--j : #bb9af7;
+--k : #c0caf5;
+--l : #a9b1d6;
+--m : #9aa5ce;
+--n : #cfc9c2;
+--o : #565f89;
+--q : #414868;
+--r : #24283b;
+}
