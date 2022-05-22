@@ -12,6 +12,6 @@ layer=overlay
 insensitive=true
 
 # outher
-always_parse_args=true
-print_command=true
-prompt=
+# always_parse_args=true
+# print_command=true
+# prompt=
