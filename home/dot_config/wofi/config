@@ -1,10 +1,8 @@
-# xoffset=710
-# yoffset=275
 show=drun
+columns=2
 width=500
 height=500
 always_parse_args=true
-# show_all=true
 allow_images=true
 print_command=true
 layer=overlay
