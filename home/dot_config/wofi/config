@@ -10,3 +10,4 @@ allow_images=true
 image_size=16
 layer=overlay
 insensitive=true
+prompt=
