@@ -5,7 +5,7 @@ lines=15
 # menu
 show=drun
 
-#style
+# style
 allow_images=true
 image_size=16
 layer=overlay
