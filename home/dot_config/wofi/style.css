@@ -5,6 +5,7 @@ border-radius: 5px;
 background-color: #24283b;
 font-family: 'Fira Code', monospace;
 font-size: 12px;
+font-weight: 400;
 }
 
 #input {
@@ -12,7 +13,6 @@ margin: 5px;
 border: 1px solid #2ac3de;
 color: #1a1b26;
 background-color: #2ac3de;
-font-weight: bold;
 }
 
 #input image {
