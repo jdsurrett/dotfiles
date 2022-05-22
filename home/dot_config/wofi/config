@@ -4,7 +4,7 @@ lines=15
 
 # menu
 show=drun
-
+line_wrap=word
 # style
 allow_images=true
 image_size=16
