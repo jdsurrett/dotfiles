@@ -10,8 +10,9 @@ font-size: 12px;
 #input {
 margin: 5px;
 border: 1px solid #2ac3de;
-color: #24283b;
+color: #1a1b26;
 background-color: #2ac3de;
+font-weight: bold;
 }
 
 #input image {
@@ -43,7 +44,6 @@ color: #c0caf5;
 
 #entry:selected {
 	background-color: #e0af68;
-    /* color: #1a1b26; */
 	font-weight: normal;
 }
 
