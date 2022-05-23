@@ -11,7 +11,7 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 * [X] ~~Refactor sway configuration file.~~
 * [X] ~~Fix waybar.~~
 * [X] ~~Fix wofi.~~
-* [ ] Setup notification daemon.
+* [X] ~~Setup notification daemon.~~
 * [ ] Setup email client.
 * [ ] Rewrite all files.
 <!-- * [X] ~~PLACEHOLDER~~ -->
