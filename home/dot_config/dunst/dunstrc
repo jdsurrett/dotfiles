@@ -313,6 +313,7 @@
     #default_icon = /path/to/icon
 
 [urgency_critical]
+    frame_color = "#f7768e"
     background = "#f7768e"
     foreground = "#24283b"
     frame_color = "#f7768e"
