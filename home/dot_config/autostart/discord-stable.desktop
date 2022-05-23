@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/opt/discord/Discord
+Exec=/opt/discord/Discord --start-minimized
 Hidden=true
 NoDisplay=false
 Name=Discord
