@@ -1,4 +1,0 @@
-[Desktop Entry]
-Exec=/usr/bin/pamac-tray --gapplication-service
-Name=pamac-tray
-Type=Application
