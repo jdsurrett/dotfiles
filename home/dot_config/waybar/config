@@ -236,11 +236,12 @@
             "interval": 6,
             "min-length": 6,
             "format-wifi": "{signalStrength}% ",
-            "tooltip-format": "{essid} ",
+            // "tooltip-format": "{essid} ",
+            "tooltip": false,
             "format-ethernet": "{ifname} ",
             "format-linked": "{ifname} (No IP) ",
             "format-disconnected": "Disconnected ⚠ 睊",
-            "format-alt": "{ifname}: {ipaddr}/{cidr}"
+            "format-alt": "{essid} "
         },
         //}}}
         //{{{pulseaudio
