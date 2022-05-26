@@ -210,31 +210,13 @@ bindsym $mod+r mode "resize"
 # font pango:SauceCodePro Nerd Font Mono Mono 11
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    font pango:Fira Code 11
-    position top
-    exec "systemctl --user import-environment; systemctl --user start sway-session.target"
+# bar {
+    # font pango:Fira Code 11
+    # position top
     # tray_output primary
     # swaybar_command waybar
-    # swaybar_command yambar
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    # status_command while date +'%Y-%m-%d %l:%M %p'; do sleep 1; done
-    # status_command i3status-rs ~/.config/i3status-rs/config.toml
-    # status_command yambar
-#    colors {
-#        background #24283b
-#        statusline #f9faf9
-#        separator  #c0caf5
-
-# #                         border  backgr. text
-#        focused_workspace  #414868 #414868 #c0caf5
-#        active_workspace   #414868 #414868 #c0caf5
-#        inactive_workspace #24283b #24283b #c0caf5
-#        binding_mode       #16a085 #2C2C2C #F9FAF9
-#        urgent_workspace   #f7768e #f7768e #c0caf5
-#    }
-}
+# }
+exec "systemctl --user import-environment; systemctl --user start sway-session.target"
 exec --no-startup-id autotiling
 exec --no-startup-id $term
 # exec --no-startup-id steam -silent
