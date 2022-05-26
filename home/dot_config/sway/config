@@ -240,4 +240,5 @@ exec --no-startup-id $term
 # exec --no-startup-id discord --start-minimized
 exec --no-startup-id dex -a
 exec --no-startup-id dunst
+exec "systemctl --user import-environment; systemctl --user start sway-session.target"
 #}}}
