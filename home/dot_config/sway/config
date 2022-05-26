@@ -1,6 +1,6 @@
 include /etc/sway/config.d/50-systemd-user.conf
 
-###:{{{ Variables
+###{{{ :Variables
 set $mod Mod4
 set $left h
 set $down j
@@ -8,8 +8,8 @@ set $up k
 set $right l
 set $term kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty 
 set $menu wofi
-#:}}}
-###:{{{ Output configuration
+#}}}
+###{{{ :Output configuration
 output * bg /usr/share/backgrounds/teahub.io-black-wallpaper-hd-93723.png fill
 # output * bg /usr/share/backgrounds/Dune.jpg fill
 default_border none
@@ -19,8 +19,8 @@ gaps inner 0
 exec_always --no-startup-id kitti3 -p CC -s 1.0 1.0
 bindsym $mod+n nop kitti3 
 
-#:}}}
-###:{{{ Idle configuration
+#}}}
+###{{{ :Idle configuration
 #:
 #: Example configuration:
 #:
@@ -32,8 +32,8 @@ bindsym $mod+n nop kitti3
 #: This will lock your screen after 300 seconds of inactivity, then turn off
 #: your displays after another 300 seconds, and turn your screens back on when
 #: resumed. It will also lock your screen before your computer goes to sleep.
-#:}}}
-###:{{{ Input configuration
+#}}}
+###{{{ :Input configuration
   input "1133:16469:Logitech_Wireless_Mouse" {
 #:       dwt enabled
       left_handed enabled
@@ -42,8 +42,8 @@ bindsym $mod+n nop kitti3
       middle_emulation enabled
   }
 input * xkb_numlock enable
-#:}}}
-###{{{ Key bindings
+#}}}
+###{{{ :Key bindings
 #: Basics:
     #: Start a terminal
     bindsym $mod+Return exec --no-startup-id $term
@@ -170,42 +170,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 #}}}
-#:{{{ Colors
-#  # theme colors
-# set_from_resource $bgcolor  	color4
-# set_from_resource $ibgcolor	color0
-# set_from_resource $textcolor	color7
-# set_from_resource $ubgcolor 	color1
-
-# # class                   border    backgr.   text        indic.   child_border
-#   client.focused          $bgcolor  $bgcolor  $textcolor  $bgcolor
-#   client.focused_inactive $ibgcolor $ibgcolor $textcolor  $ibgcolor
-#   client.unfocused        #ibgclor  $ibgcolor $textcolor  $ibgcolor
-#   client.urgent           $ubgcolor $ubgcolor $textcolor  $ubgcolor
-#   client.placeholder      #000000 #0c0c0c #ffffff #000000 
-
-#   client.background       $bgcolor
-
-# # color palette used for the terminal ( ~/.Xresources file )
-# set_from_resource $term_background background
-# set_from_resource $term_foreground foreground
-# set_from_resource $term_color0     color0
-# set_from_resource $term_color1     color1
-# set_from_resource $term_color2     color2
-# set_from_resource $term_color3     color3
-# set_from_resource $term_color4     color4
-# set_from_resource $term_color5     color5
-# set_from_resource $term_color6     color6
-# set_from_resource $term_color7     color7
-# set_from_resource $term_color8     color8
-# set_from_resource $term_color9     color9
-# set_from_resource $term_color10    color10
-# set_from_resource $term_color11    color11
-# set_from_resource $term_color12    color12
-# set_from_resource $term_color13    color13
-# set_from_resource $term_color14    color14
-# set_from_resource $term_color15    color15
-#:}}}
+#{{{ :Colors
+#}}}
 #{{{ Status Bar:
 # font pango:SauceCodePro Nerd Font Mono Mono 11
 #
@@ -216,6 +182,8 @@ bindsym $mod+r mode "resize"
     # tray_output primary
     # swaybar_command waybar
 # }
+#}}}
+#{{{ Startup
 exec "systemctl --user import-environment; systemctl --user start sway-session.target"
 exec --no-startup-id autotiling
 exec --no-startup-id $term
