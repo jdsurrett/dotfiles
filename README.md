@@ -13,10 +13,16 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 * [X] ~~Fix wofi.~~
 * [X] ~~Setup notification daemon.~~
 * [ ] Rewrite all files.
-* [ ] Setup email client.
+* [ ] Integrate email.
+* [ ] Write shell scrips.
 <!-- * [X] ~~PLACEHOLDER~~ -->
 
-## Rewrite goals
+## Rewrite goals:
 
 * [ ] Turn lvim configuration into nvim configuration.
 * [ ] Unify key bindings.
+
+## Shell scrips:
+
+|name|description|args|
+
