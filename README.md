@@ -15,3 +15,8 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 * [ ] Rewrite all files.
 * [ ] Setup email client.
 <!-- * [X] ~~PLACEHOLDER~~ -->
+
+## Rewrite goals
+
+* [ ] Turn lvim configuration into nvim configuration.
+* [ ] Unify key bindings.
