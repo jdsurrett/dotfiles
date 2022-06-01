@@ -25,4 +25,5 @@ sh -c "$(curl -fsLS https://github.com/jdsurrett/dotfiles/raw/main/installer)" -
 ## Shell scrips:
 
 |name|description|args|
+|--|--|--|
 
