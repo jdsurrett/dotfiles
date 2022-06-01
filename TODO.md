@@ -18,7 +18,7 @@
 
 ## Shell scrips:
 
-||name|description|args|keys|
-|--|--|--|--|--|
-|[ ]|todo|a todo list app| --help|win+shift+t|
-|[ ]|chezmoi_cd|chezmoi in a vm| --help|n/a|
+|name|description|args|keys|
+|--|--|--|--|
+|todo|a todo list app| --help|win+shift+t|
+|chezmoi_cd|chezmoi in a VM| --help|n/a|
