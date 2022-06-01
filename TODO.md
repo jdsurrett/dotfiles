@@ -7,8 +7,8 @@
 * [X] ~~Fix wofi.~~
 * [X] ~~Setup notification daemon.~~
 * [ ] Rewrite all files.
-* [ ] Integrate email.
 * [ ] Write shell scrips.
+* [ ] Integrate email.
 <!-- * [X] ~~PLACEHOLDER~~ -->
 
 ## Rewrite goals:
