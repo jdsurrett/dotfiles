@@ -1,6 +1,4 @@
-
-
-## ToDo:
+# ToDo:
 
 * [X] ~~Refactor lvim configuration file.~~
 * [X] ~~Refactor kitty configuration file.~~
@@ -11,6 +9,7 @@
 * [ ] Rewrite all files.
 * [ ] Write shell scrips.
 * [ ] Integrate email.
+
 <!-- * [X] ~~PLACEHOLDER~~ -->
 
 ## Rewrite goals:
@@ -23,4 +22,5 @@
 |name|description|args|keys|
 |--|--|--|--|
 |todo|a todo list app| --help|win+shift+t|
-|chezmoi_cd|chezmoi in a VM| --help|N/a|
+|chezmoi_cd|chezmoi in a VM| --help|tty|
+<!-- ||||| -->
