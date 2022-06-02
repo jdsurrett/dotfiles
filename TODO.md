@@ -7,17 +7,17 @@
 * [X] ~~Fix wofi.~~
 * [X] ~~Setup notification daemon.~~
 * [ ] Rewrite all files.
-* [ ] Write shell scrips.
-* [ ] Integrate email.
-
-## Rewrite goals:
-
 * [ ] Port the lvim configuration into nvim.
 * [ ] Unify key bindings.
 * [ ] Write chezmoi templates.
 * [ ] Write environment.d files.
 * [ ] Redesign way bar.
 * [ ] 
+* [ ] Write shell scrips.
+* [ ] Integrate email.
+
+## Rewrite goals:
+
 
 ## Shell scrips:
 
