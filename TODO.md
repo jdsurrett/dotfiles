@@ -1,3 +1,5 @@
+
+
 ## ToDo:
 
 * [X] ~~Refactor lvim configuration file.~~
@@ -21,4 +23,4 @@
 |name|description|args|keys|
 |--|--|--|--|
 |todo|a todo list app| --help|win+shift+t|
-|chezmoi_cd|chezmoi in a VM| --help|n/a|
+|chezmoi_cd|chezmoi in a VM| --help|N/a|
