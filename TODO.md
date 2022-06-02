@@ -10,12 +10,14 @@
 * [ ] Write shell scrips.
 * [ ] Integrate email.
 
-<!-- * [X] ~~PLACEHOLDER~~ -->
-
 ## Rewrite goals:
 
 * [ ] Port the lvim configuration into nvim.
 * [ ] Unify key bindings.
+* [ ] Write chezmoi templates.
+* [ ] Write environment.d files.
+* [ ] Redesign way bar.
+* [ ] 
 
 ## Shell scrips:
 
@@ -23,4 +25,5 @@
 |--|--|--|--|
 |todo|a todo list app| --help|win+shift+t|
 |chezmoi_cd|chezmoi in a VM| --help|tty|
+
 <!-- ||||| -->
