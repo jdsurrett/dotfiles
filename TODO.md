@@ -13,7 +13,7 @@
 
 ## Rewrite goals:
 
-* [ ] Turn lvim configuration into nvim configuration.
+* [ ] Port the lvim configuration into nvim.
 * [ ] Unify key bindings.
 
 ## Shell scrips:
