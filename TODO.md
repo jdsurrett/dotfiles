@@ -13,6 +13,8 @@
     * [ ] Write environment.d files.
     * [ ] Redesign way bar.
 * [ ] Write shell scrips.
+    * [ ] todo
+    * [ ] chezmoi_cd
 * [ ] Integrate email.
 
 ## Shell scrips:
