@@ -13,13 +13,13 @@
     * [ ] Write environment.d files.
     * [ ] Redesign way bar.
 * [ ] Write shell scrips.
-    |name|description|args|keys|
-    |-|-|-|-|
-    |todo|a todo list app| --help|win+shift+t|
-    |chezmoi_cd|chezmoi in a VM| --help|tty|
-
-    <!-- ||||| -->
 * [ ] Integrate email.
 
 ## Shell scrips:
 
+|name|description|args|keys|
+|-|-|-|-|
+|todo|a todo list app| --help|win+shift+t|
+|chezmoi_cd|chezmoi in a VM| --help|tty|
+
+<!-- ||||| -->
