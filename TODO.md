@@ -12,10 +12,10 @@
     * [ ] Write chezmoi templates.
     * [ ] Write environment.d files.
     * [ ] Redesign way bar.
-* [ ] Write shell scrips.[^1]
+* [ ] Write shell scrips.
 * [ ] Integrate email.
 
-[^1]: ## Shell scrips:
+## Shell scrips:
 
 |name|description|args|keys|
 |-|-|-|-|
