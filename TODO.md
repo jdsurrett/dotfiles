@@ -20,9 +20,9 @@
 
 ## Shell scrips:
 
-| Name       | Description              | Args   | Interaction method       |
-|------------|--------------------------|--------|--------------------------|
-| todo       | A todo list, wofi script | --help | key binding: win+shift+t |
-| chezmoi_cd | Chezmoi in a VM          | --help | ran by chezmoi           |
+| Name        | Description               | Args    | Interaction method        |
+|:------------|:--------------------------|:--------|:--------------------------|
+| todo        | A todo list, wofi script  | --help  | key binding: win+shift+t  |
+| chezmoi_cd  | Chezmoi in a VM           | --help  | ran by chezmoi            |
 
 <!-- ||||| -->
