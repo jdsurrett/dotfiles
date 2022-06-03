@@ -7,8 +7,8 @@
 * [X] ~~Fix wofi.~~
 * [X] ~~Setup notification daemon.~~
 * [ ] Write shell scrips.
-    * [ ] todo
     * [ ] chezmoi_cd
+    * [ ] todo
 * [ ] Rewrite all files.
     * [ ] Write chezmoi templates.
     * [ ] Unify key bindings.
