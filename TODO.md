@@ -20,10 +20,10 @@
 
 ## Shell scrips:
 
-|name        | description     | args   | keys       |
-|------------|-----------------|--------|------------|
-| todo       | a todo list app | --help | win+shift+t|
-|            | test            |        |            |
-| chezmoi_cd | chezmoi in a VM | --help | tty        |
+|name        | description         | args   | keys       |
+|------------|---------------------|--------|------------|
+| todo       | a todo list app<br> | --help | win+shift+t|
+|            | test                |        |            |
+| chezmoi_cd | chezmoi in a VM     | --help | tty        |
 
 <!-- ||||| -->
