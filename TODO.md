@@ -22,8 +22,8 @@
 
 |name        | description         | args   | keys       |
 |------------|---------------------|--------|------------|
-| todo       | a todo list app<br> | --help | win+shift+t|
-|            | test                |        |            |
+| todo       | a todo list app<br>test | --help | win+shift+t|
+|            |                     |        |            |
 | chezmoi_cd | chezmoi in a VM     | --help | tty        |
 
 <!-- ||||| -->
