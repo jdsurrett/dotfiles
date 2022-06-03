@@ -6,16 +6,16 @@
 * [X] ~~Fix waybar.~~
 * [X] ~~Fix wofi.~~
 * [X] ~~Setup notification daemon.~~
+* [ ] Write shell scrips.
+    * [ ] todo
+    * [ ] chezmoi_cd
 * [ ] Rewrite all files.
     * [ ] Write chezmoi templates.
     * [ ] Unify key bindings.
     * [ ] Port the lvim configuration into nvim.
     * [ ] Write environment.d files.
-    * [ ] Configure local system.d
+    * [ ] Configure systemd/user files.
     * [ ] Redesign way bar.
-* [ ] Write shell scrips.
-    * [ ] todo
-    * [ ] chezmoi_cd
 * [ ] Integrate email.
 
 ## Shell scrips:
