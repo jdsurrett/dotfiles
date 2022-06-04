@@ -28,16 +28,8 @@ exec_always --no-startup-id kitti3 -p CC -s 1.0 1.0
 #: This will lock your screen after 300 seconds of inactivity, then turn off
 #: your displays after another 300 seconds, and turn your screens back on when
 #: resumed. It will also lock your screen before your computer goes to sleep.
-### :Input configuration
-  input "1133:16469:Logitech_Wireless_Mouse" {
-#:       dwt enabled
-      left_handed enabled
-#:       tap enabled
-#:       natural_scroll enabled
-      middle_emulation enabled
-  }
-input * xkb_numlock enable
-{{template "sway_keys" .}}
+{{ template "sway_input" . }}
+{{ template "sway_keys" . }}
 # :Colors
 # Status Bar:
 # font pango:SauceCodePro Nerd Font Mono Mono 11
