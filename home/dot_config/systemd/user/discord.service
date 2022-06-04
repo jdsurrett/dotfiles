@@ -1,4 +1,4 @@
-[Desktop Entry]
-Exec=/usr/bin/discord --start-minimized
-Name=discord
-Type=Application
+[Unit]
+Description=discord
+[Service]
+ExecStart=/usr/bin/discord --start-minimized

@@ -1,5 +1,4 @@
-[Desktop Entry]
-Exec=/usr/bin/dunst
-Name=dunst
-Comment=A customizable and lightweight notification-daemon
-Type=Application
+[Unit]
+Description=A customizable and lightweight notification-daemon
+[Service]
+ExecStart=/usr/bin/dunst
