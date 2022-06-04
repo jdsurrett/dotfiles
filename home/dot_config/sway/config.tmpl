@@ -6,7 +6,6 @@ set $left h
 set $down j
 set $up k
 set $right l
-# set $term kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty 
 set $term {{ .term }}
 set $menu wofi
 ###:Output configuration
@@ -17,7 +16,6 @@ for_window [class="^.*"] border normal 2
 smart_borders on
 gaps inner 0
 exec_always --no-startup-id kitti3 -p CC -s 1.0 1.0
-bindsym $mod+n nop kitti3 
 ### :Idle configuration
 #:
 #: Example configuration:
@@ -42,14 +40,14 @@ input * xkb_numlock enable
 ### :Key bindings
 #: Basics:
     #: Start a terminal
-    bindsym $mod+Return exec --no-startup-id $term
+    bindsym $mod+n exec --no-startup-id $term
 #: for_window [title="^terminal"] resize set width 42 ppt
 
     #: Kill focused window
     bindsym $mod+Shift+q kill
 
     #: Start your launcher
-    bindsym $mod+d exec --no-startup-id $menu
+    bindsym $mod+Return exec --no-startup-id $menu
 
     #: Drag floating windows by holding down $mod and left mouse button.
     #: Resize them with right mouse button + $mod.
