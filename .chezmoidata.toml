@@ -1,0 +1,2 @@
+fontSize = 12
+term = "kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty"
