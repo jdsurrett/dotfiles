@@ -1,0 +1,8 @@
+###:Output configuration
+output * bg /usr/share/backgrounds/teahub.io-black-wallpaper-hd-93723.png fill
+# output * bg /usr/share/backgrounds/Dune.jpg fill
+default_border none
+for_window [class="^.*"] border normal 2
+smart_borders on
+gaps inner 0
+exec_always --no-startup-id kitti3 -p CC -s 1.0 1.0
