@@ -1,0 +1,4 @@
+[Unit]
+Description=dex
+[Service]
+ExecStart=/usr/bin/dex -a
