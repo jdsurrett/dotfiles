@@ -1,7 +1,7 @@
 ### :Key bindings
 #: Basics:
     #: Start a terminal
-    bindsym $mod+n exec --no-startup-id $term
+    bindsym $mod+n exec --no-startup-id {{ .term }}
 #: for_window [title="^terminal"] resize set width 42 ppt
 
     #: Kill focused window

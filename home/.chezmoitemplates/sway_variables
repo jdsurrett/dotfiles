@@ -4,5 +4,5 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term {{ .term }}
+# set $term {{ .term }}
 set $menu wofi
