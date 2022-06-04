@@ -1,5 +1,4 @@
-[Desktop Entry]
+[Unit]
+Description=a launcher for the Steam client from Valve Corporation
+[Service]
 Exec=/usr/bin/steam -silent
-Name=steam
-Comment=a launcher for the Steam client from Valve Corporation
-Type=Application

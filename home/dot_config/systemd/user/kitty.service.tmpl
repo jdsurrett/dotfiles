@@ -1,5 +1,4 @@
-[Desktop Entry]
-Exec=/usr/bin/{{- .term }}
-Name=kitty
-Comment=kitty Documentation
-Type=Application
+[Unit]
+Description=kitty
+[Service]
+ExecStart=/usr/bin/{{- .term }}
