@@ -1,5 +1,2 @@
 # Startup
-exec --no-startup-id autotiling
-exec --no-startup-id {{ .term }}
 exec --no-startup-id dex -a
-exec --no-startup-id dunst
