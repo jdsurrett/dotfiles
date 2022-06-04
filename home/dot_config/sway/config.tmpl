@@ -16,18 +16,7 @@ for_window [class="^.*"] border normal 2
 smart_borders on
 gaps inner 0
 exec_always --no-startup-id kitti3 -p CC -s 1.0 1.0
-### :Idle configuration
-#:
-#: Example configuration:
-#:
-#: exec swayidle -w \
-#:          timeout 300 'swaylock -f -c 000000' \
-#:          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#:          before-sleep 'swaylock -f -c 000000'
-#:
-#: This will lock your screen after 300 seconds of inactivity, then turn off
-#: your displays after another 300 seconds, and turn your screens back on when
-#: resumed. It will also lock your screen before your computer goes to sleep.
+{{ template "sway_idle" . }}
 {{ template "sway_input" . }}
 {{ template "sway_keys" . }}
 # :Colors
