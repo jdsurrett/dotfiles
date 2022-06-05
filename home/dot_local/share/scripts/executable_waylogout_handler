@@ -26,7 +26,8 @@ waylogout \
 	--line-color 00000000 \
 	--inside-color 00000088 \
 	--separator-color 00000000 \
-	--fade-in 0.2" \
+	--fade-in 0.2\
+    --grace-no-mouse" \
 	--poweroff-command="systemctl poweroff" \
 	--reboot-command="systemctl reboot" \
 	--selection-label
