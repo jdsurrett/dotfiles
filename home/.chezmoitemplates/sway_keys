@@ -1,7 +1,7 @@
 ### :Key bindings
 #: Basics:
     #: Start a terminal
-    bindsym {{ .sway.mod -}}+` exec --no-startup-id {{ .sway.term }}
+    bindsym {{ .sway.mod -}}+n exec --no-startup-id {{ .sway.term }}
 #: for_window [title="^terminal"] resize set width 42 ppt
 
     #: Kill focused window
