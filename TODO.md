@@ -6,9 +6,6 @@
 * [X] ~~Fix waybar.~~
 * [X] ~~Fix wofi.~~
 * [X] ~~Setup notification daemon.~~
-* [ ] Write shell scrips.
-    * [ ] chezmoi_cd
-    * [ ] todo
 * [ ] Rewrite all files.
     * [ ] Write chezmoi templates.
     * [ ] Unify key bindings.
@@ -16,6 +13,9 @@
     * [ ] Write environment.d files.
     * [ ] Configure systemd/user files.
     * [ ] Redesign way bar.
+* [ ] Write shell scrips.
+    * [ ] chezmoi_cd
+    * [ ] todo
 * [ ] Integrate email.
 
 ## Shell scrips:
