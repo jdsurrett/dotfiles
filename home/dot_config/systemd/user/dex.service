@@ -3,7 +3,7 @@ Description=dex
 PartOf=graphical-session.target
 
 [Service]
-Type=forking
+Type=simple
 ExecStart=/usr/bin/dex -a
 
 [Install]
