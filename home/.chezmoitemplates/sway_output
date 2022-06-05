@@ -1,5 +1,6 @@
 ###:Output configuration
-output * bg /usr/share/backgrounds/teahub.io-black-wallpaper-hd-93723.png fill
+output * bg ~/.local/share/backgrounds/teahub.io-black-wallpaper-hd-93723.png fill
+# output * bg /usr/share/backgrounds/teahub.io-black-wallpaper-hd-93723.png fill
 # output * bg /usr/share/backgrounds/Dune.jpg fill
 default_border none
 for_window [class="^.*"] border normal 2
