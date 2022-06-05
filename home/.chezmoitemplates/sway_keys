@@ -1,117 +1,117 @@
 ### :Key bindings
 #: Basics:
     #: Start a terminal
-    bindsym $mod+n exec --no-startup-id {{ .sway.term }}
+    bindsym {{ .sway.mod -}}+n exec --no-startup-id {{ .sway.term }}
 #: for_window [title="^terminal"] resize set width 42 ppt
 
     #: Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym {{ .sway.mod -}}+Shift+q kill
 
     #: Start your launcher
-    bindsym $mod+Return exec --no-startup-id {{ .sway.menu }}
+    bindsym {{ .sway.mod -}}+Return exec --no-startup-id {{ .sway.menu }}
 
-    #: Drag floating windows by holding down $mod and left mouse button.
-    #: Resize them with right mouse button + $mod.
+    #: Drag floating windows by holding down {{ .sway.mod -}} and left mouse button.
+    #: Resize them with right mouse button + {{ .sway.mod -}}.
     #: Despite the name, also works for non-floating windows.
     #: Change normal to inverse to use left mouse button for resizing and right
     #: mouse button for dragging.
-    floating_modifier $mod normal
+    floating_modifier {{ .sway.mod -}} normal
 
     #: Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym {{ .sway.mod -}}+Shift+c reload
 
     #: Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym {{ .sway.mod -}}+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 #: Moving around:
     #: Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
-    #: Or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
+    bindsym {{ .sway.mod -}}+{{- .sway.left}} focus left
+    bindsym {{ .sway.mod -}}+{{- .sway.down}} focus down
+    bindsym {{ .sway.mod -}}+{{- .sway.up}} focus up
+    bindsym {{ .sway.mod -}}+{{- .sway.right}} focus right
+    #: Or use {{ .sway.mod -}}+[up|down|left|right]
+    bindsym {{ .sway.mod -}}+Left focus left
+    bindsym {{ .sway.mod -}}+Down focus down
+    bindsym {{ .sway.mod -}}+Up focus up
+    bindsym {{ .sway.mod -}}+Right focus right
 
     #: Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+    bindsym {{ .sway.mod -}}+Shift+{{- .sway.left}} move left
+    bindsym {{ .sway.mod -}}+Shift+{{- .sway.down}} move down
+    bindsym {{ .sway.mod -}}+Shift+{{- .sway.up}} move up
+    bindsym {{ .sway.mod -}}+Shift+{{- .sway.right}} move right
     #: Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
+    bindsym {{ .sway.mod -}}+Shift+Left move left
+    bindsym {{ .sway.mod -}}+Shift+Down move down
+    bindsym {{ .sway.mod -}}+Shift+Up move up
+    bindsym {{ .sway.mod -}}+Shift+Right move right
 #: Workspaces:
     #: Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
+    bindsym {{ .sway.mod -}}+1 workspace number 1
+    bindsym {{ .sway.mod -}}+2 workspace number 2
+    bindsym {{ .sway.mod -}}+3 workspace number 3
+    bindsym {{ .sway.mod -}}+4 workspace number 4
+    bindsym {{ .sway.mod -}}+5 workspace number 5
+    bindsym {{ .sway.mod -}}+6 workspace number 6
+    bindsym {{ .sway.mod -}}+7 workspace number 7
+    bindsym {{ .sway.mod -}}+8 workspace number 8
+    bindsym {{ .sway.mod -}}+9 workspace number 9
+    bindsym {{ .sway.mod -}}+0 workspace number 10
     #: Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
-    bindsym $mod+Shift+7 move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10
+    bindsym {{ .sway.mod -}}+Shift+1 move container to workspace number 1
+    bindsym {{ .sway.mod -}}+Shift+2 move container to workspace number 2
+    bindsym {{ .sway.mod -}}+Shift+3 move container to workspace number 3
+    bindsym {{ .sway.mod -}}+Shift+4 move container to workspace number 4
+    bindsym {{ .sway.mod -}}+Shift+5 move container to workspace number 5
+    bindsym {{ .sway.mod -}}+Shift+6 move container to workspace number 6
+    bindsym {{ .sway.mod -}}+Shift+7 move container to workspace number 7
+    bindsym {{ .sway.mod -}}+Shift+8 move container to workspace number 8
+    bindsym {{ .sway.mod -}}+Shift+9 move container to workspace number 9
+    bindsym {{ .sway.mod -}}+Shift+0 move container to workspace number 10
     #: Note: workspaces can have any name you want, not just numbers.
     #: We just use 1-10 as the default.
 #: Layout stuff:
     #: You can "split" the current object of your focus with
-    #: $mod+b or $mod+v, for horizontal and vertical splits
+    #: {{ .sway.mod -}}+b or $mod+v, for horizontal and vertical splits
     #: respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym {{ .sway.mod -}}+b splith
+    bindsym {{ .sway.mod -}}+v splitv
 
     #: Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    bindsym {{ .sway.mod -}}+s layout stacking
+    bindsym {{ .sway.mod -}}+w layout tabbed
+    bindsym {{ .sway.mod -}}+e layout toggle split
 
     #: Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    bindsym {{ .sway.mod -}}+f fullscreen
 
     #: Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym {{ .sway.mod -}}+Shift+space floating toggle
 
     #: Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    bindsym {{ .sway.mod -}}+space focus mode_toggle
 
     #: Move focus to the parent container
-    bindsym $mod+a focus parent
+    bindsym {{ .sway.mod -}}+a focus parent
 #: Scratchpad:
     #: Sway has a "scratchpad", which is a bag of holding for windows.
     #: You can send windows there and get them back later.
 
     #: Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
+    bindsym {{ .sway.mod -}}+Shift+minus move scratchpad
 
     #: Show the next scratchpad window or hide the focused scratchpad window.
     #: If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+    bindsym {{ .sway.mod -}}+minus scratchpad show
 #: Resizing containers:
 mode "resize" {
     #: left will shrink the containers width
     #: right will grow the containers width
     #: up will shrink the containers height
     #: down will grow the containers height
-    bindsym $left resize shrink width 1px
-    bindsym $down resize grow height 1px
-    bindsym $up resize shrink height 1px
-    bindsym $right resize grow width 1px
+    bindsym {{ .sway.left}} resize shrink width 1px
+    bindsym {{ .sway.down}} resize grow height 1px
+    bindsym {{ .sway.up}} resize shrink height 1px
+    bindsym {{ .sway.right}} resize grow width 1px
 
     #: Ditto, with arrow keys
     bindsym Left resize shrink width 10px
@@ -123,4 +123,4 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym {{ .sway.mod -}}+r mode "resize"
