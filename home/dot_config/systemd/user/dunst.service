@@ -1,4 +1,10 @@
 [Unit]
 Description=A customizable and lightweight notification-daemon
+PartOf=graphical-session.target
+
 [Service]
+Type=forking
 ExecStart=/usr/bin/dunst
+
+[Install]
+WantedBy=sway-session.target
