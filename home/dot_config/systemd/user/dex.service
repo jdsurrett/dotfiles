@@ -1,2 +1,10 @@
+[Unit]
+Description=dex
+PartOf=graphical-session.target
+
 [Service]
+Type=simple
 ExecStart=/usr/bin/dex -a
+
+[Install]
+WantedBy=sway-session.target
