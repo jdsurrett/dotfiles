@@ -8,11 +8,11 @@
 * [X] ~~Setup notification daemon.~~
 * [ ] Rewrite all files.
     * [ ] Write chezmoi templates.
-    * [ ] Unify key bindings.
-    * [ ] Port the lvim configuration into nvim.
+    * [ ] Redesign way bar.
     * [ ] Write environment.d files.
     * [ ] Configure systemd/user files.
-    * [ ] Redesign way bar.
+    * [ ] Port the lvim configuration into nvim.
+    * [ ] Unify key bindings.
 * [ ] Write shell scrips.
     * [ ] chezmoi_cd
     * [ ] todo
