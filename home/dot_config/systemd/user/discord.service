@@ -1,4 +1,10 @@
 [Unit]
 Description=discord
+PartOf=graphical-session.target
+
 [Service]
+Type=forking
 ExecStart=/usr/bin/discord --start-minimized
+
+[Install]
+WantedBy=sway-session.target

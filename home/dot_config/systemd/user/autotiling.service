@@ -1,4 +1,10 @@
 [Unit]
 Description=autotiling
+PartOf=graphical-session.target
+
 [Service]
+Type=forking
 ExecStart=/usr/bin/autotiling
+
+[Install]
+WantedBy=sway-session.target

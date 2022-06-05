@@ -1,4 +1,10 @@
 [Unit]
 Description=a launcher for the Steam client from Valve Corporation
+PartOf=graphical-session.target
+
 [Service]
+Type=forking
 Exec=/usr/bin/steam -silent
+
+[Install]
+WantedBy=sway-session.target
