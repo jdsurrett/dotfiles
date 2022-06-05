@@ -7,10 +7,10 @@
 * [X] ~~Fix wofi.~~
 * [X] ~~Setup notification daemon.~~
 * [ ] Rewrite all files.
+    * [X] Configure systemd/user files.
     * [ ] Write chezmoi templates.
     * [ ] Redesign way bar.
     * [ ] Write environment.d files.
-    * [ ] Configure systemd/user files.
     * [ ] Port the lvim configuration into nvim.
     * [ ] Unify key bindings.
 * [ ] Write shell scrips.
