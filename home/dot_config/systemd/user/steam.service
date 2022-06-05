@@ -3,7 +3,7 @@ Description=a launcher for the Steam client from Valve Corporation
 PartOf=graphical-session.target
 
 [Service]
-Type=simple
+Type=exec
 Exec=/usr/bin/steam -silent
 
 [Install]
