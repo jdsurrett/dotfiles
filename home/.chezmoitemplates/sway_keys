@@ -9,6 +9,7 @@
 
     #: Start your launcher
     bindsym {{ .sway.mod -}}+Return exec --no-startup-id {{ .sway.menu }}
+    bindsym Menu+Return exec --no-startup-id {{ .sway.menu }}
 
     #: Drag floating windows by holding down {{ .sway.mod -}} and left mouse button.
     #: Resize them with right mouse button + {{ .sway.mod -}}.
