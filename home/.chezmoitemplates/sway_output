@@ -3,7 +3,5 @@ font pango:Fira Code 10
 output * bg ~/.local/share/backgrounds/futurist-city-2.jpg fill
 default_border pixel 2
 titlebar_border_thickness 2
-gaps outer 7
+gaps outer 5
 gaps inner 3
-# for_window [class="^.*"] border normal 2
-# smart_borders on
