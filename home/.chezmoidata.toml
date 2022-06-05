@@ -1,3 +1,4 @@
 fontSize = 12
 [sway]
 term = "kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty"
+menu = "wofi"
