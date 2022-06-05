@@ -5,4 +5,4 @@ for_window [class="^.*"] border normal 2
 smart_borders on
 gaps inner 0
 font pango:Fira Code 10
-exec_always --no-startup-id kitti3 -p CC -s 1.0 1.0
+# exec_always --no-startup-id kitti3 -p CC -s 1.0 1.0
