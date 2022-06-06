@@ -31,7 +31,7 @@ waylogout \
 	--inside-selection-color=33cc3366 \
 	--text-selection-color=eaeaeaaa \
 	--line-selection-color=00000000 \
-	--lock-command='$(swaylock_handler)' \
+	--lock-command=(swaylock_handler) \
 	--poweroff-command="systemctl poweroff" \
 	--reboot-command="systemctl reboot" \
 	--selection-label
