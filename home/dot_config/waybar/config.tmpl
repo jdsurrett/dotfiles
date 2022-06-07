@@ -1,4 +1,4 @@
-    // {{{ Bar configuration
+    // Bar configuration
     {
         "layer": "top", // Waybar at top layer
         "position": "top", // Waybar position (top|bottom|left|right)
@@ -42,9 +42,9 @@
             "custom/arrow7",
             "tray"
         ],
-        //}}}
-        //{{{ Modules configuration
-        // {{{ sway/workspaces
+        //
+        // Modules configuration
+        //  sway/workspaces
         "sway/workspaces": {
             "disable-scroll": true,
             "all-outputs": true,
@@ -60,14 +60,14 @@
                 "default": ""
             }
         },
-        //}}}
-        //{{{ sway/window
+        
+        // sway/window
         "sway/window": {
             "tooltip": false,
             "icon": false //Option to disable application icon.
         },
-        //}}}
-        //{{{ keyboard-state
+        
+        // keyboard-state
         "keyboard-state": {
             "numlock": true,
             "capslock": true,
@@ -77,13 +77,13 @@
                 "unlocked": ""
             }
         },
-        //}}}
-        //{{{ sway/mode
+        
+        // sway/mode
         "sway/mode": {
             "format": "<span style=\"italic\">>= {}</span>"
         },
-        //}}}
-        //{{{ mpd
+        
+        // mpd
         "mpd": {
             "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
             "format-disconnected": "Disconnected ",
@@ -110,8 +110,8 @@
             "tooltip-format": "MPD (connected)",
             "tooltip-format-disconnected": "MPD (disconnected)"
         },
-        //}}}
-        //{{{idle_inhibitor
+        
+        //idle_inhibitor
         "idle_inhibitor": {
             "format": "{icon}",
             "format-icons": {
@@ -119,14 +119,14 @@
                 "deactivated": ""
             }
         },
-        //}}}
-        //{{{tray
+        
+        //tray
         "tray": {
             "icon-size": 21,
             "spacing": 5
         },
-        //}}}
-        //{{{clock
+        
+        //clock
         "clock#dayofweek": {
             "interval": 10,
             "format": "{: %a}",
@@ -142,8 +142,8 @@
             "format": "{:%D}", // Icon: calendar-alt
             "tooltip": false
         },
-        //}}}
-        //{{{ cpu
+        
+        // cpu
         "cpu": {
             "interval": 6,
             "min-length": 6,
@@ -154,8 +154,8 @@
                 "critical": 90
             }
         },
-        //}}}
-        //{{{memory
+        
+        //memory
         "memory": {
             "interval": 6,
             "min-length": 6,
@@ -166,8 +166,8 @@
                 "critical": 90
             }
         },
-        //}}}
-        //{{{temperature
+        
+        //temperature
         "temperature": {
             // "thermal-zone": 2,
             "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -185,8 +185,8 @@
                 "" // Icon: temperature-full
             ]
         },
-        //}}}
-        //{{{backlight
+        
+        //backlight
         "backlight": {
             // "device": "acpi_video1",
             "format": "{percent}% {icon}",
@@ -202,8 +202,8 @@
                 ""
             ]
         },
-        //}}}
-        //{{{battery
+        
+        //battery
         "battery": {
             "states": {
                 // "good": 95,
@@ -224,13 +224,13 @@
                 ""
             ]
         },
-        //}}}
-        //{{{battery#bat2
+        
+        //battery#bat2
         "battery#bat2": {
             "bat": "BAT2"
         },
-        //}}}
-        //{{{network
+        
+        //network
         "network": {
             // "interface": "wlp2*", // (Optional) To force the use of this interface
             "interval": 6,
@@ -243,8 +243,8 @@
             "format-disconnected": "Disconnected ⚠ 睊",
             "format-alt": "{essid} "
         },
-        //}}}
-        //{{{pulseaudio
+        
+        //pulseaudio
         "pulseaudio": {
             // "scroll-step": 1, // %, can be a float
             "format": "{volume}% {icon} {format_source}",
@@ -268,8 +268,8 @@
             },
             "on-click": "pavucontrol"
         },
-        // }}}
-        //{{{custom/media
+        
+        //custom/media
         "custom/media": {
             "format": "{icon} {}",
             "return-type": "json",
@@ -282,8 +282,8 @@
             "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
             // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
         },
-        // }}}
-        //{{{ custom/arrow
+        
+        // custom/arrow
         "custom/spaces3": {
             "max-length": 1,
             "format": "║",
@@ -328,5 +328,5 @@
             "tooltip": false
         }
     }
-    //}}}
-    //}}}
+    
+    //
