@@ -1,4 +1,4 @@
-#: Fonts {{{
+#: Fonts 
 font_family      Fira Code
 bold_font        auto
 italic_font      auto
@@ -10,24 +10,24 @@ adjust_column_width 0
 adjust_baseline 0
 disable_ligatures cursor
 box_drawing_scale 0.001, 1, 1.5, 2
-#: }}}
-#: Cursor customization {{{
+
+#: Cursor customization 
 cursor none
 cursor_shape block
 cursor_beam_thickness 1.5
 cursor_underline_thickness 2.0
 cursor_blink_interval -1
 cursor_stop_blinking_after 15.0
-#: }}}
-#: Scrollback {{{
+
+#: Scrollback 
 scrollback_lines 2000
 scrollback_pager less --chop-long-lines --RAW-CONTROL-CHARS +INPUT_LINE_NUMBER
 scrollback_pager_history_size 512
 scrollback_fill_enlarged_window no
 wheel_scroll_multiplier 5.0
 touch_scroll_multiplier 1.0
-#: }}}
-#: Mouse {{{
+
+#: Mouse 
 mouse_hide_wait 3.0
 # url_color #0087bd
 url_style curly
@@ -64,13 +64,13 @@ mouse_map shift+left triplepress ungrabbed,grabbed mouse_selection line
 mouse_map ctrl+shift+alt+left triplepress ungrabbed,grabbed mouse_selection line_from_point
 mouse_map shift+right press ungrabbed,grabbed mouse_selection extend
 mouse_map ctrl+shift+right press ungrabbed mouse_show_command_output
-#: }}}
-#: Performance tuning {{{
+
+#: Performance tuning 
 repaint_delay 10
 input_delay 3
 sync_to_monitor yes
-#: }}}
-#: Terminal bell {{{
+
+#: Terminal bell 
 enable_audio_bell yes
 visual_bell_duration 0.0
 visual_bell_color none
@@ -78,8 +78,8 @@ window_alert_on_bell yes
 bell_on_tab "ﲌ "
 command_on_bell none
 bell_path none
-#: }}}
-#: Window layout {{{
+
+#: Window layout 
 remember_window_size  yes
 initial_window_width  640
 initial_window_height 400
@@ -105,8 +105,8 @@ resize_draw_strategy static
 resize_in_steps no
 visual_window_select_characters 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ
 confirm_os_window_close 0
-#: }}}
-#: Tab bar {{{
+
+#: Tab bar 
 tab_bar_edge bottom
 tab_bar_margin_width 0.0
 tab_bar_margin_height 0.0 0.0
@@ -122,12 +122,12 @@ tab_title_template " {index} ┊"
 active_tab_title_template " {index} ┊ {f'{title[:6]}…{title[-6:]}' if title.rindex(title[-1]) + 1 > 13 else title}"
 tab_bar_background none
 tab_bar_margin_color none
-#: }}}
-#: Color scheme {{{
+
+#: Color scheme 
 include color_themes/kitty_tokyonight_night.conf
 background_opacity 0.7
-#: }}}
-#: Advanced {{{
+
+#: Advanced 
 shell .
 editor .
 close_on_child_death no
@@ -140,8 +140,8 @@ clipboard_max_size 512
 allow_hyperlinks yes
 shell_integration enabled
 term xterm-kitty
-#: }}}
-#: OS specific tweaks {{{
+
+#: OS specific tweaks 
 wayland_titlebar_color system
 macos_titlebar_color system
 macos_option_as_alt no
@@ -153,19 +153,19 @@ macos_traditional_fullscreen no
 macos_show_window_title_in all
 macos_custom_beam_cursor no
 linux_display_server wayland
-#: }}}
-#: Keyboard shortcuts {{{
+
+#: Keyboard shortcuts 
 kitty_mod ctrl+shift
 clear_all_shortcuts yes
-#:}}}
-#: Clipboard {{{
+
+#: Clipboard 
 map kitty_mod+c copy_to_clipboard
 map kitty_mod+v paste_from_clipboard
 map kitty_mod+s  paste_from_selection
 map shift+insert paste_from_selection
 map kitty_mod+o pass_selection_to_program
-#: }}}
-#: Scrolling {{{
+
+#: Scrolling 
 map kitty_mod+up    scroll_line_up
 map kitty_mod+k     scroll_line_up
 map opt+cmd+page_up scroll_line_up
@@ -186,8 +186,8 @@ map kitty_mod+z scroll_to_prompt -1
 map kitty_mod+x scroll_to_prompt 1
 map kitty_mod+b show_scrollback
 map kitty_mod+g show_last_command_output
-#: }}}
-#: Window management {{{
+
+#: Window management 
 map ctrl+j kitten pass_keys.py neighboring_window bottom ctrl+j
 map ctrl+k kitten pass_keys.py neighboring_window top    ctrl+k
 map ctrl+h kitten pass_keys.py neighboring_window left   ctrl+h
@@ -230,8 +230,8 @@ map kitty_mod+f8 swap_with_window
 # map ctrl+k kitten pass_keys.py neighboring_window top    ctrl+k
 # map ctrl+h kitten pass_keys.py neighboring_window left   ctrl+h
 # map ctrl+l kitten pass_keys.py neighboring_window right  ctrl+l
-#: }}}
-#: Tab management {{{
+
+#: Tab management 
 map kitty_mod+right next_tab
 map shift+cmd+]     next_tab
 map ctrl+tab        next_tab
@@ -249,12 +249,12 @@ map kitty_mod+. move_tab_forward
 map kitty_mod+, move_tab_backward
 map kitty_mod+alt+t set_tab_title
 map shift+cmd+i     set_tab_title
-#: }}}
-#: Layout management {{{
+
+#: Layout management 
 map kitty_mod+p next_layout
 map ctrl+alt+t goto_layout tall
-#: }}}
-#: Font sizes {{{
+
+#: Font sizes 
 map kitty_mod+equal  change_font_size all +2.0
 map kitty_mod+plus   change_font_size all +2.0
 map kitty_mod+kp_add change_font_size all +2.0
@@ -267,8 +267,8 @@ map cmd+minus             change_font_size all -2.0
 map shift+cmd+minus       change_font_size all -2.0
 map kitty_mod+backspace change_font_size all 0
 map cmd+0               change_font_size all 0
-#: }}}
-#: Select and act on visible text {{{
+
+#: Select and act on visible text 
 map kitty_mod+e open_url_with_hints
 map kitty_mod+p>f kitten hints --type path --program -
 map kitty_mod+p>shift+f kitten hints --type path
@@ -277,8 +277,8 @@ map kitty_mod+p>w kitten hints --type word --program -
 map kitty_mod+p>h kitten hints --type hash --program -
 map kitty_mod+p>n kitten hints --type linenum
 map kitty_mod+p>y kitten hints --type hyperlink
-#: }}}
-#: Miscellaneous {{{
+
+#: Miscellaneous 
 map kitty_mod+f11 toggle_fullscreen
 map kitty_mod+f10 toggle_maximized
 map opt+cmd+s toggle_macos_secure_keyboard_entry
@@ -297,4 +297,4 @@ map kitty_mod+f5 load_config_file
 map ctrl+cmd+,   load_config_file
 map kitty_mod+f6 debug_config
 map opt+cmd+,    debug_config
-#: }}}
+
