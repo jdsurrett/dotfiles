@@ -1,9 +1,39 @@
-fontSize = 12
+[system]
+font = "Fira Code"
+
+[tokyo_night_storm]
+background = "#24283b"
+foreground = "#c0caf5"
+terminalBlack = "#414868"
+terminalRed = "#f7768e"
+terminalGreen = "#9ece6a"
+terminalYellow = "#e0af68"
+terminalBlue = "#7aa2f7"
+terminalMagenta = "#bb9af7"
+terminalCyan = "#7dcfff"
+terminalWhite = "#a9b1d6"
+terminalBrightBlack = "#414868"
+terminalBrightRed = "#f7768e"
+terminalBrightGreen = "#9ece6a"
+terminalBrightYellow = "#e0af68"
+terminalBrightBlue = "#7aa2f7"
+terminalBrightMagenta = "#bb9af7"
+terminalBrightCyan = "#7dcfff"
+terminalBrightWhite = "#c0caf5"
+
+
 [sway]
+fontSize = 10
 term = "kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty"
 menu = "wofi"
+background = "~/.local/share/backgrounds/futurist-city-2.jpg fill"
+
+# key bindings
 left = "h"
 down = "j"
 up = "k"
 right = "l"
 mod = "Mod4"
+
+[kitty]
+fontSize = 10
