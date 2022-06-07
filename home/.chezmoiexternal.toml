@@ -28,7 +28,7 @@ type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_storm.conf"
 refreshPeriod = "168h"
 
-[".local/share/backgrounds/futurist-city-2.jpg"]
+[".local/share/backgrounds/futurist-city.jpg"]
 type = "file"
 url = "https://resi.ze-robot.com/dl/fu/futurist-city-2-1920%C3%971080.jpg"
 

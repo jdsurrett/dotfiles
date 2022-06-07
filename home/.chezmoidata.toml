@@ -26,7 +26,7 @@ terminalBrightWhite = "#c0caf5"
 fontSize = 10
 term = "kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty"
 menu = "wofi"
-background = "~/.local/share/backgrounds/futurist-city-2.jpg fill"
+background = "~/.local/share/backgrounds/futurist-city.jpg fill"
 
 # key bindings
 left = "h"
