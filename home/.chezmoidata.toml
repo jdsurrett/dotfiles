@@ -23,7 +23,7 @@ terminalBrightWhite = "#c0caf5"
 
 
 [sway]
-fontSize = 10
+fontSize = "10"
 term = "kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty"
 menu = "wofi"
 background = "~/.local/share/backgrounds/futurist-city.jpg fill"
@@ -36,4 +36,4 @@ right = "l"
 mod = "Mod4"
 
 [kitty]
-fontSize = 10
+fontSize = "9.5"
