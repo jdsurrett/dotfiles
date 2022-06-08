@@ -1,0 +1,13 @@
+#: Advanced 
+shell .
+editor .
+close_on_child_death no
+allow_remote_control yes
+listen_on none
+update_check_interval 0
+startup_session none
+clipboard_control write-clipboard write-primary read-clipboard-ask read-primary-ask
+clipboard_max_size 512
+allow_hyperlinks yes
+shell_integration enabled
+term xterm-kitty

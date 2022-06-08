@@ -8,26 +8,8 @@
 {{ template "kitty_terminal_bell" . }} 
 {{ template "kitty_window_layout" . }}
 {{ template "kitty_tab_bar" . }}
-
-
-#: Color scheme 
-include color_themes/kitty_tokyonight_night.conf
-background_opacity 0.7
-
-#: Advanced 
-shell .
-editor .
-close_on_child_death no
-allow_remote_control yes
-listen_on none
-update_check_interval 0
-startup_session none
-clipboard_control write-clipboard write-primary read-clipboard-ask read-primary-ask
-clipboard_max_size 512
-allow_hyperlinks yes
-shell_integration enabled
-term xterm-kitty
-
+{{ template "kitty_color" . }}
+{{ template "kitty_advanced" . }}
 #: OS specific tweaks 
 wayland_titlebar_color system
 macos_titlebar_color system
