@@ -22,5 +22,5 @@ rm -f $HOME/.profile $ZDOTDIR/.zshenv
 cargo install fd-find taplo-cli
 cargo install --locked code-minimap bat
 
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 rm -rf $XDG_CONFIG_HOME/lvim/*
