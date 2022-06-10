@@ -1,8 +1,6 @@
 #!/usr/bin/env zsh
 set -eu
 
-if ! [[ -n "$@" ]]; then >&2 echo "Please set chezmoi github username" && return; fi
-
 export XDG_CONFIG_HOME=$HOME/.config
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
@@ -26,11 +24,3 @@ cargo install --locked code-minimap bat
 
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y
 rm -rf $XDG_CONFIG_HOME/lvim/*
-
-if ! [[ -x $(command -v chezmoi) ]]; then >&2
-    sh -c "$(curl -fsLS chezmoi.io/get)" -- $@
-    return
-else
-    chezmoi $@
-    return
-fi
