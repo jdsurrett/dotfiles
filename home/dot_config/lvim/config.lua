@@ -16,7 +16,7 @@ lvim.builtin.dap.active = true
 -- {{{ Colorscheme
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_hide_inactive_statusline = true
-vim.g.tokyonight_colors = { comment = "yellow" }
+vim.g.tokyonight_colors = {comment = "yellow"}
 vim.g.tokyonight_transparent = true
 vim.g.tokyonight_transparentSidebar = true
 lvim.colorscheme = "tokyonight"
@@ -37,17 +37,17 @@ lvim.builtin.alpha.mode = "dashboard"
 -- {{{ Lualine
 local components = require("lvim.core.lualine.components")
 lvim.builtin.lualine.options.theme = "tokyonight"
-lvim.builtin.lualine.sections.lualine_a = { 'mode' }
-lvim.builtin.lualine.sections.lualine_b = { components.filename }
-lvim.builtin.lualine.sections.lualine_c = { 'branch', 'diff' }
-lvim.builtin.lualine.sections.lualine_x = { 'diagnostics' }
+lvim.builtin.lualine.sections.lualine_a = {'mode'}
+lvim.builtin.lualine.sections.lualine_b = {components.filename}
+lvim.builtin.lualine.sections.lualine_c = {'branch', 'diff'}
+lvim.builtin.lualine.sections.lualine_x = {'diagnostics'}
 lvim.builtin.lualine.sections.lualine_y = {
     components.treesitter, components.lsp, 'filetype'
 }
 lvim.builtin.lualine.sections.lualine_z = {
     components.location, components.scrollbar
 }
-lvim.builtin.lualine.options.section_separators = { left = '', right = '' }
+lvim.builtin.lualine.options.section_separators = {left = '', right = ''}
 lvim.builtin.lualine.options.component_separators = {
     left = '┊',
     right = '┊'
@@ -65,7 +65,7 @@ lvim.builtin.treesitter.rainbow.max_file_lines = 1000
 -- }}}
 -- {{{ Bufferline
 lvim.builtin.bufferline.options.indicator_icon = "┊"
-lvim.builtin.bufferline.options.separator_style = { '┊', '┊' }
+lvim.builtin.bufferline.options.separator_style = {'┊', '┊'}
 -- }}}
 -- {{{ Keymappings
 lvim.leader = "space"
@@ -97,16 +97,16 @@ lvim.builtin.treesitter.ensure_installed = {
     "make", "cmake", "toml", "rust", "yaml"
     -- ,"zsh","python","tsx",
 }
-lvim.builtin.treesitter.ignore_install = { "java", "haskell" }
+lvim.builtin.treesitter.ignore_install = {"java", "haskell"}
 lvim.builtin.treesitter.highlight.enabled = true
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
-    { command = "lua-format", filetypes = { "lua" } }
+    {command = "lua-format", filetypes = {"lua"}}
     --
 }
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
-    { command = "luacheck", filetypes = { "lua" } }
+    {command = "luacheck", filetypes = {"lua"}}
     --
 }
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers,
@@ -116,7 +116,7 @@ linters.setup {
 -- {{{ Additional Plugins
 lvim.plugins = {
     -- {{{ Colorschemes
-    { "folke/tokyonight.nvim" }, -- }}}
+    {"folke/tokyonight.nvim"}, -- }}}
     -- {{{ Rust
     -- {{{Rust tools
     {
@@ -124,12 +124,12 @@ lvim.plugins = {
         config = function()
             local lsp_installer_servers = require "nvim-lsp-installer.servers"
             local _, requested_server =
-            lsp_installer_servers.get_server "rust_analyzer"
+                lsp_installer_servers.get_server "rust_analyzer"
             require("rust-tools").setup({
                 tools = {
                     autoSetHints = true,
                     hover_with_actions = true,
-                    runnables = { use_telescope = true }
+                    runnables = {use_telescope = true}
                 },
                 server = {
                     cmd_env = requested_server._default_options.cmd_env,
@@ -138,14 +138,14 @@ lvim.plugins = {
                 }
             })
         end,
-        ft = { "rust", "rs" }
+        ft = {"rust", "rs"}
     }, -- }}}
     -- {{{ Crates nvim
     -- {{{ Top
     {
         'saecki/crates.nvim',
         tag = 'v0.1.0',
-        requires = { 'nvim-lua/plenary.nvim' },
+        requires = {'nvim-lua/plenary.nvim'},
         config = function()
             require('crates').setup {
                 smart_insert = true,
@@ -202,14 +202,14 @@ lvim.plugins = {
                         transitive = "CratesNvimPopupTransitive"
                     },
                     keys = {
-                        hide = { "q", "<esc>" },
-                        select = { "<cr>" },
-                        select_alt = { "s" },
-                        copy_version = { "yy" },
-                        toggle_feature = { "<cr>" },
-                        goto_feature = { "gd", "K" },
-                        jump_forward_feature = { "<c-i>" },
-                        jump_back_feature = { "<c-o>" }
+                        hide = {"q", "<esc>"},
+                        select = {"<cr>"},
+                        select_alt = {"s"},
+                        copy_version = {"yy"},
+                        toggle_feature = {"<cr>"},
+                        goto_feature = {"gd", "K"},
+                        jump_forward_feature = {"<c-i>"},
+                        jump_back_feature = {"<c-o>"}
                     }
                 },
                 cmp = {
@@ -229,10 +229,10 @@ lvim.plugins = {
             require("autosave").setup({
                 execution_message = "AutoSave: saved at " ..
                     vim.fn.strftime("%I:%M %p ┊ %D"),
-                events = { "InsertLeave", "TextChanged" },
+                events = {"InsertLeave", "TextChanged"},
                 conditions = {
                     exists = true,
-                    filename_is_not = { "config.lua" },
+                    filename_is_not = {"config.lua"},
                     filetype_is_not = {},
                     modifiable = true
                 },
@@ -261,7 +261,7 @@ lvim.plugins = {
     -- -- {{{ Glow
     -- { "npxbr/glow.nvim", ft = { "markdown" }, run = "yay -S glow" }, -- }}}
     -- {{{ Vim Kitty Navigator
-    { "knubie/vim-kitty-navigator", run = "cp -f ./*.py ~/.config/kitty/" }, -- }}}
+    {"knubie/vim-kitty-navigator", run = "cp -f ./*.py ~/.config/kitty/"}, -- }}}
     -- {{{ Neoscroll
     {
         "karb94/neoscroll.nvim",
@@ -272,26 +272,26 @@ lvim.plugins = {
                 stop_eof = true, -- Stop at <EOF> when scrolling downwards
                 use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
                 respect_scrolloff = false, -- Stop scrolling when the cursor reaches the scrolloff margin of the file
-                cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+                cursor_scrolls_alone = true,
                 easing_function = nil, -- Default easing function
                 pre_hook = nil, -- Function to run before the scrolling animation starts
                 post_hook = nil -- Function to run after the scrolling animation ends
             })
             local t = {}
             -- Syntax: t[keys] = {function, {function arguments}}
-            t['<C-u>'] = { 'scroll', { '-vim.wo.scroll', 'true', '250' } }
-            t['<C-d>'] = { 'scroll', { 'vim.wo.scroll', 'true', '250' } }
+            t['<C-u>'] = {'scroll', {'-vim.wo.scroll', 'true', '250'}}
+            t['<C-d>'] = {'scroll', {'vim.wo.scroll', 'true', '250'}}
             t['<C-b>'] = {
-                'scroll', { '-vim.api.nvim_win_get_height(0)', 'true', '450' }
+                'scroll', {'-vim.api.nvim_win_get_height(0)', 'true', '450'}
             }
             t['<C-f>'] = {
-                'scroll', { 'vim.api.nvim_win_get_height(0)', 'true', '450' }
+                'scroll', {'vim.api.nvim_win_get_height(0)', 'true', '450'}
             }
-            t['<C-y>'] = { 'scroll', { '-0.10', 'false', '100' } }
-            t['<C-e>'] = { 'scroll', { '0.10', 'false', '100' } }
-            t['zt'] = { 'zt', { '250' } }
-            t['zz'] = { 'zz', { '250' } }
-            t['zb'] = { 'zb', { '250' } }
+            t['<C-y>'] = {'scroll', {'-0.10', 'false', '100'}}
+            t['<C-e>'] = {'scroll', {'0.10', 'false', '100'}}
+            t['zt'] = {'zt', {'250'}}
+            t['zz'] = {'zz', {'250'}}
+            t['zb'] = {'zb', {'250'}}
             require('neoscroll.config').set_mappings(t)
         end
     }, -- }}}
@@ -302,26 +302,26 @@ lvim.plugins = {
         config = function() require("todo-comments").setup() end
     }, -- }}}
     -- {{{ Vim-surround
-    { "tpope/vim-surround", keys = { "c", "d", "y" } }, -- }}}
-    -- {{{ Persistence
-    {
-        "folke/persistence.nvim",
-        event = "BufReadPre", -- this will only start session saving when an actual file was opened
-        module = "persistence",
-        config = function()
-            require("persistence").setup {
-                dir = vim.fn.expand(vim.fn.stdpath "config" .. "/session/"),
-                options = { "buffers", "curdir", "tabpages", "winsize" }
-            }
-        end
-    }, -- }}}
+    {"tpope/vim-surround", keys = {"c", "d", "y"}}, -- }}}
+    -- -- {{{ Persistence
+    -- {
+    --     "folke/persistence.nvim",
+    --     event = "BufReadPre", -- this will only start session saving when an actual file was opened
+    --     module = "persistence",
+    --     config = function()
+    --         require("persistence").setup {
+    --             dir = vim.fn.expand(vim.fn.stdpath "config" .. "/session/"),
+    --             options = { "buffers", "curdir", "tabpages", "winsize" }
+    --         }
+    --     end
+    -- }, -- }}}
     -- {{{ Lastplace
     {
         "ethanholz/nvim-lastplace",
         event = "BufRead",
         config = function()
             require("nvim-lastplace").setup({
-                lastplace_ignore_buftype = { "quickfix", "nofile", "help" },
+                lastplace_ignore_buftype = {"quickfix", "nofile", "help"},
                 lastplace_ignore_filetype = {
                     "gitcommit", "gitrebase", "svn", "hgcommit"
                 },
@@ -330,7 +330,7 @@ lvim.plugins = {
         end
     }, -- }}}
     -- {{{ Neuron
-    { "oberblastmeister/neuron.nvim" }, -- }}}
+    {"oberblastmeister/neuron.nvim"}, -- }}}
     -- --{{{ Trouble
     --     {
     --       "folke/trouble.nvim",
@@ -344,21 +344,21 @@ lvim.plugins = {
             "G", "Git", "Gdiffsplit", "Gread", "Gwrite", "Ggrep", "GMove",
             "GDelete", "GBrowse", "GRemove", "GRename", "Glgrep", "Gedit"
         },
-        ft = { "fugitive" }
+        ft = {"fugitive"}
     }, -- }}}
     -- {{{ Nvim ts-rainbow
-    { "p00f/nvim-ts-rainbow" }, -- }}}
+    {"p00f/nvim-ts-rainbow"}, -- }}}
     -- {{{ Vim cursorword
     {
         "itchyny/vim-cursorword",
-        event = { "BufEnter", "BufNewFile" },
+        event = {"BufEnter", "BufNewFile"},
         config = function()
             vim.api.nvim_command("augroup user_plugin_cursorword")
             vim.api.nvim_command("autocmd!")
             vim.api.nvim_command(
-            "autocmd FileType NvimTree,lspsagafinder,dashboard,vista let b:cursorword = 0")
+                "autocmd FileType NvimTree,lspsagafinder,dashboard,vista let b:cursorword = 0")
             vim.api.nvim_command(
-            "autocmd WinEnter * if &diff || &pvw | let b:cursorword = 0 | endif")
+                "autocmd WinEnter * if &diff || &pvw | let b:cursorword = 0 | endif")
             vim.api.nvim_command("autocmd InsertEnter * let b:cursorword = 0")
             vim.api.nvim_command("autocmd InsertLeave * let b:cursorword = 1")
             vim.api.nvim_command("augroup END")
@@ -367,18 +367,18 @@ lvim.plugins = {
 } -- }}} }}}
 -- {{{ Autocommands
 vim.api.nvim_create_autocmd("User,BufEnter", {
-    pattern = { "*" },
+    pattern = {"*"},
     command = ":lua vim.wo.fillchars = 'vert:║,fold:.,eob: '"
 })
 
 vim.api.nvim_create_autocmd("TermEnter,QuitPre",
-    { pattern = { "*" }, command = ":MinimapClose" })
+                            {pattern = {"*"}, command = ":MinimapClose"})
 
 vim.api.nvim_create_autocmd("BufEnter",
-    { pattern = { "*" }, command = ":MinimapRefresh" })
+                            {pattern = {"*"}, command = ":MinimapRefresh"})
 
 vim.api.nvim_create_autocmd("User,BufEnter", {
-    pattern = { "*/waybar/config" },
+    pattern = {"*/waybar/config"},
     command = ":setlocal filetype=jsonc"
 })
 -- lvim.autocommands.custom_groups = {
