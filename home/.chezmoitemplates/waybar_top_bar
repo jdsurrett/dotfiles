@@ -1,0 +1,44 @@
+        // Bar configuration
+        "layer": "top", // Waybar at top layer
+        "position": "top", // Waybar position (top|bottom|left|right)
+        "height": 16, // Waybar height (to be removed for auto height)
+        // "width": 1280, // Waybar width
+        "spacing": 0, // Gaps between modules (4px)
+        // Choose the order of the modules
+        "modules-left": [
+            "network",
+            "custom/arrow1",
+            "memory",
+            "custom/arrow2",
+            "clock#time",
+            "custom/spaces3",
+            "sway/workspaces",
+            "custom/spaces3",
+            "sway/mode",
+            "custom/arrow3"
+            // "mpd",
+            // "custom/media"
+        ],
+        "modules-center": [
+            "sway/window"
+        ],
+        "modules-right": [
+            // "idle_inhibitor",
+            // "pulseaudio",
+            // "backlight",
+            // "keyboard-state",
+            // "sway/language",
+            // "battery",
+            // "battery#bat2",
+            "custom/arrow4",
+            "clock#dayofweek",
+            "custom/spaces2",
+            "clock#date",
+            "custom/arrow5",
+            "cpu",
+            "custom/arrow6",
+            "temperature",
+            "custom/arrow7",
+            "tray"
+        ],
+        //
