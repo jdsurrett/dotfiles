@@ -1,6 +1,5 @@
     {
 {{ template "waybar_top_bar" . }}
-{{ template "waybar_bottom_bar" . }}
         // Modules configuration
         //  sway/workspaces
         "sway/workspaces": {
@@ -285,6 +284,7 @@
             "format": "",
             "tooltip": false
         }
-    }
-    
-    //
+    },
+   { 
+{{ template "waybar_bottom_bar" . }}
+    }//
