@@ -1,0 +1,59 @@
+        //custom/media
+        "custom/media": {
+            "format": "{icon} {}",
+            "return-type": "json",
+            "max-length": 40,
+            "format-icons": {
+                "spotify": "",
+                "default": "🎜"
+            },
+            "escape": true,
+            "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+            // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        },
+        
+        // custom/arrow
+        "custom/spaces3": {
+            "max-length": 1,
+            "format": "║",
+            "tooltip": false
+        },
+        "custom/spaces2": {
+            "max-length": 1,
+            "format": "┊",
+            "tooltip": false
+        },
+        // "custom/spaces1": {
+        //     // "min-length": 2,
+        //     "format": "║",
+        //     "tooltip": false
+        // },
+        "custom/arrow3": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow2": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow1": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow7": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow6": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow5": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow4": {
+            "format": "",
+            "tooltip": false
+        }
+    },

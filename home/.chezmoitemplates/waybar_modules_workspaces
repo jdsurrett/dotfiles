@@ -1,0 +1,17 @@
+        // Modules configuration
+        // sway/workspaces
+        "sway/workspaces": {
+            "disable-scroll": true,
+            "all-outputs": true,
+            "format": "{icon} {name}",
+            "format-icons": {
+                "1": "",
+                "2": "www",
+                "3": "",
+                "4": "",
+                "5": "",
+                "urgent": "",
+                "focused": "",
+                "default": ""
+            }
+        },
