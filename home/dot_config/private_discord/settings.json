@@ -1,6 +1,7 @@
 {
-  "BACKGROUND_COLOR": "#202225",
-  "IS_MAXIMIZED": true,
-  "IS_MINIMIZED": false,
-  "OPEN_ON_STARTUP": true
+    "BACKGROUND_COLOR": "#202225",
+    "IS_MAXIMIZED": false,
+    "IS_MINIMIZED": true,
+    "OPEN_ON_STARTUP": true,
+    "SKIP_HOST_UPDATE": true
 }
