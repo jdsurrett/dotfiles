@@ -7,6 +7,7 @@
         // Choose the order of the modules
         "modules-left": [
             "sway/window"
+            // "custom/arrow2",
         ],
         "modules-right": [
             // "custom/spaces3"
@@ -26,7 +27,6 @@
             "network",
             "custom/arrow1",
             "memory",
-            "custom/arrow2",
             "custom/arrow5",
             "cpu",
             "custom/arrow6",
