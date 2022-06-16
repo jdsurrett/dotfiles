@@ -23,11 +23,6 @@
             "format": "┊",
             "tooltip": false
         },
-        // "custom/spaces1": {
-        //     // "min-length": 2,
-        //     "format": "║",
-        //     "tooltip": false
-        // },
         "custom/arrow3": {
             "format": "",
             "tooltip": false
