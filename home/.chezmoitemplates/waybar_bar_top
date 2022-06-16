@@ -6,8 +6,8 @@
         "spacing": 0, // Gaps between modules (4px)
         // Choose the order of the modules
         "modules-left": [
-            "sway/window"
-            "custom/arrow2",
+            "sway/window",
+            "custom/arrow2"
         ],
         "modules-right": [
             "network",
