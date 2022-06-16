@@ -12,6 +12,10 @@
             "sway/mode",
             "custom/arrow3"
         ],
+        "modules-center": [
+            "wlr/taskbar"
+        ],
+
         "modules-right": [
             "custom/arrow4",
             "clock#time",
@@ -26,4 +30,5 @@
 {{ template "waybar_modules_sway_mode" . }}
 {{ template "waybar_modules_clock" . }}
 {{ template "waybar_modules_tray" . }}
+{{ template "waybar_modules_taskbar" . }}
 {{ template "waybar_modules_custom" . }}
