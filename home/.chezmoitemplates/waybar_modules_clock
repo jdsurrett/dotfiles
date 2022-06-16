@@ -1,16 +1,6 @@
         //clock
-        "clock#dayofweek": {
+        "clock": {
             "interval": 10,
-            "format": "{: %a}",
-            "tooltip": false
-        },
-        "clock#time": {
-            "interval": 10,
-            "format": "{:%I:%M %p }",
-            "tooltip": false
-        },
-        "clock#date": {
-            "interval": 20,
-            "format": "{:%D}", // Icon: calendar-alt
+            "format": "{:%I:%M %p   %a┊%D}",
             "tooltip": false
         },

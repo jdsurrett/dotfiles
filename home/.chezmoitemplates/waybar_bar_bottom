@@ -19,10 +19,7 @@
 
         "modules-right": [
             "custom/arrow4",
-            "clock#time",
-            "clock#dayofweek",
-            "custom/spaces2",
-            "clock#date",
+            "clock",
             "custom/arrow7",
             "tray"
         ],
