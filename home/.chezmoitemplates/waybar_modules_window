@@ -1,5 +1,6 @@
         // sway/window
         "sway/window": {
             "tooltip": false,
+            "max-length": 50,
             "icon": false //Option to disable application icon.
         },
