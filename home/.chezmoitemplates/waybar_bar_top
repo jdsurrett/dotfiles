@@ -13,9 +13,9 @@
             "clock#time",
             "custom/spaces3",
             "sway/workspaces",
-            "custom/spaces3",
-            "sway/mode",
-            "custom/arrow3"
+            // "custom/spaces3",
+            // "sway/mode",
+            // "custom/arrow3"
             // "mpd",
             // "custom/media"
         ],
@@ -38,7 +38,7 @@
             "cpu",
             "custom/arrow6",
             "temperature",
-            "custom/arrow7",
-            "tray"
+            // "custom/arrow7",
+            // "tray"
         ],
         //
