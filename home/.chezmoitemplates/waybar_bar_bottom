@@ -6,16 +6,11 @@
         "spacing": 0, // Gaps between modules (4px)
         // Choose the order of the modules
         "modules-left": [
-           // "network",
-           // "custom/arrow1",
-           // "memory",
             "custom/spaces3",
             "sway/workspaces",
             "custom/spaces3",
             "sway/mode",
             "custom/arrow3"
-            // "mpd",
-            // "custom/media"
         ],
         "modules-right": [
             // "idle_inhibitor",
