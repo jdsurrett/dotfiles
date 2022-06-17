@@ -1,6 +1,6 @@
 "wlr/taskbar": {
     "format": "{icon}",
-    "icon-size": 10,
+    "icon-size": 20,
     "markup": true,
     "icon-theme": "Numix-Circle",
     "tooltip-format": "{app_id}",
