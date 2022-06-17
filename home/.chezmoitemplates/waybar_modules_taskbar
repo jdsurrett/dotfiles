@@ -6,7 +6,7 @@
     "tooltip-format": "{app_id}",
     "on-click": "activate",
     "on-click-middle": "close",
-    "on-click-right": "minimize-raise",
+    "on-click-right": "minimize",
     "ignore-list": [
        "Alacritty"
     ],
