@@ -8,19 +8,30 @@
 * [X] ~~Setup notification daemon.~~
 * [ ] Rewrite all files.
     * [X] Configure systemd/user files.
-    * [ ] Write chezmoi templates.
-    * [ ] Redesign way bar.
+    * [X] Write chezmoi templates.
+    * [X] Redesign way bar.
     * [ ] Write environment.d files.
     * [ ] Port the lvim configuration into nvim.
     * [ ] Unify key bindings.
 * [ ] Write shell scrips.
-    * [ ] chezmoi_cd
+    * [ ] chezmoi_arch
     * [ ] todo
 * [ ] Integrate email.
 
 ## Shell scrips:
 
-| Name       | Description              | Args   | Interaction method       |
-|:-----------|:-------------------------|:-------|:-------------------------|
-| todo       | A todo list, wofi script | --help | Key binding: win+shift+t |
-| chezmoi_cd | Run chezmoi in a VM      | --help | Run by chezmoi           |
+| Name         | Description               | Args   | Interaction method       |
+|:-------------|:--------------------------|:-------|:-------------------------|
+| todo         | A todo list, wofi script  | --help | Key binding: win+shift+t |
+| chezmoi_arch | Run chezmoi in an arch VM | --help | shell script.            |
+
+## Email scrips:
+
+| Name             | Description                       | Args   | Interaction method       |
+|:-----------------|:----------------------------------|:-------|:-------------------------|
+| Email manager    | Email manager/notification daemon | N/a    | managed by systemd       |
+| Email downloader | Manage the downloading of email   | N/a    | managed by email manager |
+| Email filter     | Filter emails                     | N/a    | managed by email manager |
+| Email UI         | Custom ranger configuration       | --help | Shell script launcher    |
+| Email render     | Render emails                     | N/a    | launched by email ui     |
+| Email reply      | Use nvim for email                | N/a    | launched by email ui      |
