@@ -1,7 +1,7 @@
 # ToDo:
 
 > If it's just checked then it's most of the way done.
-
+>
 > If it's crossed out and checked then it's finished.
 
 * [X] ~~Refactor lvim configuration file.~~
