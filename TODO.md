@@ -1,8 +1,8 @@
 # ToDo:
 
-> if just checked then its most of the way done.
+> if it's just checked then it's most of the way done.
 
-> if crossed out then finished.
+> if it's crossed out and checked then it's finished.
 
 * [X] ~~Refactor lvim configuration file.~~
 * [X] ~~Refactor kitty configuration file.~~
@@ -38,4 +38,4 @@
 | Email filter     | Filter emails                     | N/a    | managed by email manager |
 | Email UI         | Custom ranger configuration       | --help | Shell script launcher    |
 | Email render     | Render emails                     | N/a    | launched by email ui     |
-| Email reply      | Use nvim for email                | N/a    | launched by email ui      |
+| Email reply      | Use nvim for email                | N/a    | launched by email ui     |
