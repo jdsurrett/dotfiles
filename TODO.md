@@ -1,5 +1,9 @@
 # ToDo:
 
+> if just checked then its most of the way done.
+
+> if crossed out then finished.
+
 * [X] ~~Refactor lvim configuration file.~~
 * [X] ~~Refactor kitty configuration file.~~
 * [X] ~~Refactor sway configuration file.~~
