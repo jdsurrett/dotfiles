@@ -4,7 +4,7 @@
 >
 > If it's crossed out and checked then it's finished.
 >
-> In the raw file there will be commented out items.
+> In the raw file there will be commented out items.<br />
 > This is for visual cleanliness.
 
 <!-- * [X] ~~Refactor lvim configuration file.~~ -->
