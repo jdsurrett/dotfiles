@@ -31,7 +31,7 @@
 
 ## Email scrips:
 
-### Backend
+### Backend:
 
 | Name                | Description                       | Args | Interaction method       |
 |:--------------------|:----------------------------------|:-----|:-------------------------|
@@ -39,7 +39,7 @@
 | Email downloader    | Manage the downloading of email   | N/a  | managed by email manager |
 | Email filter/router | Filter/rout emails                | N/a  | managed by email manager |
 
-### Frontend
+### Frontend:
 
 | Name                | Description                       | Args | Interaction method       |
 |:--------------------|:----------------------------------|:-----|:-------------------------|
