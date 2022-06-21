@@ -4,7 +4,8 @@
  
 > If it's crossed out and checked then it's finished.
  
-> In the raw file there will be commented out items. This is for visual cleanliness
+> In the raw file there will be commented out items.
+> This is for visual cleanliness
 <!-- * [X] ~~Refactor lvim configuration file.~~ -->
 <!-- * [X] ~~Refactor kitty configuration file.~~ -->
 <!-- * [X] ~~Refactor sway configuration file.~~ -->
