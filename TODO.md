@@ -31,11 +31,11 @@
 
 ## Email scrips:
 
-| Name             | Description                       | Args   | Interaction method       |
-|:-----------------|:----------------------------------|:-------|:-------------------------|
-| Email manager    | Email manager/notification daemon | N/a    | managed by systemd       |
-| Email downloader | Manage the downloading of email   | N/a    | managed by email manager |
-| Email filter     | Filter emails                     | N/a    | managed by email manager |
-| Email UI         | Custom ranger configuration       | --help | Shell script launcher    |
-| Email render     | Render emails                     | N/a    | launched by email ui     |
-| Email reply      | Use nvim for email                | N/a    | launched by email ui     |
+| Name                | Description                       | Args   | Interaction method       |
+|:--------------------|:----------------------------------|:-------|:-------------------------|
+| Email manager       | Email manager/notification daemon | N/a    | managed by systemd       |
+| Email downloader    | Manage the downloading of email   | N/a    | managed by email manager |
+| Email filter/router | Filter/rout emails                | N/a    | managed by email manager |
+| Email UI            | Custom ranger configuration       | --help | Shell script launcher    |
+| Email render        | Render emails                     | N/a    | launched by email ui     |
+| Email reply         | Use nvim for email                | N/a    | launched by email ui     |
