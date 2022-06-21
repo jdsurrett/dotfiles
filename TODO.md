@@ -41,8 +41,8 @@
 
 ### Frontend:
 
-| Name                | Description                       | Args | Interaction method       |
-|:--------------------|:----------------------------------|:-----|:-------------------------|
-| Email UI            | Custom ranger configuration       | yes  | Shell script launcher    |
-| Email render        | Render emails                     | N/a  | launched by email ui     |
-| Email reply         | Use nvim for email                | N/a  | launched by email ui     |
+| Name                | Description                 | Args | Interaction method       |
+|:--------------------|:----------------------------|:-----|:-------------------------|
+| Email UI            | Custom ranger configuration | yes  | Shell script launcher    |
+| Email render        | Render emails               | N/a  | launched by email ui     |
+| Email reply         | Use nvim for email          | N/a  | launched by email ui     |
