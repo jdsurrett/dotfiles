@@ -12,7 +12,7 @@
 <!-- * [X] ~~Refactor sway configuration file.~~ -->
 <!-- * [X] ~~Fix waybar.~~ -->
 <!-- * [X] ~~Fix wofi.~~ -->
-* [X] ~~Setup notification daemon.~~
+<!-- * [X] ~~Setup notification daemon.~~ -->
 * [ ] Rewrite all files.
     * [X] Configure systemd/user files.
     * [X] Write chezmoi templates.
