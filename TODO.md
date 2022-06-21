@@ -24,18 +24,25 @@
 
 ## Shell scrips:
 
-| Name         | Description               | Args   | Interaction method       |
-|:-------------|:--------------------------|:-------|:-------------------------|
-| todo         | A todo list, wofi script  | --help | Key binding: win+shift+t |
-| chezmoi_arch | Run chezmoi in an arch VM | --help | shell script.            |
+| Name         | Description               | Args | Interaction method       |
+|:-------------|:--------------------------|:-----|:-------------------------|
+| todo         | A todo list, wofi script  | yes  | Key binding: win+shift+t |
+| chezmoi_arch | Run chezmoi in an arch VM | yes  | shell script.            |
 
 ## Email scrips:
 
-| Name                | Description                       | Args   | Interaction method       |
-|:--------------------|:----------------------------------|:-------|:-------------------------|
-| Email manager       | Email manager/notification daemon | N/a    | managed by systemd       |
-| Email downloader    | Manage the downloading of email   | N/a    | managed by email manager |
-| Email filter/router | Filter/rout emails                | N/a    | managed by email manager |
-| Email UI            | Custom ranger configuration       | --help | Shell script launcher    |
-| Email render        | Render emails                     | N/a    | launched by email ui     |
-| Email reply         | Use nvim for email                | N/a    | launched by email ui     |
+### Backend
+
+| Name                | Description                       | Args | Interaction method       |
+|:--------------------|:----------------------------------|:-----|:-------------------------|
+| Email manager       | Email manager/notification daemon | N/a  | managed by systemd       |
+| Email downloader    | Manage the downloading of email   | N/a  | managed by email manager |
+| Email filter/router | Filter/rout emails                | N/a  | managed by email manager |
+
+### Frontend
+
+| Name                | Description                       | Args | Interaction method       |
+|:--------------------|:----------------------------------|:-----|:-------------------------|
+| Email UI            | Custom ranger configuration       | yes  | Shell script launcher    |
+| Email render        | Render emails                     | N/a  | launched by email ui     |
+| Email reply         | Use nvim for email                | N/a  | launched by email ui     |
