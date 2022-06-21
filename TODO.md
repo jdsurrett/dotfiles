@@ -4,12 +4,12 @@
 >
 > If it's crossed out and checked then it's finished.
 
-* [X] ~~Refactor lvim configuration file.~~
-* [X] ~~Refactor kitty configuration file.~~
-* [X] ~~Refactor sway configuration file.~~
-* [X] ~~Fix waybar.~~
-* [X] ~~Fix wofi.~~
-* [X] ~~Setup notification daemon.~~
+<!-- * [X] ~~Refactor lvim configuration file.~~ -->
+<!-- * [X] ~~Refactor kitty configuration file.~~ -->
+<!-- * [X] ~~Refactor sway configuration file.~~ -->
+<!-- * [X] ~~Fix waybar.~~ -->
+<!-- * [X] ~~Fix wofi.~~ -->
+<!-- * [X] ~~Setup notification daemon.~~ -->
 * [ ] Rewrite all files.
     * [X] Configure systemd/user files.
     * [X] Write chezmoi templates.
