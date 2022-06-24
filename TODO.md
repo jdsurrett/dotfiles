@@ -48,5 +48,5 @@
 | Name         | Description                 | Args | Interaction method   |
 |:-------------|:----------------------------|:-----|:---------------------|
 | Email UI     | Custom ranger configuration | yes  | Custom launcher      |
-| Email render | Render emails               | N/a  | launched by email ui |
-| Email reply  | Use nvim for email          | N/a  | launched by email ui |
+| Email render | Render emails               | N/a  | launched by email UI |
+| Email reply  | Use nvim for email          | N/a  | launched by email UI |
