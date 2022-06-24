@@ -23,6 +23,7 @@
 * [ ] Write shell scrips.
     * [ ] chezmoi_arch
     * [ ] todo
+    * [ ] File manager
 * [ ] Integrate email.
 
 ## Shell scrips:
