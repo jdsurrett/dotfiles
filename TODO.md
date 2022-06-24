@@ -27,10 +27,11 @@
 
 ## Shell scrips:
 
-| Name         | Description               | Args | Interaction method       |
-|:-------------|:--------------------------|:-----|:-------------------------|
-| todo         | A todo list, wofi script  | yes  | Key binding: win+shift+t |
-| chezmoi_arch | Run chezmoi in an arch VM | yes  | Custom launcher          |
+| Name         | Description                             | Args | Interaction method       |
+|:-------------|:----------------------------------------|:-----|:-------------------------|
+| todo         | A todo list, wofi script                | yes  | Key binding: win+shift+t |
+| chezmoi_arch | Run chezmoi in an arch VM               | yes  | Custom launcher          |
+| file manager | Ranger and a custom kitty configuration | yes  | Key binding: win+shift+f |
 
 ## Email scrips:
 
