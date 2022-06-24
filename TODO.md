@@ -31,7 +31,7 @@
 |:-------------|:----------------------------------------|:-----|:-------------------------|
 | todo         | A todo list, wofi script                | yes  | Key binding: win+shift+t |
 | chezmoi_arch | Run chezmoi in an arch VM               | yes  | Custom launcher          |
-| file manager | Ranger and a custom kitty configuration | yes  | Key binding: win+shift+f |
+| File manager | Ranger and a custom kitty configuration | yes  | Key binding: win+shift+f |
 
 ## Email scrips:
 
