@@ -2,7 +2,6 @@
 
 > In the raw file there will be commented out items.<br>
 > This is for visual cleanliness.
-
  
 <!-- * [X] ~~Refactor lvim configuration file.~~ -->
 <!-- * [X] ~~Refactor kitty configuration file.~~ -->
