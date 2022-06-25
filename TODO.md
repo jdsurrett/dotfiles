@@ -3,8 +3,6 @@
 > In the raw file there will be commented out items.<br>
 > This is for visual cleanliness.
 
-> If it's just checked then it's most of the way done.<br>
-> If it's crossed out and checked then it's finished.
  
 <!-- * [X] ~~Refactor lvim configuration file.~~ -->
 <!-- * [X] ~~Refactor kitty configuration file.~~ -->
@@ -12,6 +10,9 @@
 <!-- * [X] ~~Fix waybar.~~ -->
 <!-- * [X] ~~Fix wofi.~~ -->
 <!-- * [X] ~~Setup notification daemon.~~ -->
+
+> If it's just checked then it's most of the way done.<br>
+> If it's crossed out and checked then it's finished.
 
 * [ ] Rewrite all files.
     * [X] Configure systemd/user files.
