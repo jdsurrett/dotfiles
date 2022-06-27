@@ -19,11 +19,11 @@
     * [X] Redesign way bar.
     * [ ] Write environment.d files.
     * [ ] Port the lvim configuration into nvim.
+* [ ] Integrate email.
 * [ ] Write shell scrips.
     * [ ] chezmoi_arch
     * [ ] todo
     * [ ] File manager
-* [ ] Integrate email.
 * [ ] Unify key bindings.
 
 ## Shell scrips:
