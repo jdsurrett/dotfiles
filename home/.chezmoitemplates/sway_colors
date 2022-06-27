@@ -1,7 +1,7 @@
 # :Colors
 ## Window decoration
 # class                 border  backgr. text    indicator child_border
-client.focused          #e0af68 #24283b #e0af68 #a9b1d6   #c0caf5
+client.focused          #e0af68 #24283b #e0af68 #a9b1d6   #e0af68
 client.focused_inactive #7aa2f7 #24283b #7aa2f7 #a9b1d6   #c0caf5
 client.unfocused        #414868 #c0caf5 #414868 #c0caf5   #414868
 client.urgent           #e0af68 #24283b #1d202f #7dcfff   #e0af68
