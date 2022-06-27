@@ -117,6 +117,8 @@ linters.setup {
 lvim.plugins = {
     -- {{{ Colorschemes
     {"folke/tokyonight.nvim"}, -- }}}
+    -- {{{ zi-vim-syntax
+    {"z-shell/zi-vim-syntax"}, -- }}}
     -- {{{ Rust
     -- {{{Rust tools
     {
