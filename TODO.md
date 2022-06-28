@@ -26,7 +26,7 @@
     * [ ] File manager
 * [ ] Unify key bindings.
 
-## Shell scrips:
+## Shell script:
 
 | Name         | Description                             | Interaction method       |
 |:-------------|:----------------------------------------|:-------------------------|
