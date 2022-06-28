@@ -7,6 +7,10 @@ if [[ -n $KITTY_INSTALLATION_DIR ]]; then
     unfunction kitty-integration
 fi
 
+if [[ -r "${XDG_CONFIG_HOME:-${HOME}/.config}/.zi/init.zsh" ]]; then
+  source "${XDG_CONFIG_HOME:-${HOME}/.config}/.zi/init.zsh" && zzinit
+fi
+
 typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
 export PATH
 source $ZDOTDIR/plugins/ohmyzsh/clipboard.zsh
@@ -23,6 +27,3 @@ source $ZDOTDIR/plugins/sorin-ionescu/prezto/completion/init.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 welcome
-if [[ -r "${XDG_CONFIG_HOME:-${HOME}/.config}/.zi/init.zsh" ]]; then
-  source "${XDG_CONFIG_HOME:-${HOME}/.config}/.zi/init.zsh" && zzinit
-fi
