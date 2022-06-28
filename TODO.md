@@ -34,7 +34,7 @@
 | chezmoi_arch | Run chezmoi in an arch VM               | Custom launcher          |
 | File manager | Ranger and a custom kitty configuration | Key binding: win+shift+f |
 
-## Email scrips:
+## Email:
 
 ### Backend:
 
