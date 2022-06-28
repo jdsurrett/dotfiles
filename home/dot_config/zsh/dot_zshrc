@@ -23,6 +23,6 @@ source $ZDOTDIR/plugins/sorin-ionescu/prezto/completion/init.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZDOTDIR/plugins/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 welcome
-if [[ -r "${XDG_CONFIG_HOME:-${HOME}/.config}/zsh/.zi/init.zsh" ]]; then
-  source "${XDG_CONFIG_HOME:-${HOME}/.config}/zsh/.zi/init.zsh" && zzinit
+if [[ -r "${XDG_CONFIG_HOME:-${HOME}/.config}/.zi/init.zsh" ]]; then
+  source "${XDG_CONFIG_HOME:-${HOME}/.config}/.zi/init.zsh" && zzinit
 fi
