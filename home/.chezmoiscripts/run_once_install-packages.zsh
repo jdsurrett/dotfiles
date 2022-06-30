@@ -20,9 +20,9 @@ source $CARGO_HOME/env
 rm -f $HOME/.profile $ZDOTDIR/.zshenv
 
 cargo install fd-find
-cargo install taplo-cli
+# cargo install taplo-cli
 cargo install --locked bat
-cargo install --locked code-minimap
+# cargo install --locked code-minimap
 
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 rm -rf $XDG_CONFIG_HOME/lvim/*
