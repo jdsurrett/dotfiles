@@ -26,7 +26,7 @@
     * [ ] File manager
 * [ ] Unify key bindings.
 
-## Shell shell scripts:
+## Shell scripts:
 
 | Name         | Description                             | Interaction method       |
 |:-------------|:----------------------------------------|:-------------------------|
@@ -34,7 +34,7 @@
 | chezmoi_arch | Run chezmoi in an arch VM               | Custom launcher          |
 | File manager | Ranger and a custom kitty configuration | Key binding: win+shift+f |
 
-## Email scripts:
+## Email shell scripts:
 
 ### Backend:
 
