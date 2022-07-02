@@ -13,11 +13,11 @@ export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 export CARGO_HOME=$HOME/.local
 export CARGO_INSTALL_ROOT=$HOME/.local
 
-mkdir -p $ZDOTDIR
-touch $ZDOTDIR/.zshenv
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $CARGO_HOME/env
-rm -f $HOME/.profile $ZDOTDIR/.zshenv
+# mkdir -p $ZDOTDIR
+# touch $ZDOTDIR/.zshenv
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# source $CARGO_HOME/env
+# rm -f $HOME/.profile $ZDOTDIR/.zshenv
 
 # cargo install fd-find
 # cargo install taplo-cli
