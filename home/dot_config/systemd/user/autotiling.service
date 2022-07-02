@@ -4,7 +4,7 @@ PartOf=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/autotiling
+ExecStart=/usr/bin/autotiling-rs
 
 [Install]
 WantedBy=sway-session.target
