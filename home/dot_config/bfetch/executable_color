@@ -10,9 +10,9 @@
       # futurama \
       # firefly \
       # ferengi_rules_of_acquisition \
+      # torchwood \
 
 PRINT=$(fortune -c -a -s \
-      torchwood \
       montypython \
       matrix \
       hitchhiker \
