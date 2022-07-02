@@ -3,7 +3,7 @@
             "interval": 6,
             "min-length": 6,
             "tooltip": true,
-            "format": "{usage} %",
+            "format": "{usage}% ",
             "states": {
                 "warning": 70,
                 "critical": 90
