@@ -41,7 +41,6 @@ refreshPeriod = "168h"
 [".config/systemd/user/sway-session.target"]
 type = "file"
 url = "https://raw.githubusercontent.com/alebastr/sway-systemd/main/sway-session.target"
-executable = true
 refreshPeriod = "168h"
 
 [".local/bin/unimatrix"]
