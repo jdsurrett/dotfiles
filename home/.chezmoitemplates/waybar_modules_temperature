@@ -7,7 +7,7 @@
             "tooltip": false,
             "min-length": 6,
             "interval": 2,
-            "format": "{icon} {temperatureC}°C",
+            "format": "{temperatureC}°C {icon}",
             "format-icons": [
                 "", // Icon: temperature-empty
                 "", // Icon: temperature-quarter
