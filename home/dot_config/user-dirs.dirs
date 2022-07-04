@@ -13,7 +13,7 @@ XDG_PROJECTS_DIR="$HOME/Projects/"
 XDG_TEMPLATES_DIR="$HOME/Projects/Templates/"
 XDG_DOTFILES_DIR="$HOME/Projects/Dotfiles/"
 
-XDG_DOCUMENTS_DIR="$HOME/Documents/TextDocuments/"
+XDG_DOCUMENTS_DIR="$HOME/Documents/Text/"
 XDG_PICTURES_DIR="$HOME/Documents/Pictures/"
 XDG_VIDEOS_DIR="$HOME/Documents/Videos/"
 XDG_MUSIC_DIR="$HOME/Documents/Music/"
