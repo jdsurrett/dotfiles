@@ -107,7 +107,7 @@ Comment[zh_HK]=連線到網際網路
 Comment[zh_TW]=連線到網際網路
 StartupNotify=true
 StartupWMClass=brave-browser
-TryExec=brave
+TryExec=com.brave.Browser
 Exec=com.brave.Browser --enable-features=UseOzonePlatform --ozone-platform=wayland %U
 Terminal=false
 Icon=brave-desktop
