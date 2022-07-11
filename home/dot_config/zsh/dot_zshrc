@@ -6,7 +6,7 @@ if [[ -n $KITTY_INSTALLATION_DIR ]]; then
     kitty-integration
     unfunction kitty-integration
 fi
-
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
 export PATH
 source $ZDOTDIR/plugins/ohmyzsh/clipboard.zsh
