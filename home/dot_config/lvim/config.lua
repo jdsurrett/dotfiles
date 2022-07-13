@@ -248,7 +248,7 @@ lvim.plugins = {
     -- {{{ Minimap
     {
         'wfxr/minimap.vim',
-        run = "cargo install --locked code-minimap",
+        -- run = "cargo install --locked code-minimap",
         -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
         config = function()
             vim.cmd("let g:minimap_width = 15")
