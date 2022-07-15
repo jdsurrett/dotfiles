@@ -1,22 +1,19 @@
 #!/usr/bin/env zsh
 
-export XDG_CONFIG_HOME=$HOME/.config
-export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
-
-export XDG_CACHE_HOME=$HOME/.cache
-export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
-export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
-export KITTY_CONFIG_DIRECTORY=$XDG_CONFIG_HOME/kitty
-
 export XDG_DATA_HOME=$HOME/.local/share
 export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
 source $XDG_DATA_HOME/ls_colors/lscolors.sh
 
-export RUSTUP_HOME=$XDG_DATA_HOME/rustup
-export CARGO_HOME=$HOME/.local
-export CARGO_INSTALL_ROOT=$HOME/.local/
+export XDG_CONFIG_HOME=$XDG_DATA_HOME/config
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
 
-export XDG_STATE_HOME=$HOME/.local/state
+export XDG_CACHE_HOME=$XDG_DATA_HOME/cache
+export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
+export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
+export KITTY_CONFIG_DIRECTORY=$XDG_CONFIG_HOME/kitty
+
+export RUSTUP_HOME=$XDG_DATA_HOME/rustup
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
 export COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 
@@ -30,8 +27,7 @@ export MAKEOPTS="-j$(nproc)"
 export BFETCH_CLASSIC_MODE=true
 export BFETCH_ART_RIGHT=true
 export BFETCH_SEPARATOR=0
-# . "$CARGO_HOME/env"
-# typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$path[@]")
-# export PATH
+typeset -U PATH path=("$HOME/.local/bin" "$path[@]")
+export PATH
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
