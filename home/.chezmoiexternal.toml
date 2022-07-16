@@ -8,22 +8,22 @@ refreshPeriod = "168h"
 # url = "https://github.com/folke/tokyonight.nvim/blob/main/extras/xresources_tokyonight_storm.Xresources"
 # refreshPeriod = "168h"
 
-[".config/bat/themes/Tokyo-Night.tmTheme"]
+[".local/share/config/bat/themes/Tokyo-Night.tmTheme"]
 type = "file"
 url = "https://raw.githubusercontent.com/enkia/enki-theme/master/scheme/Enki-Tokyo-Night.tmTheme"
 refreshPeriod = "168h"
 
-[".config/kitty/color_themes/kitty_tokyonight_day.conf"]
+[".local/share/config/kitty/color_themes/kitty_tokyonight_day.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_day.conf"
 refreshPeriod = "168h"
 
-[".config/kitty/color_themes/kitty_tokyonight_night.conf"]
+[".local/share/config/kitty/color_themes/kitty_tokyonight_night.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_night.conf"
 refreshPeriod = "168h"
 
-[".config/kitty/color_themes/kitty_tokyonight_storm.conf"]
+[".local/share/config/kitty/color_themes/kitty_tokyonight_storm.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty_tokyonight_storm.conf"
 refreshPeriod = "168h"
@@ -58,66 +58,66 @@ url = "https://github.com/NNBnh/bfetch/raw/main/man/bfetch.1"
 refreshPeriod = "168h"
 
 
-[".config/zsh/plugins/romkatv/powerlevel10k/"]
+[".local/share/config/zsh/plugins/romkatv/powerlevel10k/"]
 type = "git-repo"
 url = "https://github.com/romkatv/powerlevel10k.git"
 refreshPeriod = "168h"
-[".config/zsh/plugins/romkatv/powerlevel10k/".clone]
+[".local/share/config/zsh/plugins/romkatv/powerlevel10k/".clone]
 args = ["--depth=1"]
-[".config/zsh/plugins/romkatv/powerlevel10k/".pull]
+[".local/share/config/zsh/plugins/romkatv/powerlevel10k/".pull]
 args = ["--depth=1"]
 
-[".config/zsh/plugins/zsh-users/zsh-syntax-highlighting"]
+[".local/share/config/zsh/plugins/zsh-users/zsh-syntax-highlighting"]
 type = "git-repo"
 url = "https://github.com/zsh-users/zsh-syntax-highlighting.git"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/zsh-users/zsh-autosuggestions"]
+[".local/share/config/zsh/plugins/zsh-users/zsh-autosuggestions"]
 type = "git-repo"
 url = "https://github.com/zsh-users/zsh-autosuggestions.git"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/sorin-ionescu/prezto/completion/external"]
+[".local/share/config/zsh/plugins/sorin-ionescu/prezto/completion/external"]
 type = "git-repo"
 url = "https://github.com/zsh-users/zsh-completions.git"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/sorin-ionescu/prezto/completion/init.zsh"]
+[".local/share/config/zsh/plugins/sorin-ionescu/prezto/completion/init.zsh"]
 type = "file"
 url = "https://raw.githubusercontent.com/sorin-ionescu/prezto/master/modules/completion/init.zsh"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/ohmyzsh/history.zsh"]
+[".local/share/config/zsh/plugins/ohmyzsh/history.zsh"]
 type = "file"
 url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/history.zsh"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/ohmyzsh/completion.zsh"]
+[".local/share/config/zsh/plugins/ohmyzsh/completion.zsh"]
 type = "file"
 url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/completion.zsh"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/ohmyzsh/clipboard.zsh"]
+[".local/share/config/zsh/plugins/ohmyzsh/clipboard.zsh"]
 type = "file"
 url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/clipboard.zsh"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/ohmyzsh/key-bindings.zsh"]
+[".local/share/config/zsh/plugins/ohmyzsh/key-bindings.zsh"]
 type = "file"
 url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/lib/key-bindings.zsh"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/ohmyzsh/sudo.plugin.zsh"]
+[".local/share/config/zsh/plugins/ohmyzsh/sudo.plugin.zsh"]
 type = "file"
 url = "https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/sudo/sudo.plugin.zsh"
 refreshPeriod = "168h"
 
-[".config/zsh/plugins/Valiev/almostontop"]
+[".local/share/config/zsh/plugins/Valiev/almostontop"]
 type = "git-repo"
 url = "https://github.com/Valiev/almostontop.git"
 refreshPeriod = "168h"
 
-[".config/boxes/boxes-config"]
+[".local/share/config/boxes/boxes-config"]
 type = "file"
 url = "https://raw.githubusercontent.com/ascii-boxes/boxes/master/boxes-config"
 refreshPeriod = "168h"
