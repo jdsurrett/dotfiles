@@ -117,8 +117,6 @@ linters.setup {
 lvim.plugins = {
     -- {{{ Colorschemes
     {"folke/tokyonight.nvim"}, -- }}}
-    -- {{{ zi-vim-syntax
-    {"z-shell/zi-vim-syntax"}, -- }}}
     -- {{{ Rust
     -- {{{Rust tools
     {
@@ -261,7 +259,7 @@ lvim.plugins = {
         end
     }, -- }}}
     -- -- {{{ Glow
-    -- { "npxbr/glow.nvim", ft = { "markdown" }, run = "yay -S glow" }, -- }}}
+    {"npxbr/glow.nvim", ft = {"markdown"}, run = "yay -S glow"}, -- }}}
     -- {{{ Vim Kitty Navigator
     {"knubie/vim-kitty-navigator", run = "cp -f ./*.py ~/.config/kitty/"}, -- }}}
     -- {{{ Neoscroll
