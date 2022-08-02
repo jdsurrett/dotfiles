@@ -21,7 +21,6 @@
     * [ ] Port the lvim configuration into nvim.
 * [ ] Integrate email.
 * [ ] Write shell scrips.
-    * [ ] chezmoi_arch
     * [ ] todo
     * [ ] File manager
 * [ ] Unify key bindings.
@@ -31,8 +30,7 @@
 | Name         | Description                             | Interaction method       |
 |:-------------|:----------------------------------------|:-------------------------|
 | todo         | A todo list, wofi script                | Key binding: win+shift+t |
-| chezmoi_arch | Run chezmoi in an arch VM               | Custom launcher          |
-| File manager | Ranger and a custom kitty configuration | Key binding: win+shift+f |
+| File manager | clifm and a custom kitty configuration  | Key binding: win+shift+f |
 
 ## Email shell scripts:
 
@@ -48,6 +46,6 @@
 
 | Name         | Description                 | Interaction method   |
 |:-------------|:----------------------------|:---------------------|
-| Email UI     | Custom ranger configuration | Custom launcher      |
+| Email UI     | Custom clifm profile        | Custom launcher      |
 | Email render | Render emails               | launched by email UI |
 | Email reply  | Use nvim for email          | launched by email UI |
