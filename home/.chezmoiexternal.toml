@@ -63,9 +63,9 @@ type = "git-repo"
 url = "https://github.com/romkatv/powerlevel10k.git"
 refreshPeriod = "168h"
 [".config/zsh/plugins/romkatv/powerlevel10k/".clone]
-args = ["--depth=1"]
+args = ["--depth=1 --force"]
 [".config/zsh/plugins/romkatv/powerlevel10k/".pull]
-args = ["--depth=1"]
+args = ["--depth=1 --force"]
 
 [".config/zsh/plugins/zsh-users/zsh-syntax-highlighting"]
 type = "git-repo"
