@@ -1,5 +1,0 @@
-[Desktop Entry]
-Exec=/var/lib/flatpak/exports/bin/com.valvesoftware.Steam -silent
-Name=steam
-Comment=a launcher for the Steam client from Valve Corporation
-Type=Application
