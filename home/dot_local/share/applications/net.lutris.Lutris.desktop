@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Lutris
+Comment=Video games
+Categories=Game;
+Keywords=gaming;wine;emulator;
+Exec=net.lutris.Lutris %U
+Icon=lutris
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/lutris;
+Path=
+StartupNotify=false
