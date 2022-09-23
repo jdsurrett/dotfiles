@@ -38,7 +38,7 @@ SHELL=$(zsh --version | sed 's/(.*)//g')
 TERMINAL=$TERM
 term_font="from kitty.cli import *; o = create_default_opts(); print(f'{o.font_family} {o.font_size}')"
 term_font="$(kitty +runpy ''"$term_font"'')"
-EDIT=$(editor "${pretty_name} ${version}")
+EDIT="lvim" #$(editor "${pretty_name} ${version}")
 CPU="$(lscpu | awk 'FNR == 8 {printf "%s %s %s %s ",$3,$4,$5,$6;} FNR == 12 {printf "%s%s%s","(",$4,")";}')$cpu_speed $deg"
 GPU="ATI Radeon Vega Series / Radeon Vega Mobile Series"
 SEPARATOR=$(echo "GPU: $GPU" | sed -e 's/./─/g')
