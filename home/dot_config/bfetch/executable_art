@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Values
 set_text_colors() {
@@ -74,7 +74,7 @@ set_colors() {
 # \033[1;${COLOR}m╚╧╧╧╧╧╧╝  ╚╧╧╧╧╧╧╝  ╚╧╧╧╧╧╧╝\033[0m" 
 
 set_colors 6 6 7 1
-            read -rd '' ascii_data <<'EOF'  | boxes -d jstone
+            read -rd '' ascii_data <<'EOF' 
 ${c1}                   -`
                   .o+`
                  `ooo/
@@ -95,5 +95,5 @@ ${c2}        .oossssso-````/ossssss+`
  `++:.                           `-/+/
  .`                                 `/
 EOF
-
+boxes -d jstone $ascii_data
 exit 0
