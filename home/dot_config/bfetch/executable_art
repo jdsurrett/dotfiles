@@ -130,6 +130,6 @@ print_ascii() {
     printf '%b\n' "$ascii_data${reset}" |boxes -d jstone
     LC_ALL=C
 }
-
+print_ascii
 # 
 exit 0
