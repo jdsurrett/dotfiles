@@ -127,9 +127,9 @@ print_ascii() {
     ascii_data="${ascii_data//\$\{c6\}/$c6}"
 
     ((text_padding=ascii_len+gap))
-    printf '%b\n' "$ascii_data${reset}" |boxes -d jstone
+    printf '%b\n' "$ascii_data${reset}" 
     LC_ALL=C
 }
 print_ascii
-# 
+# |boxes -d jstone
 exit 0
