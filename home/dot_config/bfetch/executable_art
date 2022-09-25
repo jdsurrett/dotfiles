@@ -74,7 +74,7 @@ set_colors() {
 # \033[1;${COLOR}m╚╧╧╧╧╧╧╝  ╚╧╧╧╧╧╧╝  ╚╧╧╧╧╧╧╝\033[0m" 
 
 set_colors 6 6 7 1
-            read -rd '' ascii_data <<'EOF'
+            read -rd '' ascii_data <<'EOF'  | boxes -d jstone
 ${c1}                   -`
                   .o+`
                  `ooo/
@@ -94,6 +94,6 @@ ${c2}        .oossssso-````/ossssss+`
   `+sso+:-`                 `.-/+oso:
  `++:.                           `-/+/
  .`                                 `/
-EOF | boxes -d jstone\033[0m
+EOF
 
 exit 0
