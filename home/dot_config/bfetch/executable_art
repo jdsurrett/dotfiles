@@ -94,6 +94,7 @@ ${c2}        .oossssso-````/ossssss+`
   `+sso+:-`                 `.-/+oso:
  `++:.                           `-/+/
  .`                                 `/
-EOF| boxes -d jstone\033[0m
+EOF
+| boxes -d jstone\033[0m
 
 exit 0
