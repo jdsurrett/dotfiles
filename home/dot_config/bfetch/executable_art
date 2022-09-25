@@ -18,6 +18,6 @@
 # \033[1;${COLOR}m╟┼┼┼┼┼┼╢  ╟┼┼┼┼┼┼╢  ╟┼┼┼┼┼┼╢\033[0m
 # \033[1;${COLOR}m╟┼┼┼┼┼┼╢  ╟┼┼┼┼┼┼╢  ╟┼┼┼┼┼┼╢\033[0m
 # \033[1;${COLOR}m╚╧╧╧╧╧╧╝  ╚╧╧╧╧╧╧╝  ╚╧╧╧╧╧╧╝\033[0m" 
-neofetch -L | boxes -d jstone
+printf "%S" $(neofetch -L) | boxes -d jstone
 
 exit 0
