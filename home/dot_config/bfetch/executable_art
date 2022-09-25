@@ -73,6 +73,14 @@ set_colors() {
 # \033[1;${COLOR}m╟┼┼┼┼┼┼╢  ╟┼┼┼┼┼┼╢  ╟┼┼┼┼┼┼╢\033[0m
 # \033[1;${COLOR}m╚╧╧╧╧╧╧╝  ╚╧╧╧╧╧╧╝  ╚╧╧╧╧╧╧╝\033[0m" 
 
+trim() {
+    set -f
+    # shellcheck disable=2048,2086
+    set -- $*
+    printf '%s\n' "${*//[[:space:]]/}"
+    set +f
+}
+
 
 get_distro_ascii() {
     # This function gets the distro ascii art and colors.
