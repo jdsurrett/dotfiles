@@ -5352,6 +5352,6 @@ print_ascii() {
     printf '%b\n' "$ascii_data${reset}" 
     LC_ALL=C
 }
-print_ascii
+# print_ascii
 # |boxes -d jstone
 exit 0
