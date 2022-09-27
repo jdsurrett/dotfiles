@@ -1,6 +1,16 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 tput clear
 unimatrix -fbwl m -s 99
 neofetch
+PRINT=$(fortune -c -a -s \
+      montypython \
+      matrix \
+      hitchhiker \
+      hackers \
+      doctorwho-new-series \
+      doctorwho-classic-series | sed -e 's|/usr/share/fortune/||g' -e 's|%||g' -e 's|- None||g' | \
+      boxes -d jstone)
+
+printf '%s' "$PRINT"
 echo
