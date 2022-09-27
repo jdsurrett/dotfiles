@@ -2,5 +2,5 @@
 
 tput clear
 unimatrix -fbwl m -s 99
-bfetch
+neofetch
 echo
