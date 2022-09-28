@@ -1,8 +1,10 @@
 #!/usr/bin/env zsh
 
+export XDG_STATE_HOME=$HOME/.local/state
 export XDG_DATA_HOME=$HOME/.local/share
 export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
 source $XDG_DATA_HOME/ls_colors/lscolors.sh
+export GOPATH="$XDG_DATA_HOME"/go
 
 export XDG_CONFIG_HOME=$HOME/.config
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
@@ -11,7 +13,6 @@ export XDG_CACHE_HOME=$HOME/.cache
 export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
 export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat
 export KITTY_CONFIG_DIRECTORY=$XDG_CONFIG_HOME/kitty
-
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
