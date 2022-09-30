@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+paru -Syu --batchinstall --sudoloop --noconfirm --skipreview --failfast
+flatpak update --assumeyes --system
