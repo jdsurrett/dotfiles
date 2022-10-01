@@ -8,7 +8,7 @@ paru -Syu --batchinstall --sudoloop \
     --noconfirm --skipreview --failfast \
     --cleanafter --combinedupgrade
 
-paru -Qtdq | paru -Rns - 2> /dev/null || printf "${BLUE}%s::%s${YELLOW}%s No packages to clean.${NC}\n"
+paru -Qtdq | paru -Rns - 2> /dev/null || printf "${BLUE}%s::%s${YELLOW}%s No packages to clean${NC}\n"
 
 
 flatpak update --assumeyes --system
