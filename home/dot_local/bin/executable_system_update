@@ -5,6 +5,6 @@ paru -Syu --batchinstall --sudoloop \
     --noconfirm --skipreview --failfast \
     --cleanafter --combinedupgrade
 
-paru -Qtdq | paru -Rns - || :
+paru -Qtdq | paru -Rns - 2> /dev/null || :
 
 flatpak update --assumeyes --system
