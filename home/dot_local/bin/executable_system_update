@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+p_clean(){
+    paru -Qtdq | paru -Rns -
+}
+
 paru -Syu --batchinstall --sudoloop \
     --noconfirm --skipreview --failfast \
     --cleanafter --combinedupgrade
 
-flatpak update --assumeyes --system
+p_clean
 
-paru -Qtdq | paru -Rns -
+flatpak update --assumeyes --system
