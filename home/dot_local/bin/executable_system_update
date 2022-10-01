@@ -2,7 +2,7 @@
 set -euo pipefail
 
 p_clean(){
-    paru -Qtdq | paru -Rns -
+    paru -Qtdq | paru -Rns - || :
 }
 
 paru -Syu --batchinstall --sudoloop \
