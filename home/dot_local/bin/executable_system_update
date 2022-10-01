@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
+YELLOW='\033[0;33m'
+NC='\033[0m'
 
 paru -Syu --batchinstall --sudoloop \
     --noconfirm --skipreview --failfast \
     --cleanafter --combinedupgrade
 
-paru -Qtdq | paru -Rns - 2> /dev/null || printf "No packages to clean.\n"
+paru -Qtdq | paru -Rns - 2> /dev/null || printf "%s${YELLOW}%sNo packages to clean.${NC}\n"
+
 
 flatpak update --assumeyes --system
