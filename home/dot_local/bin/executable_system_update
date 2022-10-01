@@ -11,5 +11,4 @@ paru -Syu --batchinstall --sudoloop \
 paru -Qtdq | paru -Rns --recursive --sudoloop --failfast --noconfirm - 2> /dev/null || \
     printf "${BLUE}%s::%s${YELLOW}%s No packages to clean${NC}\n"
 
-
 flatpak update --assumeyes --system
