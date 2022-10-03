@@ -5,6 +5,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 export MANDIR=$XDG_DATA_HOME/man:/usr/local/share/man
 source $XDG_DATA_HOME/ls_colors/lscolors.sh
 export GOPATH="$XDG_DATA_HOME"/go
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 export XDG_CONFIG_HOME=$HOME/.config
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
