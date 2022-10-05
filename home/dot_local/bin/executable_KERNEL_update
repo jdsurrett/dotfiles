@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -ueo pipefail
+
+paru -Syu --batchinstall --sudoloop \
+    --noconfirm --skipreview --failfast \
+    --cleanafter --rebuild  \
+    --combinedupgrade linux-lqx linux-lqx-docs linux-lqx-headers
+
