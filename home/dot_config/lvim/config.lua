@@ -64,7 +64,7 @@ lvim.builtin.treesitter.rainbow.extended_mode = true
 lvim.builtin.treesitter.rainbow.max_file_lines = 1000
 -- }}}
 -- {{{ Bufferline
-lvim.builtin.bufferline.options.indicator_icon = "┊"
+lvim.builtin.bufferline.options.indicator_style = "┊"
 lvim.builtin.bufferline.options.separator_style = {'┊', '┊'}
 -- }}}
 -- {{{ Keymappings
@@ -226,7 +226,7 @@ lvim.plugins = {
     {
         "Pocco81/AutoSave.nvim",
         config = function()
-            require("autosave").setup({
+            require("auto-save").setup({
                 execution_message = "AutoSave: saved at " ..
                     vim.fn.strftime("%I:%M %p ┊ %D"),
                 events = {"InsertLeave", "TextChanged"},
