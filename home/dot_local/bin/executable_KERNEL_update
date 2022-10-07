@@ -6,3 +6,7 @@ paru -Syu --batchinstall --sudoloop \
     --cleanafter --rebuild  \
     --combinedupgrade linux-lqx linux-lqx-docs linux-lqx-headers
 
+paru -Qtdq | paru -Rns --recursive --sudoloop --failfast --noconfirm - 2> /dev/null || \
+    printf "${BLUE}%s::%s${YELLOW}%s No packages to clean${NC}\n"
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
