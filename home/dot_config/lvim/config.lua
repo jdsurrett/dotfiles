@@ -225,23 +225,23 @@ lvim.plugins = {
     -- {{{ AutoSave
     {
         "Pocco81/AutoSave.nvim",
-        config = function()
-            require("auto-save").setup({
-                execution_message = "AutoSave: saved at " ..
-                    vim.fn.strftime("%I:%M %p ┊ %D"),
-                events = {"InsertLeave", "TextChanged"},
-                conditions = {
-                    exists = true,
-                    filename_is_not = {"config.lua"},
-                    filetype_is_not = {},
-                    modifiable = true
-                },
-                write_all_buffers = true,
-                on_off_commands = true,
-                clean_command_line_interval = 0,
-                debounce_delay = 135
-            })
-        end
+        -- config = function()
+        --     require("auto-save").setup({
+        --         execution_message = "AutoSave: saved at " ..
+        --             vim.fn.strftime("%I:%M %p ┊ %D"),
+        --         events = {"InsertLeave", "TextChanged"},
+        --         conditions = {
+        --             exists = true,
+        --             filename_is_not = {"config.lua"},
+        --             filetype_is_not = {},
+        --             modifiable = true
+        --         },
+        --         write_all_buffers = true,
+        --         on_off_commands = true,
+        --         clean_command_line_interval = 0,
+        --         debounce_delay = 135
+        --     })
+        -- end
     }, -- }}}
     -- {{{ Minimap
     {
