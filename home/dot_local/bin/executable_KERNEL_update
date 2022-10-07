@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 set -ueo pipefail
+YELLOW='\033[1;33m'
+BLUE='\033[1;34m'
+NC='\033[0m'
 
 paru -Syu --batchinstall --sudoloop \
     --noconfirm --skipreview --failfast \
