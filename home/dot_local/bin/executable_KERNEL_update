@@ -6,7 +6,7 @@ NC='\033[0m'
 
 paru -Syu --batchinstall --sudoloop \
     --noconfirm --skipreview --failfast \
-    --cleanafter --rebuild  \
+    --cleanafter --rebuild  --aur \
     --combinedupgrade linux-lqx linux-lqx-docs linux-lqx-headers
 
 paru -Qtdq | paru -Rns --recursive --sudoloop --failfast --noconfirm - 2> /dev/null || \
