@@ -3,6 +3,6 @@ Type=Application
 Version=2022.8.1
 Name=Bitwarden
 Comment=Bitwarden startup script
-Exec=bitwarden-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland
+Exec=com.bitwarden.desktop --enable-features=UseOzonePlatform --ozone-platform=wayland
 StartupNotify=false
 Terminal=false
