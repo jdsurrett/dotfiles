@@ -31,5 +31,8 @@ export BFETCH_ART_RIGHT=true
 export BFETCH_SEPARATOR=0
 typeset -U PATH path=("$HOME/.local/bin" "$path[@]")
 export PATH
-
+export MOZ_ENABLE_WAYLAND="1"
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_TYPE=wayland
+export QT_QPA_PLATFORM="wayland-egl"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
