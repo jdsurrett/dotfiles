@@ -7,7 +7,7 @@ NC='\033[0m'
 paru -Syu --batchinstall --sudoloop \
     --noconfirm --skipreview --failfast \
     --cleanafter --combinedupgrade --removemake=yes\
-    --ignore=linux-lqx,linux-lqx-docs,linux-lqx-headers $@
+    --ignore=linux-lqx,linux-lqx-docs,linux-lqx-headers,linux-zen-git,linux-zen-docs,linux-zen-git-headers,linux-firmware-git $@
 
 paru -Qtdq | paru -Rns --recursive --sudoloop --failfast --noconfirm - 2> /dev/null || \
     printf "${BLUE}%s::%s${YELLOW}%s No packages to clean${NC}\n"
