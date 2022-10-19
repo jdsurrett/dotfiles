@@ -29,7 +29,7 @@ export MAKEOPTS="-j$(nproc)"
 export BFETCH_CLASSIC_MODE=true
 export BFETCH_ART_RIGHT=true
 export BFETCH_SEPARATOR=0
-typeset -U PATH path=("$HOME/.local/bin" "$path[@]")
+typeset -U PATH path=("$HOME/.local/bin" "$HOME/.local/share/cargo/bin" "$path[@]")
 export PATH
 export MOZ_ENABLE_WAYLAND="1"
 export XDG_CURRENT_DESKTOP=sway
