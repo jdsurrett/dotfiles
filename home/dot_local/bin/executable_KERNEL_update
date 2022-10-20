@@ -5,10 +5,10 @@ BLUE='\033[1;34m'
 NC='\033[0m'
 
 paru -Syu --batchinstall --sudoloop \
-    --skipreview --failfast \
+    --skipreview --failfast --noconfirm\
     --cleanafter --rebuild  --aur \
-    --combinedupgrade linux-zen-git linux-zen-docs \
-    linux-zen-git-headers linux-firmware-git
+    --combinedupgrade linux-lqx linux-lqx-docs \
+    linux-lqx-headers linux-firmware-git
  #--noconfirm 
 paru -Qtdq | paru -Rns --recursive --sudoloop --failfast --noconfirm - 2> /dev/null || \
     printf "${BLUE}%s::%s${YELLOW}%s No packages to clean${NC}\n"
