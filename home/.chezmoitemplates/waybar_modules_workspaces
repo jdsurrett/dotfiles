@@ -1,6 +1,6 @@
         // Modules configuration
-        // sway/workspaces
-        "sway/workspaces": {
+        // hyprland/workspaces
+        "hyprland/workspaces": {
             "disable-scroll": true,
             "all-outputs": true,
             "format": "{icon} {name}",
@@ -9,7 +9,7 @@
                 "2": "www",
                 "3": "",
                 "4": "",
-                "5": "",
+                "5": "",
                 "urgent": "",
                 "focused": "",
                 "default": ""
