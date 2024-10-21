@@ -8,9 +8,9 @@
         // Choose the order of the modules
         "modules-left": [
             "custom/spaces3",
-            "sway/workspaces",
+            "hyprland/workspaces",
             "custom/spaces3",
-            "sway/mode",
+            "hyprland/mode",
             "custom/arrow3"
         ],
         "modules-center": [
@@ -25,7 +25,7 @@
         ],
 
 {{ template "waybar_modules_workspaces" . }}
-{{ template "waybar_modules_sway_mode" . }}
+{{ template "waybar_modules_hyprland_mode" . }}
 {{ template "waybar_modules_clock" . }}
 {{ template "waybar_modules_tray" . }}
 {{ template "waybar_modules_taskbar" . }}
