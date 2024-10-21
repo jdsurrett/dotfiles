@@ -2,12 +2,12 @@
         "network": {
             // "interface": "wlp2*", // (Optional) To force the use of this interface
             "interval": 6,
-            "min-length": 6,
+            "min-length": 8,
             "format-wifi": "{signalStrength}% ",
             // "tooltip-format": "{essid} ",
             "tooltip": false,
             "format-ethernet": "{ifname} ",
-            "format-linked": "{ifname} (No IP) ",
-            "format-disconnected": "Disconnected ⚠ 睊",
+            "format-linked": "{ifname} (No IP) 󰌙",
+            "format-disconnected": "Disconnected ⚠ 󰌙",
             "format-alt": "{essid} "
         },
