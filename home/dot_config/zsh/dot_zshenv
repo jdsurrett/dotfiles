@@ -19,7 +19,7 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
 export COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 
-export EDITOR="nvim"
+export EDITOR="code -w"
 
 export COMMON_FLAGS="-march=native -mtune=native -O2 -pipe"
 export CFLAGS="${COMMON_FLAGS}"
