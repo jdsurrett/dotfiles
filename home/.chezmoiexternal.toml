@@ -28,10 +28,6 @@ type = "file"
 url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty/tokyonight_storm.conf"
 refreshPeriod = "168h"
 
-[".local/share/backgrounds/futurist-city.jpg"]
-type = "file"
-url = "https://resi.ze-robot.com/dl/fu/futurist-city-2-1920%C3%971080.jpg"
-
 [".local/bin/nofetch"]
 type = "file"
 url = "https://raw.githubusercontent.com/jnats/nofetch/main/nofetch"
