@@ -1,6 +1,6 @@
 # ToDo
 
-> In the raw file there will be commented out items.
+> In the raw file there will be commented-out items.
 > This is for visual cleanliness.
 
 <!-- * [X] ~~Refactor lvim configuration file.~~ -->
@@ -16,10 +16,10 @@
 * [ ] Rewrite all files.
   * [X] Configure systemd/user files.
   * [X] Write chezmoi templates.
-  * [X] Redesign way bar.
+  * [X] Redesign waybar.
   * [ ] Write environment.d files.
 * [ ] Integrate email.
-* [ ] Write shell scrips.
+* [ ] Write shell scripts.
   * [ ] todo
   * [ ] File manager
 * [ ] Unify key bindings.
