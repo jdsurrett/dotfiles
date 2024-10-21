@@ -1,5 +1,5 @@
-        // sway/window
-        "sway/window": {
+        // hyprland/window
+        "hyprland/window": {
             "tooltip": false,
             "max-length": 160,
             "icon": false //Option to disable application icon.
