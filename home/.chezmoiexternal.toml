@@ -34,6 +34,9 @@ url = "https://raw.githubusercontent.com/jnats/nofetch/main/nofetch"
 executable = true
 refreshPeriod = "168h"
 
+[".local/share/backgrounds/futurist-city.jpg"]
+type = "file"
+url = "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fug7hy525o4291.jpg"
 
 [".local/bin/unimatrix"]
 type = "file"
