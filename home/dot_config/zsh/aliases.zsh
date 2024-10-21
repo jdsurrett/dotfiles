@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
-alias cargo="cargo"
 alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
