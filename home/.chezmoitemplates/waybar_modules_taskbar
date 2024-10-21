@@ -8,7 +8,7 @@
     "on-click-middle": "close",
     "on-click-right": "minimize",
     "ignore-list": [
-       "Alacritty"
+       "dropdown"
     ],
     "app_ids-mapping": {
       "firefoxdeveloperedition": "firefox-developer-edition"
