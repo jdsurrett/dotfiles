@@ -1,9 +1,0 @@
-### :Input configuration
-  input "1133:16469:Logitech_Wireless_Mouse" {
-#:       dwt enabled
-      left_handed enabled
-#:       tap enabled
-#:       natural_scroll enabled
-      middle_emulation enabled
-  }
-input * xkb_numlock enable
