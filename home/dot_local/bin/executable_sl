@@ -1,4 +1,3 @@
 #!/usr/bin/env zsh
 
-/usr/bin/sl $@ | lolcat
-clear | lolcat -i -p 1
+/usr/bin/sl $@ | lolcat; clear
