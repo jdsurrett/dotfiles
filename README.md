@@ -6,7 +6,6 @@ sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply git@github.com:jdsurrett/do
 
 [TODO](TODO.md)
 [wallpaper][def2]
-
 [wallpaper large][def]
 
 [def]: https://i.redd.it/ug7hy525o4291.jpg
