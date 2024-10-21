@@ -1,4 +1,4 @@
-        // sway/mode
-        "sway/mode": {
+        // hyprland/mode
+        "hyprland/mode": {
             "format": "<span style=\"italic\">>= {}</span>"
         },
