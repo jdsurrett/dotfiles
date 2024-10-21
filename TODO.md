@@ -1,8 +1,8 @@
-  ToDo:
+# ToDo
 
-> In the raw file there will be commented out items.<br>
+> In the raw file there will be commented out items.
 > This is for visual cleanliness.
- 
+
 <!-- * [X] ~~Refactor lvim configuration file.~~ -->
 <!-- * [X] ~~Refactor kitty configuration file.~~ -->
 <!-- * [X] ~~Refactor sway configuration file.~~ -->
@@ -10,31 +10,30 @@
 <!-- * [X] ~~Fix wofi.~~ -->
 <!-- * [X] ~~Setup notification daemon.~~ -->
 
-> If it's just checked then it's most of the way done.<br>
+> If it's just checked then it's most of the way done.
 > If it's crossed out and checked then it's finished.
 
 * [ ] Rewrite all files.
-    * [X] Configure systemd/user files.
-    * [X] Write chezmoi templates.
-    * [X] Redesign way bar.
-    * [ ] Write environment.d files.
-    * [ ] Port the lvim configuration into nvim.
+  * [X] Configure systemd/user files.
+  * [X] Write chezmoi templates.
+  * [X] Redesign way bar.
+  * [ ] Write environment.d files.
 * [ ] Integrate email.
 * [ ] Write shell scrips.
-    * [ ] todo
-    * [ ] File manager
+  * [ ] todo
+  * [ ] File manager
 * [ ] Unify key bindings.
 
-## Shell scripts:
+## Shell scripts
 
 | Name         | Description                             | Interaction method       |
 |:-------------|:----------------------------------------|:-------------------------|
 | todo         | A todo list, wofi script                | Key binding: win+shift+t |
 | File manager | clifm and a custom kitty configuration  | Key binding: win+shift+f |
 
-## Email shell scripts:
+## Email shell scripts
 
-### Backend:
+### Backend
 
 | Name                | Description                       | Interaction method       |
 |:--------------------|:----------------------------------|:-------------------------|
@@ -42,7 +41,7 @@
 | Email downloader    | Manage the downloading of email   | managed by email manager |
 | Email filter/router | Filter/rout emails                | managed by email manager |
 
-### Frontend:
+### Frontend
 
 | Name         | Description                 | Interaction method   |
 |:-------------|:----------------------------|:---------------------|
