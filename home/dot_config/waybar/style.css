@@ -24,7 +24,7 @@
     color: #24283b;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     background-color: #2ac3de;
     color : #24283b;
 }
