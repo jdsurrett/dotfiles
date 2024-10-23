@@ -10,6 +10,7 @@
             "custom/spaces3",
             "hyprland/workspaces",
             "custom/spaces3",
+            "hyprland/submap",
             "custom/arrow3"
         ],
         "modules-right": [
@@ -23,6 +24,7 @@
         ],
 
 {{ template "waybar_modules_workspaces" . }}
+{{ template "waybar_modules_waybar_modules_hyprland_submap" . }}
 {{ template "waybar_modules_network" . }}
 {{ template "waybar_modules_memory" . }}
 {{ template "waybar_modules_cpu" . }}
