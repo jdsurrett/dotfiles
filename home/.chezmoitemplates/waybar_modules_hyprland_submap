@@ -1,4 +1,5 @@
         // hyprland/submap
         "hyprland/submap": {
-            "format": ">>= {}"
+            "format": "{}"
+            //>>= 
         },
