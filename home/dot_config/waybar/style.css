@@ -1,0 +1,184 @@
+* {
+    font-family: 'FiraCode Nerd Font', monospace;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+#window {
+    background-color: #24283b;
+    color: #e0af68;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    background-color: #24283b;
+    color: #c0caf5;
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button:hover {
+    background: #b4f9f8;
+    color: #24283b;
+}
+
+#workspaces button.focused {
+    background-color: #2ac3de;
+    color : #24283b;
+}
+
+#workspaces button.urgent {
+    background-color: #bb9af7;
+}
+
+#submap {
+    color: #24283b;
+    background-color: #2ac3de;
+}
+
+#taskbar button {
+    background-color: #24283b;
+    padding: 0 2px;
+    border: none;
+    border-radius: 0;
+}
+
+#taskbar button.active {
+    background-color: #e0af68;
+}
+
+#taskbar button.minimized {
+    background-color: #b4f9f8;
+}
+
+#taskbar button.maximized {
+    background-color: #2ac3de;
+}
+
+#taskbar button.fullscreen {
+    background-color: #bb9af7;
+}
+
+#cpu,
+#memory,
+#clock,
+#temperature,
+#network,
+#tray,
+#submap,
+#window,
+#workspaces,
+#taskbar,
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: #ff9e64;
+    color: #24283b;
+}
+
+#cpu {
+    background-color: #e0af68;
+    color: #24283b;
+}
+
+#memory {
+    background-color: #bb9af7;
+    color: #24283b;
+}
+
+#network {
+    background-color: #24283b;
+    color: #c0caf5;
+}
+
+#network.disconnected {
+    background-color: #bb9af7;
+    color: #24283b;
+}
+
+#temperature {
+    background-color: #bb9af7;
+    color: #24283b;
+}
+
+#temperature.critical {
+    background-color: #2ac3de;
+}
+
+#tray {
+    background-color: #2ac3de;
+    color: #24283b;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #2ac3de;
+}
+
+#custom-spaces3 {
+    font-size: 16px;
+    color: #2ac3de;
+    background: #24283b;
+}
+
+#custom-spaces2 {
+    font-size: 16px;
+    color: #24283b;
+    background: #7aa2f7;
+}
+
+#custom-arrow7 {
+    font-size: 16px;
+    color: #2ac3de;
+    background: #ff9e64;
+}
+
+#custom-arrow6 {
+    font-size: 16px;
+    color: #bb9af7;
+    background: #e0af68;
+}
+
+#custom-arrow5 {
+    font-size: 16px;
+    color: #e0af68;
+    background: #bb9af7;
+}
+
+#custom-arrow3 {
+    font-size: 16px;
+    color: #2ac3de;
+    background: transparent;
+}
+
+#custom-arrow2 {
+    font-size: 16px;
+    color: #24283b;
+    background: transparent;
+
+}
+
+#custom-arrow1 {
+    font-size: 16px;
+    color: #24283b;
+    background: #bb9af7;
+}
+
+#custom-arrow4 {
+    font-size: 16px;
+    color: #ff9e64;
+    background: transparent;
+}
