@@ -174,8 +174,8 @@
         //clock
         "clock": {
             "interval": 10,
-            "format": "{: %I:%M %p  %a %D  }",
-            "tooltip": false
+            "format": "{:L %I:%M %p  %a %D  }"
+            //"tooltip": false
         },
         //tray
         "tray": {
