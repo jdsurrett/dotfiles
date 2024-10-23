@@ -1,0 +1,271 @@
+[
+{
+        // Bar configuration
+        "name": "topbar",
+        "layer": "top", // Waybar at top layer
+        "position": "top", // Waybar position (top|bottom|left|right)
+        "height": 6, // Waybar height (to be removed for auto height)
+        // "width": 1280, // Waybar width
+        "spacing": 0, // Gaps between modules (4px)
+        // Choose the order of the modules
+        "modules-left": [
+            "custom/spaces3",
+            "hyprland/workspaces",
+            "custom/spaces3",
+            "hyprland/submap",
+            "custom/arrow3"
+        ],
+        "modules-right": [
+            "network",
+            "custom/arrow1",
+            "memory",
+            "custom/arrow5",
+            "cpu",
+            "custom/arrow6",
+            "temperature"
+        ],
+
+        // Modules configuration
+        // hyprland/workspaces
+        "hyprland/workspaces": {
+            "disable-scroll": true,
+            "all-outputs": true,
+            "format": "{icon} {name}",
+            "format-icons": {
+                "1": "",
+                "2": "www",
+                "3": "",
+                "4": "",
+                "5": "",
+                "urgent": "",
+                "focused": "",
+                "default": ""
+            }
+        },
+
+        // hyprland/submap
+        "hyprland/submap": {
+            "format": "{}"
+            //>>= 
+        },
+
+        //network
+        "network": {
+            // "interface": "wlp2*", // (Optional) To force the use of this interface
+            "interval": 6,
+            "min-length": 8,
+            "format-wifi": "{signalStrength}% ",
+            // "tooltip-format": "{essid} ",
+            "tooltip": false,
+            "format-ethernet": "{ifname} ",
+            "format-linked": "{ifname} (No IP) 󰌙",
+            "format-disconnected": "Disconnected ⚠ 󰌙",
+            "format-alt": "{essid} "
+        },
+
+        //memory
+        "memory": {
+            "interval": 6,
+            "min-length": 13,
+            "tooltip": false,
+            "format": "{used:0.1f}G/{total:0.1f}G ",
+            "states": {
+                "warning": 70,
+                "critical": 90
+            }
+        },
+
+        // cpu
+        "cpu": {
+            "interval": 6,
+            "min-length": 6,
+            "tooltip": true,
+            "format": "{usage}% ",
+            "states": {
+                "warning": 70,
+                "critical": 90
+            }
+        },
+
+        //temperature
+        "temperature": {
+            // "thermal-zone": 2,
+            "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+            "critical-threshold": 80,
+            // "format-critical": "{temperatureC}°C {icon}",
+            "tooltip": false,
+            "min-length": 6,
+            "interval": 2,
+            "format": "{temperatureC}°C {icon}",
+            "format-icons": [
+                "", // Icon: temperature-empty
+                "", // Icon: temperature-quarter
+                "", // Icon: temperature-half
+                "", // Icon: temperature-three-quarters
+                "" // Icon: temperature-full
+            ]
+        },
+
+        //custom/media
+        "custom/media": {
+            "format": "{icon} {}",
+            "return-type": "json",
+            "max-length": 40,
+            "format-icons": {
+                "spotify": "",
+                "default": "🎜"
+            },
+            "escape": true,
+            "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+            // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        },
+        
+        // custom/arrow
+        "custom/spaces3": {
+            "max-length": 1,
+            "format": "║",
+            "tooltip": false
+        },
+        "custom/spaces2": {
+            "max-length": 1,
+            "format": "┊",
+            "tooltip": false
+        },
+        "custom/arrow3": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow2": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow1": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow7": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow6": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow5": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow4": {
+            "format": "",
+            "tooltip": false
+        }
+
+
+    },
+   { 
+        // Bar configuration
+        "name": "bottombar",
+        "layer": "top", // Waybar at top layer
+        "position": "bottom", // Waybar position (top|bottom|left|right)
+        "height": 6, // Waybar height (to be removed for auto height)
+        // "width": 1280, // Waybar width
+        "spacing": 0, // Gaps between modules (4px)
+        // Choose the order of the modules
+        "modules-left": [],
+        "modules-center": [
+            "wlr/taskbar"
+        ],
+
+        "modules-right": [
+            "custom/arrow4",
+            "clock",
+            "custom/arrow7",
+            "tray"
+        ],
+
+        //clock
+        "clock": {
+            "interval": 10,
+            "format": "{: %I:%M %p  %a %D  }",
+            "tooltip": false
+        },
+
+        //tray
+        "tray": {
+            "icon-size": 21,
+            "spacing": 5
+        },
+
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 20,
+    "markup": true,
+    "icon-theme": "Numix-Circle",
+    "tooltip-format": "{app_id}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "on-click-right": "minimize",
+    "ignore-list": [
+       "dropdown"
+    ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
+},
+
+        //custom/media
+        "custom/media": {
+            "format": "{icon} {}",
+            "return-type": "json",
+            "max-length": 40,
+            "format-icons": {
+                "spotify": "",
+                "default": "🎜"
+            },
+            "escape": true,
+            "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+            // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        },
+        
+        // custom/arrow
+        "custom/spaces3": {
+            "max-length": 1,
+            "format": "║",
+            "tooltip": false
+        },
+        "custom/spaces2": {
+            "max-length": 1,
+            "format": "┊",
+            "tooltip": false
+        },
+        "custom/arrow3": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow2": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow1": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow7": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow6": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow5": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/arrow4": {
+            "format": "",
+            "tooltip": false
+        }
+
+
+}]
