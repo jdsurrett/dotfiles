@@ -22,6 +22,7 @@
             "temperature"
         ],
 
+{{ template "waybar_modules_workspaces" . }}
 {{ template "waybar_modules_network" . }}
 {{ template "waybar_modules_memory" . }}
 {{ template "waybar_modules_cpu" . }}

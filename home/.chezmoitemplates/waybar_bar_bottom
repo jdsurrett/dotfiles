@@ -18,7 +18,6 @@
             "tray"
         ],
 
-{{ template "waybar_modules_workspaces" . }}
 {{ template "waybar_modules_clock" . }}
 {{ template "waybar_modules_tray" . }}
 {{ template "waybar_modules_taskbar" . }}
