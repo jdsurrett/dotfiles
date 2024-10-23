@@ -1,5 +1,5 @@
 [
-{
+    {
         // Bar configuration
         "name": "topbar",
         "layer": "top", // Waybar at top layer
@@ -24,7 +24,6 @@
             "custom/arrow6",
             "temperature"
         ],
-
         // Modules configuration
         // hyprland/workspaces
         "hyprland/workspaces": {
@@ -42,13 +41,11 @@
                 "default": ""
             }
         },
-
         // hyprland/submap
         "hyprland/submap": {
             "format": "{}"
             //>>= 
         },
-
         //network
         "network": {
             // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -62,7 +59,6 @@
             "format-disconnected": "Disconnected ⚠ 󰌙",
             "format-alt": "{essid} "
         },
-
         //memory
         "memory": {
             "interval": 6,
@@ -74,7 +70,6 @@
                 "critical": 90
             }
         },
-
         // cpu
         "cpu": {
             "interval": 6,
@@ -86,7 +81,6 @@
                 "critical": 90
             }
         },
-
         //temperature
         "temperature": {
             // "thermal-zone": 2,
@@ -105,7 +99,6 @@
                 "" // Icon: temperature-full
             ]
         },
-
         //custom/media
         "custom/media": {
             "format": "{icon} {}",
@@ -119,7 +112,6 @@
             "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
             // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
         },
-        
         // custom/arrow
         "custom/spaces3": {
             "max-length": 1,
@@ -159,10 +151,8 @@
             "format": "",
             "tooltip": false
         }
-
-
     },
-   { 
+    {
         // Bar configuration
         "name": "bottombar",
         "layer": "top", // Waybar at top layer
@@ -175,44 +165,39 @@
         "modules-center": [
             "wlr/taskbar"
         ],
-
         "modules-right": [
             "custom/arrow4",
             "clock",
             "custom/arrow7",
             "tray"
         ],
-
         //clock
         "clock": {
             "interval": 10,
             "format": "{: %I:%M %p  %a %D  }",
             "tooltip": false
         },
-
         //tray
         "tray": {
             "icon-size": 21,
             "spacing": 5
         },
-
-"wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 20,
-    "markup": true,
-    "icon-theme": "Numix-Circle",
-    "tooltip-format": "{app_id}",
-    "on-click": "activate",
-    "on-click-middle": "close",
-    "on-click-right": "minimize",
-    "ignore-list": [
-       "dropdown"
-    ],
-    "app_ids-mapping": {
-      "firefoxdeveloperedition": "firefox-developer-edition"
-    }
-},
-
+        "wlr/taskbar": {
+            "format": "{icon}",
+            "icon-size": 20,
+            "markup": true,
+            "icon-theme": "Numix-Circle",
+            "tooltip-format": "{app_id}",
+            "on-click": "activate",
+            "on-click-middle": "close",
+            "on-click-right": "minimize",
+            "ignore-list": [
+                "dropdown"
+            ],
+            "app_ids-mapping": {
+                "firefoxdeveloperedition": "firefox-developer-edition"
+            }
+        },
         //custom/media
         "custom/media": {
             "format": "{icon} {}",
@@ -226,7 +211,6 @@
             "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
             // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
         },
-        
         // custom/arrow
         "custom/spaces3": {
             "max-length": 1,
@@ -266,6 +250,5 @@
             "format": "",
             "tooltip": false
         }
-
-
-}]
+    }
+]
