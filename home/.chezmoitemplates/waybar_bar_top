@@ -7,8 +7,10 @@
         "spacing": 0, // Gaps between modules (4px)
         // Choose the order of the modules
         "modules-left": [
-            "hyprland/window",
-            "custom/arrow2"
+            "custom/spaces3",
+            "hyprland/workspaces",
+            "custom/spaces3",
+            "custom/arrow3"
         ],
         "modules-right": [
             "network",
@@ -20,7 +22,6 @@
             "temperature"
         ],
 
-{{ template "waybar_modules_window" . }}
 {{ template "waybar_modules_network" . }}
 {{ template "waybar_modules_memory" . }}
 {{ template "waybar_modules_cpu" . }}

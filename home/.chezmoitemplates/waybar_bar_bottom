@@ -6,12 +6,7 @@
         // "width": 1280, // Waybar width
         "spacing": 0, // Gaps between modules (4px)
         // Choose the order of the modules
-        "modules-left": [
-            "custom/spaces3",
-            "hyprland/workspaces",
-            "custom/spaces3",
-            "custom/arrow3"
-        ],
+        "modules-left": [],
         "modules-center": [
             "wlr/taskbar"
         ],
