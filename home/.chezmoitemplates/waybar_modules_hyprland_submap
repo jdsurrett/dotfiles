@@ -1,4 +1,4 @@
         // hyprland/submap
         "hyprland/submap": {
-            "format": "<span style=\"italic\">>= {}</span>"
+            "format": ">>= {}</span>"
         },
