@@ -2,7 +2,7 @@
 plugins = ["scratchpads"]
 
 [scratchpads.term_quake]
-command = "kitty --app-id=[term_quake]"
+command = "kitty --class term_quake"
 size = "100% 100%"
 class = "term_quake"
 animation = "fromTop"
