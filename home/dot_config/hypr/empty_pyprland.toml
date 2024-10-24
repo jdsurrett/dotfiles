@@ -1,0 +1,8 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.term_quake]
+command = "kitty --app-id=[term_quake]"
+position = "50% 0%"
+size = "50% 50%"
+class = "term_quake"
